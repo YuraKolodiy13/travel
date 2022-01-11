@@ -13,4 +13,7 @@ export const general = {
   readResults: (data) => {
     return axios.post(`${API}readresults`, data.body);
   },
+  getTour: (data) => {
+    return axios.post(`https://farvater.travel/ru/tour/${data.id}`, data.body);
+  },
 };

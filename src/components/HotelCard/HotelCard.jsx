@@ -8,7 +8,7 @@ const HotelCard = ({item}) => {
         <img src={item.photo} alt=""/>
       </div>
       <div className="HotelCard__info">
-        {item.hotel.value}
+        <a href={`/hotel/${item.SystemKey}`}>{item.hotel.value}</a>
         ${item.price}
 
         <ul>
