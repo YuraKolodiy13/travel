@@ -1,0 +1,63 @@
+.GalleryGrid{
+  .grid-gallery {
+    display: grid;
+    grid-auto-rows: 138px;
+    grid-gap: 8px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E5E6E4;
+    padding-right: 24px;
+    .destination {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      display: none;
+      cursor: pointer;
+      &:first-of-type{
+        grid-column: span 2;
+        grid-row: span 2;;
+      }
+      &:nth-child(-n+5){
+        display: block;
+      }
+      span{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover{
+        .overlay {
+          opacity: .8;
+        }
+      }
+
+      .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #0000009c;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        transition: opacity 0.3s;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

@@ -14,6 +14,6 @@ export const general = {
     return axios.post(`${API}readresults`, data.body);
   },
   getTour: (data) => {
-    return axios.post(`https://farvater.travel/ru/tour/${data.id}`, data.body);
+    return axios.post(`https://farvater.travel/uk${data.pathname.replace('q=', '?q=')}`, data.body);
   },
 };

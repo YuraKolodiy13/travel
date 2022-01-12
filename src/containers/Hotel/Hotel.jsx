@@ -1,24 +1,42 @@
-import {SEARCH_FORM_REQUEST} from "../../actions/general";
-import {useParams} from "react-router";
+import {GET_TOUR_REQUEST} from "../../actions/general";
 import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
+import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
+import './Hotel.scss'
 
 const Hotel = () => {
 
-  const {id} = useParams();
   const dispatch = useDispatch();
-  const searchForm = useSelector((state) => state.general.searchForm);
+  const tour = useSelector((state) => state.general.tour);
 
-  dispatch({
-    type: SEARCH_FORM_REQUEST,
-    payload: {
-      id,
-      body: {}
-    }
-  });
+  useEffect(() => {
+    dispatch({
+      type: GET_TOUR_REQUEST,
+      payload: {
+        pathname: window.location.pathname,
+        body: {}
+      }
+    });
+  }, []);
 
   return (
     <div className="Hotel">
-      {/*<div dangerouslySetInnerHTML={{__html:}}/>*/}
+      <h1>{tour.title}</h1>
+
+      <div className="hotel-main">
+        <div className="hotel-gallery">
+          <GalleryGrid images={tour.images}/>
+        </div>
+        <div className="hotel-info">
+          виліт
+        </div>
+      </div>
+
+      <div className="hotel-description">
+        <h3>Опис готелю</h3>
+        {tour.description}
+      </div>
+      <div className='hotel-services' dangerouslySetInnerHTML={{__html: tour.services}}/>
     </div>
   )
 };

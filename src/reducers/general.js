@@ -1,10 +1,17 @@
-import {READ_RESULTS_SUCCESS, SEARCH_FORM_REQUEST, SEARCH_FORM_SUCCESS, SEARCH_START_SUCCESS} from "../actions/general";
+import {
+  GET_TOUR_SUCCESS,
+  READ_RESULTS_SUCCESS,
+  SEARCH_FORM_REQUEST,
+  SEARCH_FORM_SUCCESS,
+  SEARCH_START_SUCCESS
+} from "../actions/general";
 
 const initialState = {
   loading: false,
   searchForm: {},
   hash: '',
-  hotels: null
+  hotels: null,
+  tour: {},
 };
 
 export default function general(state = initialState, action) {
@@ -32,6 +39,11 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         hotels: action.payload.sResult,
+      };
+    case GET_TOUR_SUCCESS:
+      return {
+        ...state,
+        tour: action.payload,
       };
 
     default:
