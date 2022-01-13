@@ -1,9 +1,9 @@
-import {call, all} from "redux-saga/effects";
+import {all} from "redux-saga/effects";
 
-import {general} from "./general";
+import general from "./general";
 
 export function* sagas() {
   yield all([
-    call(general),
-  ]);
+    general,
+  ])
 }

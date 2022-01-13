@@ -12,10 +12,7 @@ const Homepage = () => {
   const searchForm = useSelector((state) => state.general.searchForm);
   const dispatch = useDispatch();
 
-  const [state, setState] = useState({
-    cityFrom: '',
-    destination: ''
-  });
+  const [state, setState] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});
 
   useEffect(() => {
     dispatch({
@@ -32,11 +29,12 @@ const Homepage = () => {
   }, []);
 
   useEffect(() => {
-    setState({
-      cityFrom: searchForm.cityFrom?.checkedModel.id,
-      destination: searchForm.destination?.checkedModel.country,
-    })
-
+    if(!localStorage.getItem('searchFormData')){
+      setState({
+        cityFrom: searchForm.cityFrom?.checkedModel.id,
+        destination: searchForm.destination?.checkedModel.country,
+      })
+    }
   }, [searchForm]);
 
   const searchTours = () => {
@@ -65,14 +63,20 @@ const Homepage = () => {
     })
   };
 
+  const onChange = (e) => {
+    setState({...state, [e.target.name]: e.target.value});
+    localStorage.setItem('searchFormData', JSON.stringify({...state, [e.target.name]: e.target.value}))
+  };
+
 
   return (
     <div className='Homepage'>
       <ValidatorForm className='olo-main-info-body' onSubmit={searchTours}>
         <SelectValidator
           value={state.cityFrom || ''}
+          name='cityFrom'
           variant='outlined'
-          onChange={e => setState({...state, cityFrom: e.target.value})}
+          onChange={onChange}
           validators={["required"]}
           errorMessages={["This field is required"]}
         >
@@ -84,8 +88,9 @@ const Homepage = () => {
         </SelectValidator>
         <SelectValidator
           value={state.destination || ''}
+          name='destination'
           variant='outlined'
-          onChange={e => setState({...state, destination: e.target.value})}
+          onChange={onChange}
           validators={["required"]}
           errorMessages={["This field is required"]}
         >

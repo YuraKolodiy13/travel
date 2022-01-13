@@ -16,4 +16,10 @@ export const general = {
   getTour: (data) => {
     return axios.post(`https://farvater.travel/uk${data.pathname.replace('q=', '?q=')}`, data.body);
   },
+  getOtherTours: (data) => {
+    return axios.post(`https://farvater.travel/uk/tour/others/${data.id}`, data.body);
+  },
+  getFlightsInfo: (data) => {
+    return axios.post(`https://farvater.travel/uk/tour/flightsinfo/${data.id}`, data.body);
+  },
 };

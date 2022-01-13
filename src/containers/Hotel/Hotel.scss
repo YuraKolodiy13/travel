@@ -5,4 +5,26 @@
       width: 50%;
     }
   }
+  .flights{
+    .flights-wrapper{
+      display: flex;
+      .flights-block{
+        width: 35%;
+        flex: none;
+        .flights-info{
+          padding-bottom: 20px;
+        }
+        p{
+          margin: 0 0 5px;
+        }
+        span{
+          color: #847577;
+          display: block;
+        }
+      }
+      ul{
+        align-self: center;
+      }
+    }
+  }
 }

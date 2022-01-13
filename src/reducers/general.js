@@ -1,4 +1,6 @@
 import {
+  GET_FLIGHTS_INFO_SUCCESS,
+  GET_OTHER_TOURS_SUCCESS,
   GET_TOUR_SUCCESS,
   READ_RESULTS_SUCCESS,
   SEARCH_FORM_REQUEST,
@@ -12,6 +14,8 @@ const initialState = {
   hash: '',
   hotels: null,
   tour: {},
+  otherTours: [],
+  flights: null
 };
 
 export default function general(state = initialState, action) {
@@ -44,6 +48,16 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         tour: action.payload,
+      };
+    case GET_OTHER_TOURS_SUCCESS:
+      return {
+        ...state,
+        otherTours: action.payload.sResult,
+      };
+    case GET_FLIGHTS_INFO_SUCCESS:
+      return {
+        ...state,
+        flights: action.payload,
       };
 
     default:
