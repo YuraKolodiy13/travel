@@ -1,22 +1,16 @@
-import {GET_FLIGHTS_INFO_REQUEST, GET_OTHER_TOURS_REQUEST, GET_TOUR_REQUEST} from "../../actions/general";
+import {GET_TOUR_REQUEST} from "../../actions/general";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
 import './Hotel.scss'
-import {useParams} from "react-router";
 
 const Hotel = () => {
 
   const dispatch = useDispatch();
   const tour = useSelector((state) => state.general.tour);
-  const otherTours = useSelector((state) => state.general.otherTours);
-  const flights = useSelector((state) => state.general.flights);
-  const {id} = useParams();
 
   useEffect(() => {
     dispatch({type: GET_TOUR_REQUEST, payload: {pathname: window.location.pathname, body: {}}});
-    dispatch({type: GET_OTHER_TOURS_REQUEST, payload: {id, body: {}}});
-    dispatch({type: GET_FLIGHTS_INFO_REQUEST, payload: {id, body: {}}});
   }, []);
 
   return (
@@ -32,62 +26,11 @@ const Hotel = () => {
         </div>
       </div>
 
-      {flights && (
-        <div className="hotel-flights flights">
-          <h2>Деталі переольоту</h2>
-          <div className='flights-wrapper'>
-            <div className='flights-block'>
-              <h3>Виліт на відпочинок {flights.from.company}</h3>
-              <div className='flights-info'>
-                <p>{flights.from.departure.town} ({flights.from.name})</p>
-                <span>{flights.from.date} в {flights.from.departure.time}</span>
-                <span>{flights.from.departure.port}</span>
-              </div>
-              <div className='flights-info'>
-                <p>{flights.from.arrival.town}</p>
-                <span>{flights.from.dateArrival} в {flights.from.arrival.time}</span>
-                <span>{flights.from.arrival.port}</span>
-              </div>
-            </div>
-            <div className='flights-block'>
-              <h3>Повернення додому {flights.to.company}</h3>
-              <div className='flights-info'>
-                <p>{flights.to.departure.town} ({flights.to.name})</p>
-                <span>{flights.to.date} в {flights.to.departure.time}</span>
-                <span>{flights.to.departure.port}</span>
-              </div>
-              <div className='flights-info'>
-                <p>{flights.to.arrival.town}</p>
-                <span>{flights.to.dateArrival} в {flights.to.arrival.time}</span>
-                <span>{flights.to.arrival.port}</span>
-              </div>
-            </div>
-            <ul>
-              {flights.services.map((item, i) =>
-                <li key={i}>{item}</li>
-              )}
-              <li>Ознайомитися з правилами перевезення багажу можна на сайті компанії-перевізника <span>{flights.from.company}</span></li>
-            </ul>
-          </div>
-        </div>
-      )}
-
       <div className="hotel-description">
         <h2>Опис готелю</h2>
-        {tour.description}
+        <div dangerouslySetInnerHTML={{__html: tour.description}}/>
       </div>
       <div className='hotel-services' dangerouslySetInnerHTML={{__html: tour.services}}/>
-
-      <div className="hotel-otherTours">
-        {otherTours.map((item, i) =>
-          <div key={i}>
-            <span>{item.nights}</span>
-            <span>{item.room}</span>
-            <span>{item.meal.value}</span>
-            <span>{item.priceUAH}грн</span>
-          </div>
-        )}
-      </div>
     </div>
   )
 };

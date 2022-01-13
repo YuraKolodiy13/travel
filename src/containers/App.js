@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Homepage from "./Homepage/Homepage";
 import Hotel from "./Hotel/Hotel";
 import Header from "../components/Header/Header";
+import Tour from "./Tour/Tour";
 
 const App = () => {
 
@@ -13,7 +14,8 @@ const App = () => {
         <Header/>
         <Routes>
           <Route path="/" element={<Homepage/>}/>
-          <Route path="/hotel/:countryCode/:hotelName/q=:id" element={<Hotel/>}/>
+          <Route path="/hotel/:countryCode/:hotelName" element={<Hotel/>}/>
+          <Route path="/hotel/:countryCode/:hotelName/q=:id" element={<Tour/>}/>
         </Routes>
       </div>
     </div>
