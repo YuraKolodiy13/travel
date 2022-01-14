@@ -33,10 +33,13 @@ function* searchStart(action) {
   }
 }
 
+let requestCount = 0;
+
 function* readResults(action) {
   try {
     const res = yield call(Api.general.readResults, action.payload);
-    if(!res.data.data.hasResult){
+    if(!res.data.data.hasResult && requestCount < 3){
+      requestCount++;
       yield delay(2000);
       yield put({type: generalActions.READ_RESULTS_REQUEST, payload: action.payload});
     }
@@ -49,8 +52,8 @@ function* readResults(action) {
 function* getTour(action) {
   try {
     const res = yield call(Api.general.getTour, action.payload);
-    var parser = new DOMParser();
-    var parsedData = parser.parseFromString(res.data, "text/html");
+    const parser = new DOMParser();
+    const parsedData = parser.parseFromString(res.data, "text/html");
     const data = {
       title: parsedData.querySelector('#TP__Blocks__TourTitle').textContent,
       images: [...parsedData.querySelectorAll('.TP__gallery__images img')].map(item => item.src),

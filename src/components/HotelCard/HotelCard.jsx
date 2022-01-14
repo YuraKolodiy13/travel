@@ -13,6 +13,7 @@ const HotelCard = ({item}) => {
 
         <ul>
           {item.flyInclude && <li>Включно з перельотом ({item.cityFromName})</li>}
+          <li>Виліт {('0' + new Date(item.checkIn.value).getDate()).slice(-2)}.{('0' + (new Date(item.checkIn.value).getMonth() + 1)).slice(-2)}</li>
           <li>На {item.nights} ночей</li>
           <li>Ціна за {item.adl} туриста</li>
           <li>{item.room}</li>

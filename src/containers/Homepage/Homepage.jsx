@@ -4,6 +4,10 @@ import HotelCard from "../../components/HotelCard/HotelCard";
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {SEARCH_FORM_REQUEST, SEARCH_START_REQUEST} from "../../actions/general";
+import DateRangePicker from '@mui/lab/DateRangePicker';
+import TextField from "@mui/material/TextField";
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
 
 const Homepage = () => {
 
@@ -11,6 +15,7 @@ const Homepage = () => {
   const hotels = useSelector((state) => state.general.hotels);
   const searchForm = useSelector((state) => state.general.searchForm);
   const dispatch = useDispatch();
+
 
   const [state, setState] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});
 
@@ -30,9 +35,11 @@ const Homepage = () => {
 
   useEffect(() => {
     if(!localStorage.getItem('searchFormData')){
+      const currentDate = new Date();
       setState({
         cityFrom: searchForm.cityFrom?.checkedModel.id,
         destination: searchForm.destination?.checkedModel.country,
+        date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)]
       })
     }
   }, [searchForm]);
@@ -55,8 +62,8 @@ const Homepage = () => {
             nightsTo: 7,
             adults: 2,
             kids: 0,
-            dateFrom: "12.01.2022",
-            dateTo: "25.01.2022"
+            dateFrom: new Date(state.date[0]),
+            dateTo: new Date(state.date[1])
           }
         }
       }
@@ -67,6 +74,14 @@ const Homepage = () => {
     setState({...state, [e.target.name]: e.target.value});
     localStorage.setItem('searchFormData', JSON.stringify({...state, [e.target.name]: e.target.value}))
   };
+  const onChangeDate = (value, name) => {
+    setState({...state, [name]: value});
+    localStorage.setItem('searchFormData', JSON.stringify({...state, [name]: value}))
+  };
+
+  const [value, setValue] = React.useState([null, null]);
+
+  console.log(state, 'state')
 
 
   return (
@@ -105,6 +120,26 @@ const Homepage = () => {
             </MenuItem>
           ))}
         </SelectValidator>
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <DateRangePicker
+          onChange={date => onChangeDate(date, 'date')}
+          value={state.date || [null, null]}
+          name='date'
+          renderInput={({ inputProps, ...startProps }, endProps) => {
+            const startValue = inputProps.value;
+            console.log(startValue, 'startValue')
+            console.log(endProps, 'endProps')
+            delete inputProps.value;
+            return (
+              <TextField
+                {...startProps}
+                name='date'
+                inputProps={inputProps}
+                value={`${startValue}-${endProps.inputProps.value}`}
+              />
+            )}}
+          />
+        </LocalizationProvider>
         <button type="submit">Найти</button>
       </ValidatorForm>
 
