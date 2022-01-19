@@ -42,7 +42,7 @@ export default function general(state = initialState, action) {
     case READ_RESULTS_SUCCESS:
       return {
         ...state,
-        hotels: action.payload.sResult,
+        hotels: action.payload,
       };
     case GET_TOUR_SUCCESS:
       return {

@@ -3,7 +3,11 @@ import MenuItem from "@mui/material/MenuItem";
 import HotelCard from "../../components/HotelCard/HotelCard";
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {SEARCH_FORM_REQUEST, SEARCH_START_REQUEST} from "../../actions/general";
+import {
+  READ_RESULTS_REQUEST,
+  SEARCH_FORM_REQUEST,
+  SEARCH_START_REQUEST
+} from "../../actions/general";
 import DateRangePicker from '@mui/lab/DateRangePicker';
 import TextField from "@mui/material/TextField";
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
@@ -70,6 +74,24 @@ const Homepage = () => {
     })
   };
 
+  const loadMoreResults = () => {
+    dispatch({
+      type: READ_RESULTS_REQUEST,
+      payload: {
+        body: {
+          firstCount: hotels?.sResult?.length + 10,
+          hashId: hotels.hash,
+          mapKey: 0,
+          offset: 1,
+          partnerType: "",
+          show_type: "",
+          sort: "",
+          sortType: 1
+        }
+      }
+    })
+  };
+
   const onChange = (e) => {
     setState({...state, [e.target.name]: e.target.value});
     localStorage.setItem('searchFormData', JSON.stringify({...state, [e.target.name]: e.target.value}))
@@ -78,11 +100,6 @@ const Homepage = () => {
     setState({...state, [name]: value});
     localStorage.setItem('searchFormData', JSON.stringify({...state, [name]: value}))
   };
-
-  const [value, setValue] = React.useState([null, null]);
-
-  console.log(state, 'state')
-
 
   return (
     <div className='Homepage'>
@@ -127,8 +144,6 @@ const Homepage = () => {
           name='date'
           renderInput={({ inputProps, ...startProps }, endProps) => {
             const startValue = inputProps.value;
-            console.log(startValue, 'startValue')
-            console.log(endProps, 'endProps')
             delete inputProps.value;
             return (
               <TextField
@@ -143,8 +158,11 @@ const Homepage = () => {
         <button type="submit">Найти</button>
       </ValidatorForm>
 
-      {hotels?.map(item =>
+      {hotels?.sResult?.map(item =>
         <HotelCard item={item} key={item.id}/>
+      )}
+      {hotels && !hotels?.stopHotelSearch && (
+        <button onClick={loadMoreResults}>Показати більше</button>
       )}
     </div>
   )

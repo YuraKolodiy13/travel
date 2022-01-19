@@ -44,6 +44,13 @@ function* readResults(action) {
       yield put({type: generalActions.READ_RESULTS_REQUEST, payload: action.payload});
     }
     yield put({type: generalActions.READ_RESULTS_SUCCESS, payload: res.data.data});
+    if(res.data.data.hasMore && requestCount < 5 && !action.payload.body.offset){
+      requestCount++;
+      yield delay(5000);
+      if(!action.payload.body.offset){
+        yield put({type: generalActions.READ_RESULTS_REQUEST, payload: action.payload})
+      }
+    }
   } catch (err) {
     yield put({ type: generalActions.READ_RESULTS_FAIL, payload: { error: err.message } });
   }
