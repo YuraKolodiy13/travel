@@ -56,7 +56,7 @@ const Homepage = () => {
           form: {
             countryId: state.destination,
             townFromId: state.cityFrom,
-            ages: [],
+            ages: [1],
             stars: [3,4,7],
             meals: [1,2],
             hotels: [],
@@ -65,7 +65,7 @@ const Homepage = () => {
             nightsFrom: 7,
             nightsTo: 7,
             adults: 2,
-            kids: 0,
+            kids: 1,
             dateFrom: new Date(state.date[0]),
             dateTo: new Date(state.date[1])
           }
