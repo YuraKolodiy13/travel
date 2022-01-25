@@ -91,11 +91,21 @@ function* getFlightsInfo(action) {
   }
 }
 
+function* getHotTours(action) {
+  try {
+    const res = yield call(Api.general.getHotTours, action.payload);
+    yield put({type: generalActions.GET_HOT_TOURS_SUCCESS, payload: res.data.data});
+  } catch (err) {
+    yield put({ type: generalActions.GET_HOT_TOURS_FAIL, payload: { error: err.message } });
+  }
+}
+
 export default all([
   takeLatest(generalActions.SEARCH_FORM_REQUEST, searchForm),
   takeLatest(generalActions.SEARCH_START_REQUEST, searchStart),
   takeLatest(generalActions.READ_RESULTS_REQUEST, readResults),
   takeLatest(generalActions.GET_TOUR_REQUEST, getTour),
   takeLatest(generalActions.GET_OTHER_TOURS_REQUEST, getOtherTours),
+  takeLatest(generalActions.GET_HOT_TOURS_REQUEST, getHotTours),
   takeLatest(generalActions.GET_FLIGHTS_INFO_REQUEST, getFlightsInfo),
 ])

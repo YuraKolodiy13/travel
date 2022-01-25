@@ -1,10 +1,11 @@
 import React from "react";
 import './App.scss';
 import {Routes, Route} from 'react-router-dom';
-import Homepage from "./Homepage/Homepage";
-import Hotel from "./Hotel/Hotel";
-import Header from "../components/Header/Header";
-import Tour from "./Tour/Tour";
+import Header from "../Header/Header";
+import Homepage from "../../containers/Homepage/Homepage";
+import Hotel from "../../containers/Hotel/Hotel";
+import Tour from "../../containers/Tour/Tour";
+import Catalog from "../../containers/Catalog/Catalog";
 
 const App = () => {
 
@@ -13,7 +14,8 @@ const App = () => {
       <div className="container">
         <Header/>
         <Routes>
-          <Route path="/" element={<Homepage/>}/>
+          <Route exact path="/" element={<Homepage/>}/>
+          <Route path="/catalog" element={<Catalog/>}/>
           <Route path="/hotel/:countryCode/:hotelName" element={<Hotel/>}/>
           <Route path="/hotel/:countryCode/:hotelName/q=:id" element={<Tour/>}/>
         </Routes>

@@ -22,4 +22,7 @@ export const general = {
   getFlightsInfo: (data) => {
     return axios.post(`https://farvater.travel/uk/tour/flightsinfo/${data.id}`, data.body);
   },
+  getHotTours: (data) => {
+    return axios.post(`https://farvater.travel/home/homeHot`, data.body);
+  },
 };

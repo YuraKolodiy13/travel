@@ -7,7 +7,7 @@ import createSagaMiddleware from "redux-saga";
 import {Provider} from "react-redux";
 import {reducers} from "./reducers";
 import {sagas} from "./sagas";
-import App from "./containers/App";
+import App from "./components/App/App";
 import reportWebVitals from './reportWebVitals';
 import "./index.scss";
 

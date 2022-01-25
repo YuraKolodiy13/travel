@@ -1,7 +1,5 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './HotelCard.scss';
-import {SEARCH_FORM_REQUEST} from "../../actions/general";
-import {useDispatch} from "react-redux";
 
 const HotelCard = ({item}) => {
   return (
