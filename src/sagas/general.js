@@ -94,7 +94,7 @@ function* getFlightsInfo(action) {
 function* getHotTours(action) {
   try {
     const res = yield call(Api.general.getHotTours, action.payload);
-    yield put({type: generalActions.GET_HOT_TOURS_SUCCESS, payload: res.data.data});
+    yield put({type: generalActions.GET_HOT_TOURS_SUCCESS, payload: res.data.results});
   } catch (err) {
     yield put({ type: generalActions.GET_HOT_TOURS_FAIL, payload: { error: err.message } });
   }

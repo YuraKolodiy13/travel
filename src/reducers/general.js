@@ -1,5 +1,5 @@
 import {
-  GET_FLIGHTS_INFO_SUCCESS,
+  GET_FLIGHTS_INFO_SUCCESS, GET_HOT_TOURS_SUCCESS,
   GET_OTHER_TOURS_SUCCESS,
   GET_TOUR_SUCCESS,
   READ_RESULTS_SUCCESS,
@@ -15,6 +15,7 @@ const initialState = {
   hotels: null,
   tour: {},
   otherTours: [],
+  hotTours: [],
   flights: null
 };
 
@@ -58,6 +59,11 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         flights: action.payload,
+      };
+    case GET_HOT_TOURS_SUCCESS:
+      return {
+        ...state,
+        hotTours: action.payload,
       };
 
     default:

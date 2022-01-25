@@ -1,10 +1,12 @@
 import React, {useEffect} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {GET_HOT_TOURS_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
+import HotelCard from "../../components/HotelCard/HotelCard";
 
 const Homepage = () => {
 
+  const hotTours = useSelector((state) => state.general.hotTours);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -40,6 +42,9 @@ const Homepage = () => {
 
       <Search/>
 
+      {hotTours?.map(item =>
+        <HotelCard item={item} key={item.id}/>
+      )}
     </div>
   )
 };
