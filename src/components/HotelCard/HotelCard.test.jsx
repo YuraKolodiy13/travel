@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import HotelCard from "./HotelCard";
 
 test('renders learn react link', () => {
@@ -90,7 +90,7 @@ test('renders learn react link', () => {
     "isLastSeats": false
   };
 
-  render(<HotelCard item={data}/>);
-  const list = screen.getByRole('list');
+  const {getByRole} = render(<HotelCard item={data}/>);
+  const list = getByRole('list');
   expect(list).toBeInTheDocument();
 });
