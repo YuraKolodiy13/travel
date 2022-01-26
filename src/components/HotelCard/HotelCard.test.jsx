@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import HotelCard from "./HotelCard";
 
-test('renders learn react link', () => {
+describe('list components', () => {
 
   const data = {
     "disablePromoCode": false,
@@ -90,7 +90,19 @@ test('renders learn react link', () => {
     "isLastSeats": false
   };
 
-  const {getByRole} = render(<HotelCard item={data}/>);
-  const list = getByRole('list');
-  expect(list).toBeInTheDocument();
+
+  test('list renders', () => {
+    const {getByRole} = render(<HotelCard item={data}/>);
+    expect(getByRole('list')).toBeInTheDocument();
+  });
+
+  test('list without data', () => {
+    const {queryByRole} = render(<HotelCard />);
+    expect(queryByRole('list')).toBeNull();
+  });
+
+  test('list snapshot', () => {
+    const list = render(<HotelCard item={data}/>);
+    expect(list).toMatchSnapshot();
+  });
 });
