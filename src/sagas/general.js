@@ -100,6 +100,15 @@ function* getHotTours(action) {
   }
 }
 
+function* getRecommendedTours(action) {
+  try {
+    const res = yield call(Api.general.getRecommendedTours, action.payload);
+    yield put({type: generalActions.GET_RECOMMENDED_TOURS_SUCCESS, payload: res.data.results});
+  } catch (err) {
+    yield put({ type: generalActions.GET_RECOMMENDED_TOURS_FAIL, payload: { error: err.message } });
+  }
+}
+
 export default all([
   takeLatest(generalActions.SEARCH_FORM_REQUEST, searchForm),
   takeLatest(generalActions.SEARCH_START_REQUEST, searchStart),
@@ -107,5 +116,6 @@ export default all([
   takeLatest(generalActions.GET_TOUR_REQUEST, getTour),
   takeLatest(generalActions.GET_OTHER_TOURS_REQUEST, getOtherTours),
   takeLatest(generalActions.GET_HOT_TOURS_REQUEST, getHotTours),
+  takeLatest(generalActions.GET_RECOMMENDED_TOURS_REQUEST, getRecommendedTours),
   takeLatest(generalActions.GET_FLIGHTS_INFO_REQUEST, getFlightsInfo),
 ])

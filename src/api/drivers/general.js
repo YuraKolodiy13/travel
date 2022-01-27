@@ -25,4 +25,7 @@ export const general = {
   getHotTours: (data) => {
     return axios.post(`https://farvater.travel/home/homeHot`, data.body);
   },
+  getRecommendedTours: (data) => {
+    return axios.post(`https://farvater.travel/home/homeRecommended`, data.body);
+  },
 };
