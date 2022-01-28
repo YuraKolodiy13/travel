@@ -10,8 +10,8 @@ const Tour = () => {
   const dispatch = useDispatch();
   const tour = useSelector((state) => state.general.tour);
   const otherTours = useSelector((state) => state.general.otherTours);
-  const flights = useSelector((state) => state.general.flights);
   const {id} = useParams();
+  const flights = useSelector((state) => state.general.flights[id]);
 
   useEffect(() => {
     dispatch({type: GET_TOUR_REQUEST, payload: {pathname: window.location.pathname.replace('q=', '?q='), body: {}}});

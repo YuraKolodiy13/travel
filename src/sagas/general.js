@@ -85,7 +85,7 @@ function* getOtherTours(action) {
 function* getFlightsInfo(action) {
   try {
     const res = yield call(Api.general.getFlightsInfo, action.payload);
-    yield put({type: generalActions.GET_FLIGHTS_INFO_SUCCESS, payload: res.data.data.flights});
+    yield put({type: generalActions.GET_FLIGHTS_INFO_SUCCESS, payload: {[action.payload.id]: res.data.data.flights}});
   } catch (err) {
     yield put({ type: generalActions.GET_FLIGHTS_INFO_FAIL, payload: { error: err.message } });
   }

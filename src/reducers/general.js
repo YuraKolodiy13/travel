@@ -17,7 +17,7 @@ const initialState = {
   otherTours: [],
   hotTours: [],
   recommendedTours: [],
-  flights: null
+  flights: {}
 };
 
 export default function general(state = initialState, action) {
@@ -59,7 +59,7 @@ export default function general(state = initialState, action) {
     case GET_FLIGHTS_INFO_SUCCESS:
       return {
         ...state,
-        flights: action.payload,
+        flights: {...state.flights, ...action.payload},
       };
     case GET_HOT_TOURS_SUCCESS:
       return {
