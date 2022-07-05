@@ -9,11 +9,11 @@ const HotelCard = ({item, flights}) => {
 
   const getFlightsTimeDuration = (hours1, hours2, mins1, mins2) => {
     let sec_num = (hours1 - hours2) * 3600 + (mins1 - mins2) * 60;
-    let hours   = Math.floor(sec_num / 3600);
+    let hours = Math.floor(sec_num / 3600);
     let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
 
     if (minutes < 10) {minutes = "0"+minutes;}
-    return hours+':'+minutes;
+    return hours + ':' + minutes;
   }
 
   if(!item) return null;
