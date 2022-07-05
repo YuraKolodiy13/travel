@@ -8,6 +8,7 @@ import useSearch from "../../hooks/useSearch";
 const Catalog = () => {
 
   const hotels = useSelector((state) => state.general.hotels);
+  const flights = useSelector((state) => state.general.flights);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
 
@@ -43,7 +44,7 @@ const Catalog = () => {
       <Search/>
 
       {hotels?.sResult?.map(item =>
-        <HotelCard item={item} key={item.id}/>
+        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
       )}
       {hotels && !hotels?.stopHotelSearch && (
         <button onClick={loadMoreResults}>Показати більше</button>

@@ -9,7 +9,7 @@ Object {
         class="HotelCard"
       >
         <div
-          class="HotelCard__img"
+          class="hotelCard__img"
         >
           <img
             alt=""
@@ -17,15 +17,26 @@ Object {
           />
         </div>
         <div
-          class="HotelCard__info"
+          class="hotelCard__info"
         >
-          <a
-            href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+          <div
+            class="hotelCard__price"
           >
-            Desert View Sharm
-          </a>
-          $
-          410
+            <a
+              href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+            >
+              Desert View Sharm
+            </a>
+            <span>
+                 $
+              410
+            </span>
+            /
+            <span>
+              12111
+              грн
+            </span>
+          </div>
           <ul>
             <li>
               Включно з перельотом (
@@ -33,10 +44,36 @@ Object {
               )
             </li>
             <li>
-              Виліт 
-              27
+              Виліт на відпочинок 
+              
+              26
               .
               01
+              <span>
+                 о 
+                06:05
+                ,
+                 
+                Приліт 
+                10:20
+                , тривалість польоту 
+                4:15
+              </span>
+            </li>
+            <li>
+              Виліт додому 
+              
+              21.07
+              <span>
+                 о 
+                11:20
+                ,
+                 
+                Приліт 
+                15:40
+                , тривалість польоту 
+                4:20
+              </span>
             </li>
             <li>
               На 
@@ -64,7 +101,7 @@ Object {
       class="HotelCard"
     >
       <div
-        class="HotelCard__img"
+        class="hotelCard__img"
       >
         <img
           alt=""
@@ -72,15 +109,26 @@ Object {
         />
       </div>
       <div
-        class="HotelCard__info"
+        class="hotelCard__info"
       >
-        <a
-          href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+        <div
+          class="hotelCard__price"
         >
-          Desert View Sharm
-        </a>
-        $
-        410
+          <a
+            href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+          >
+            Desert View Sharm
+          </a>
+          <span>
+               $
+            410
+          </span>
+          /
+          <span>
+            12111
+            грн
+          </span>
+        </div>
         <ul>
           <li>
             Включно з перельотом (
@@ -88,10 +136,36 @@ Object {
             )
           </li>
           <li>
-            Виліт 
-            27
+            Виліт на відпочинок 
+            
+            26
             .
             01
+            <span>
+               о 
+              06:05
+              ,
+               
+              Приліт 
+              10:20
+              , тривалість польоту 
+              4:15
+            </span>
+          </li>
+          <li>
+            Виліт додому 
+            
+            21.07
+            <span>
+               о 
+              11:20
+              ,
+               
+              Приліт 
+              15:40
+              , тривалість польоту 
+              4:20
+            </span>
           </li>
           <li>
             На 

@@ -1,11 +1,10 @@
 import React from "react";
 import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
-const HotelCard = ({item}) => {
+const HotelCard = ({item, flights}) => {
 
-  const flights = useSelector((state) => state.general.flights[item.SystemKey]);
   const dispatch = useDispatch();
 
   const getFlightsTimeDuration = (hours1, hours2, mins1, mins2) => {

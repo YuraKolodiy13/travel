@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import HotelCard from "./HotelCard";
+import {Provider} from "react-redux";
+import configureStore from 'redux-mock-store';
 
 describe('list components', () => {
 
@@ -89,20 +91,85 @@ describe('list components', () => {
     "promotionEndDate": null,
     "isLastSeats": false
   };
-
+  const flights = {
+    servicesClear: [
+      {
+        code: 'insurance',
+        value: 'Медична страховка'
+      },
+      {
+        code: 'transfer',
+        value: 'Груповий трансфер'
+      }
+    ],
+    regularFly: false,
+    from: {
+      date: '14.07.2022',
+      company: 'Enter Air',
+      'class': ' Економ (Economy)',
+      name: 'ENT 4663',
+      departure: {
+        town: 'Варшава (Warszawa)',
+        port: 'WAW',
+        time: '06:05'
+      },
+      arrival: {
+        town: 'Хургада  (Hurghada INT)',
+        port: 'HRG',
+        time: '10:20'
+      },
+      dateArrival: '14.07.2022'
+    },
+    to: {
+      date: '21.07.2022',
+      company: 'Enter Air',
+      'class': ' Економ (Economy)',
+      name: 'ENT 4664',
+      departure: {
+        town: 'Хургада  (Hurghada INT)',
+        port: 'HRG',
+        time: '11:20'
+      },
+      arrival: {
+        town: 'Варшава (Warszawa)',
+        port: 'WAW',
+        time: '15:40'
+      },
+      dateArrival: '21.07.2022'
+    },
+    fromTransit: null,
+    toTransit: null,
+    services: [
+      'Medical Insurance +',
+      'Transfer: Group transfer Airport-Hotel-Airport'
+    ]
+  }
+  const mockStore = configureStore();
 
   test('list renders', () => {
-    const {getByRole} = render(<HotelCard item={data}/>);
+    const {getByRole} = render(
+      <Provider store={mockStore()}>
+        <HotelCard item={data} flights={flights}/>
+      </Provider>
+    );
     expect(getByRole('list')).toBeInTheDocument();
   });
 
   test('list without data', () => {
-    const {queryByRole} = render(<HotelCard />);
+    const {queryByRole} = render(
+      <Provider store={mockStore()}>
+        <HotelCard/>
+      </Provider>
+    );
     expect(queryByRole('list')).toBeNull();
   });
 
   test('list snapshot', () => {
-    const list = render(<HotelCard item={data}/>);
+    const list = render(
+      <Provider store={mockStore()}>
+        <HotelCard item={data} flights={flights}/>
+      </Provider>
+    );
     expect(list).toMatchSnapshot();
   });
 });

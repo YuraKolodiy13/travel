@@ -5,15 +5,11 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
 import React from "react";
-import {useSelector} from "react-redux";
 import useSearch from "../../hooks/useSearch";
 
-const Search = () => {
+const Search = ({searchForm}) => {
 
-  const searchForm = useSelector((state) => state.general.searchForm);
-
-  const {searchFormData, setSearchFormData, searchTours} = useSearch();
-
+  const {searchFormData, setSearchFormData, searchTours} = useSearch(searchForm);
 
   const onChange = (e) => {
     setSearchFormData({...searchFormData, [e.target.name]: e.target.value});

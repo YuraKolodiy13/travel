@@ -8,6 +8,8 @@ const Homepage = () => {
 
   const hotTours = useSelector((state) => state.general.hotTours);
   const recommendedTours = useSelector((state) => state.general.recommendedTours);
+  const flights = useSelector((state) => state.general.flights);
+  const searchForm = useSelector((state) => state.general.searchForm);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -65,15 +67,15 @@ const Homepage = () => {
   return (
     <div className='Homepage'>
 
-      <Search/>
+      <Search searchForm={searchForm}/>
 
       <h3>Гарячі тури</h3>
       {hotTours?.map(item =>
-        <HotelCard item={item} key={item.id}/>
+        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
       )}
       <h3>Рукомендовані тури</h3>
       {recommendedTours?.map(item =>
-        <HotelCard item={item} key={item.id}/>
+        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
       )}
     </div>
   )

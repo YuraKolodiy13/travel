@@ -4,19 +4,16 @@
     justify-content: space-between;
     align-items: center;
     .header__user{
-      span{
-        position: relative;
-        padding-left: 25px;
-        &::before{
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 20px;
-          height: 20px;
-          background: url("avatar.svg") center no-repeat;
-          background-size: cover;
+      list-style: none;
+      display: flex;
+      li{
+        cursor: pointer;
+        transition: .3s;
+        &:not(:last-of-type){
+          margin-right: 10px;
+        }
+        &:hover{
+          opacity: .7;
         }
       }
     }
