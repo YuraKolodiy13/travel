@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
+import Input from "../../components/Input/Input";
 
 const Homepage = () => {
 
@@ -66,7 +67,7 @@ const Homepage = () => {
 
   return (
     <div className='Homepage'>
-
+      <Input value='5' onChange={() => {}}/>
       <Search searchForm={searchForm}/>
 
       <h3>Гарячі тури</h3>
