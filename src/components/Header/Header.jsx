@@ -10,6 +10,10 @@ const Header = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
+  const toggle = () => {
+    document.querySelector('.App').classList.toggle('dark-mode-active');
+  }
+
   return (
     <>
       <header className='header'>
@@ -29,6 +33,10 @@ const Header = () => {
             </li>
 
           </ul>
+        </div>
+        <div className="switcher" onClick={toggle}/>
+        <div className="dark-mode-container">
+          <div className="dark-mode"/>
         </div>
       </header>
       <LoginModal

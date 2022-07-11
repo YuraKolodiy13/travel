@@ -1,16 +1,92 @@
+html, body{
+  height: 100%;
+}
 body{
-  max-width: 1200px;
-  margin: 0 auto;
   font-family: 'Fira Sans', sans-serif;
-  background-color: #e5edf4;
-  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+  #root{
+    overflow-y: auto;
+    width: 100%;
+  }
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
 }
 .App{
-  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .header-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .container {
     padding: 16px 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    width: 100%;
   }
+  .main-container{
+    overflow-y: auto;
+  }
+
+  .switcher{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+  }
+  .dark-mode-container{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  .dark-mode{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250vw;
+    height: 250vw;
+    transform: scale(0);
+    background-color: #000;
+    transition: 1s ease-in-out;
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 auto;
+  }
+  &.dark-mode-active{
+    *{
+      color: #fff;
+
+    }
+    .switcher{
+      background-color: #fff;
+    }
+    .dark-mode{
+      transform: scale(1);
+    }
+  }
+
 }

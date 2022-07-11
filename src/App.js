@@ -9,16 +9,22 @@ import './assets/styles/globals.scss'
 
 const App = () => {
 
+
+
   return (
     <div className='App'>
-      <div className="container">
+      <div className="header-container">
         <Header/>
-        <Routes>
-          <Route exact path="/" element={<Homepage/>}/>
-          <Route path="/catalog" element={<Catalog/>}/>
-          <Route path="/hotel/:countryCode/:hotelName" element={<Hotel/>}/>
-          <Route path="/hotel/:countryCode/:hotelName/q=:id" element={<Tour/>}/>
-        </Routes>
+      </div>
+      <div className="main-container">
+        <div className="container">
+          <Routes>
+            <Route exact path="/" element={<Homepage/>}/>
+            <Route path="/catalog" element={<Catalog/>}/>
+            <Route path="/hotel/:countryCode/:hotelName" element={<Hotel/>}/>
+            <Route path="/hotel/:countryCode/:hotelName/q=:id" element={<Tour/>}/>
+          </Routes>
+        </div>
       </div>
     </div>
   );

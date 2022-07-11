@@ -2,6 +2,7 @@ import React from "react";
 import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 const HotelCard = ({item, flights}) => {
 
@@ -25,7 +26,7 @@ const HotelCard = ({item, flights}) => {
       </div>
       <div className="hotelCard__info">
         <div className="hotelCard__price">
-          <a href={`${item.hotelUrl}/q=${item.SystemKey}`}>{item.hotel?.value}</a>
+          <Link to={`${item.hotelUrl}/q=${item.SystemKey}`}>{item.hotel?.value}</Link>
           <span>   ${item.price}</span>/<span>{item.priceUAH}грн</span>
         </div>
 

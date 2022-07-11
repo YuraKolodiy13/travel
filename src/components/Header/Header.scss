@@ -1,9 +1,11 @@
 .header{
+  position: relative;
   .header__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     .header__user{
+      padding-right: 50px;
       list-style: none;
       display: flex;
       li{
