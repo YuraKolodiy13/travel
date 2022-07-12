@@ -1,9 +1,10 @@
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {SEARCH_FORM_REQUEST, SEARCH_START_REQUEST} from "../actions/general";
 import {useNavigate} from "react-router-dom";
 
-const useSearch = (searchForm) => {
+const useSearch = () => {
+  const searchForm = useSelector((state) => state.general.searchForm);
   const dispatch = useDispatch();
   const history = useNavigate();
   const [searchFormData, setSearchFormData] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});

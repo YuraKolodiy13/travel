@@ -10,7 +10,6 @@ const Homepage = () => {
   const hotTours = useSelector((state) => state.general.hotTours);
   const recommendedTours = useSelector((state) => state.general.recommendedTours);
   const flights = useSelector((state) => state.general.flights);
-  const searchForm = useSelector((state) => state.general.searchForm);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -68,7 +67,7 @@ const Homepage = () => {
   return (
     <div className='Homepage'>
       <Input value='5' onChange={() => {}}/>
-      <Search searchForm={searchForm}/>
+      <Search />
 
       <h3>Гарячі тури</h3>
       {hotTours?.map(item =>

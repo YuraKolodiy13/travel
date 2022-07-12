@@ -6,10 +6,12 @@ import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
 import React from "react";
 import useSearch from "../../hooks/useSearch";
+import {useSelector} from "react-redux";
 
-const Search = ({searchForm}) => {
+const Search = () => {
 
-  const {searchFormData, setSearchFormData, searchTours} = useSearch(searchForm);
+  const searchForm = useSelector((state) => state.general.searchForm);
+  const {searchFormData, setSearchFormData, searchTours} = useSearch();
 
   const onChange = (e) => {
     setSearchFormData({...searchFormData, [e.target.name]: e.target.value});

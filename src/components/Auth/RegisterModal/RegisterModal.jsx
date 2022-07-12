@@ -30,6 +30,7 @@ const RegisterModal = ({open, setIsModalOpen}) => {
   return (
     <Modal
       className='modal'
+      data-testid='registerModal'
       open={open}
       onClose={closeModal}
       closeAfterTransition
@@ -41,7 +42,7 @@ const RegisterModal = ({open, setIsModalOpen}) => {
       <Slide direction="down" in={open}>
         <div className='modal__content'>
           <h3 className="heading">Створити новий аккаунт</h3>
-          <ValidatorForm className='login__form'>
+          <ValidatorForm className='login__form' onSubmit={() => {}}>
             <div className="modal__row">
               <div className="login__field modal__field w100">
                 <TextValidator
