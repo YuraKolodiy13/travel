@@ -4,9 +4,7 @@ import {render} from '@testing-library/react';
 import {Provider} from "react-redux";
 import configureStore from "redux-mock-store";
 import {MemoryRouter} from "react-router";
-import axios from "axios";
-
-jest.mock('axios');
+import userEvent from "@testing-library/user-event/dist";
 
 describe('testing search component', () => {
 
@@ -592,9 +590,7 @@ describe('testing search component', () => {
     }
   })
 
-
   test('search exists', () => {
-    axios.get.mockReturnValue(searchForm)
     const {getByText, debug} = render(
       <Provider store={store}>
         <MemoryRouter>
@@ -604,7 +600,20 @@ describe('testing search component', () => {
       )
     // debug()
     expect(getByText('Найти')).toBeInTheDocument()
-    // expect(axios.get).toBeCalledTimes(1);
+  })
+
+  test('search launch request', () => {
+    const {getByText} = render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Search />
+        </MemoryRouter>
+      </Provider>
+      )
+    userEvent.click(getByText('Найти'))
+    // expect(store.dispatch).toHaveBeenCalledTimes(1);
+
+
   })
 
 })
