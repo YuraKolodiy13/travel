@@ -66,16 +66,16 @@ const Homepage = () => {
 
   return (
     <div className='Homepage'>
-      <Input value='5' onChange={() => {}}/>
+      {/*<Input value='5' onChange={() => {}}/>*/}
       <Search />
 
       <h3>Гарячі тури</h3>
       {hotTours?.map(item =>
-        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
+        <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
       )}
       <h3>Рукомендовані тури</h3>
       {recommendedTours?.map(item =>
-        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
+        <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
       )}
     </div>
   )

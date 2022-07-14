@@ -20,9 +20,6 @@ export const store = createStore(reducers, composeWithDevTools(
 
 saga.run(sagas);
 
-console.log(store, 'store')
-console.log(store.getState(), 'getState()')
-
 ReactDOM.render(
   <Provider store={store}>
     <Router basename={publicURL}>
