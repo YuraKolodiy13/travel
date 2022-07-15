@@ -21,7 +21,6 @@ describe('testing homepage', () => {
     }})
 
   test('testing if requests was launched', () => {
-    console.log(store.dispatch, 'store.dispatch')
     // axios.get.mockReturnValue(store);
     const {getByText} = render(
       <Provider store={store}>
@@ -30,7 +29,6 @@ describe('testing homepage', () => {
         </MemoryRouter>
       </Provider>
       )
-    // expect(axios.get).toBeCalledTimes(1);
     expect(getByText('Гарячі тури')).toBeInTheDocument();
   })
 

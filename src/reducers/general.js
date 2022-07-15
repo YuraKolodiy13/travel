@@ -9,7 +9,7 @@ import {
 } from "../actions/general";
 
 const initialState = {
-  loading: false,
+  loading: true,
   searchForm: {},
   hash: '',
   hotels: null,

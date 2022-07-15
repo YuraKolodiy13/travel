@@ -4,9 +4,10 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
-import React from "react";
+import React, {memo} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
+import './Search.scss'
 
 const Search = () => {
 
@@ -23,7 +24,7 @@ const Search = () => {
   };
 
   return (
-    <ValidatorForm className='olo-main-info-body' onSubmit={searchTours}>
+    <ValidatorForm className='search-form' onSubmit={searchTours}>
       <SelectValidator
         value={searchFormData.cityFrom || ''}
         name='cityFrom'
@@ -80,4 +81,5 @@ const Search = () => {
   )
 };
 
-export default Search;
+// export default Search;
+export default memo(Search);

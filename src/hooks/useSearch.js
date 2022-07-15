@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
-import {SEARCH_FORM_REQUEST, SEARCH_START_REQUEST} from "../actions/general";
+import {SEARCH_START_REQUEST} from "../actions/general";
 import {useNavigate} from "react-router-dom";
 
 const useSearch = () => {
@@ -8,20 +8,6 @@ const useSearch = () => {
   const dispatch = useDispatch();
   const history = useNavigate();
   const [searchFormData, setSearchFormData] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});
-
-  useEffect(() => {
-    dispatch({
-      type: SEARCH_FORM_REQUEST,
-      payload: {
-        body: {
-          "Form": {
-            "countryId": -1,
-            "townFromId": 5
-          },
-        }
-      }
-    });
-  }, []);
 
   useEffect(() => {
     if(!localStorage.getItem('searchFormData')){

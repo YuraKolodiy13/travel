@@ -20,7 +20,7 @@ const Tour = () => {
   }, []);
 
   return (
-    <div className="Hotel">
+    <div className="Hotel" data-testid='tour-page'>
       <h1>{tour.title}</h1>
 
       <div className="hotel-main">
