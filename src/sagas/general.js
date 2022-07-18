@@ -3,7 +3,7 @@ import {Api} from "../api";
 import * as generalActions from '../actions/general'
 import {delay} from "@redux-saga/core/effects";
 
-function* searchForm(action) {
+export function* searchForm(action) {
   try {
     const res = yield call(Api.general.searchForm, action.payload);
     yield put({type: generalActions.SEARCH_FORM_SUCCESS, payload: res.data.data});

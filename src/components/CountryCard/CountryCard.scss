@@ -1,0 +1,11 @@
+.countries{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  list-style: none;
+  li{
+    width: 33.33%;
+    margin: 0 10px;
+    border: 1px solid red;
+  }
+}
