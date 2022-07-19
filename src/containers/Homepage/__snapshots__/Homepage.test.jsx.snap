@@ -9,7 +9,7 @@ Object {
         class="Homepage"
       >
         <form
-          class="olo-main-info-body"
+          class="search-form"
         >
           <div>
             <div
@@ -149,7 +149,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="07/21/2022-08/04/2022"
+                  value="07/26/2022-08/09/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -172,12 +172,102 @@ Object {
             Найти
           </button>
         </form>
-        <h3>
-          Гарячі тури
-        </h3>
-        <h3>
-          Рукомендовані тури
-        </h3>
+        <div
+          class="hotTours"
+        >
+          <h3>
+            Гарячі тури
+          </h3>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <img
+                alt=""
+                src="https://img4.farvater.travel/mapkey/34256/0?size=catalog"
+              />
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <a
+                  href="/hotel/eg/il-mercato-hotel/q=2m5136450731218604758c25"
+                >
+                  Il Mercato Hotel (ex.Iberotel Il Mercato)
+                </a>
+                <span>
+                     $
+                  1561
+                </span>
+                /
+                <span>
+                  45660
+                  грн
+                </span>
+              </div>
+              <ul>
+                <li>
+                  Включно з перельотом (
+                  Киев
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  12
+                  .
+                  09
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  14
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Standard Room
+                </li>
+                <li>
+                  Все включено (AI)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="available-countries"
+        >
+          <div
+            class="popular-countries"
+          >
+            <h4>
+              Популярні країни
+            </h4>
+            <ul />
+          </div>
+          <div
+            class="others-countries"
+          >
+            <h4>
+              Інші країни
+            </h4>
+            <ul />
+          </div>
+        </div>
       </div>
     </div>
   </body>,
@@ -186,7 +276,7 @@ Object {
       class="Homepage"
     >
       <form
-        class="olo-main-info-body"
+        class="search-form"
       >
         <div>
           <div
@@ -326,7 +416,7 @@ Object {
                 name="date"
                 placeholder="mm/dd/yyyy"
                 type="tel"
-                value="07/21/2022-08/04/2022"
+                value="07/26/2022-08/09/2022"
               />
               <fieldset
                 aria-hidden="true"
@@ -349,12 +439,102 @@ Object {
           Найти
         </button>
       </form>
-      <h3>
-        Гарячі тури
-      </h3>
-      <h3>
-        Рукомендовані тури
-      </h3>
+      <div
+        class="hotTours"
+      >
+        <h3>
+          Гарячі тури
+        </h3>
+        <div
+          class="HotelCard"
+        >
+          <div
+            class="hotelCard__img"
+          >
+            <img
+              alt=""
+              src="https://img4.farvater.travel/mapkey/34256/0?size=catalog"
+            />
+          </div>
+          <div
+            class="hotelCard__info"
+          >
+            <div
+              class="hotelCard__price"
+            >
+              <a
+                href="/hotel/eg/il-mercato-hotel/q=2m5136450731218604758c25"
+              >
+                Il Mercato Hotel (ex.Iberotel Il Mercato)
+              </a>
+              <span>
+                   $
+                1561
+              </span>
+              /
+              <span>
+                45660
+                грн
+              </span>
+            </div>
+            <ul>
+              <li>
+                Включно з перельотом (
+                Киев
+                )
+              </li>
+              <li>
+                Виліт на відпочинок 
+                
+                12
+                .
+                09
+                <span
+                  class="hotelCard__time"
+                >
+                  Час
+                </span>
+              </li>
+              <li>
+                На 
+                14
+                 ночей
+              </li>
+              <li>
+                Ціна за 
+                2
+                 туриста
+              </li>
+              <li>
+                Standard Room
+              </li>
+              <li>
+                Все включено (AI)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="available-countries"
+      >
+        <div
+          class="popular-countries"
+        >
+          <h4>
+            Популярні країни
+          </h4>
+          <ul />
+        </div>
+        <div
+          class="others-countries"
+        >
+          <h4>
+            Інші країни
+          </h4>
+          <ul />
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],

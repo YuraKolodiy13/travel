@@ -1,6 +1,6 @@
 import { axios } from "../axios";
 
-const API = 'https://farvater.travel/uk/api/';
+const API = 'https://farvater.travel/en/api/';
 
 export const general = {
 
@@ -14,13 +14,13 @@ export const general = {
     return axios.post(`${API}readresults`, data.body);
   },
   getTour: (data) => {
-    return axios.post(`https://farvater.travel/uk${data.pathname}`, data.body);
+    return axios.post(`https://farvater.travel/en${data.pathname}`, data.body);
   },
   getOtherTours: (data) => {
-    return axios.post(`https://farvater.travel/uk/tour/others/${data.id}`, data.body);
+    return axios.post(`https://farvater.travel/en/tour/others/${data.id}`, data.body);
   },
   getFlightsInfo: (data) => {
-    return axios.post(`https://farvater.travel/uk/tour/flightsinfo/${data.id}`, data.body);
+    return axios.post(`https://farvater.travel/en/tour/flightsinfo/${data.id}`, data.body);
   },
   getHotTours: (data) => {
     return axios.post(`https://farvater.travel/home/homeHot`, data.body);

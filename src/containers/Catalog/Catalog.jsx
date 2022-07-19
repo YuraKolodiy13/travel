@@ -1,7 +1,7 @@
 import HotelCard from "../../components/HotelCard/HotelCard";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {READ_RESULTS_REQUEST} from "../../actions/general";
+import {READ_RESULTS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import useSearch from "../../hooks/useSearch";
 
@@ -13,6 +13,17 @@ const Catalog = () => {
   const {searchTours} = useSearch();
 
   useEffect(() => {
+    dispatch({
+      type: SEARCH_FORM_REQUEST,
+      payload: {
+        body: {
+          "Form": {
+            "countryId": -1,
+            "townFromId": 5
+          },
+        }
+      }
+    })
     searchTours()
   }, []);
 

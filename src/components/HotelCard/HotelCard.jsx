@@ -3,19 +3,11 @@ import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
+import {getTimeDuration} from "../../helpers/global";
 
 const HotelCard = ({item, flights}) => {
 
   const dispatch = useDispatch();
-
-  const getFlightsTimeDuration = (hours1, hours2, mins1, mins2) => {
-    let sec_num = (hours1 - hours2) * 3600 + (mins1 - mins2) * 60;
-    let hours = Math.floor(sec_num / 3600);
-    let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-
-    if (minutes < 10) {minutes = "0"+minutes;}
-    return hours + ':' + minutes;
-  }
 
   if(!item) return null;
 
@@ -40,7 +32,7 @@ const HotelCard = ({item, flights}) => {
               : <span>
                   {' о '}{flights.from.departure.time},
                   {' '}Приліт {flights.from.arrival.time},
-                  тривалість польоту {getFlightsTimeDuration(parseInt(flights.from.arrival.time), parseInt(flights.from.departure.time), flights.from.arrival.time.slice(-2), flights.from.departure.time.slice(-2))}
+                  тривалість польоту {getTimeDuration(parseInt(flights.from.arrival.time), parseInt(flights.from.departure.time), flights.from.arrival.time.slice(-2), flights.from.departure.time.slice(-2))}
                 </span>
             }
           </li>
@@ -51,7 +43,7 @@ const HotelCard = ({item, flights}) => {
               <span>
                 {' о '}{flights.to.departure.time},
                 {' '}Приліт {flights.to.arrival.time},
-                тривалість польоту {getFlightsTimeDuration(parseInt(flights.to.arrival.time), parseInt(flights.to.departure.time), flights.to.arrival.time.slice(-2), flights.to.departure.time.slice(-2))}
+                тривалість польоту {getTimeDuration(parseInt(flights.to.arrival.time), parseInt(flights.to.departure.time), flights.to.arrival.time.slice(-2), flights.to.departure.time.slice(-2))}
               </span>
             </li>
           )}

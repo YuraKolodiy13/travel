@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {SEARCH_START_REQUEST} from "../actions/general";
 import {useNavigate} from "react-router-dom";
+import {getFullDate} from "../helpers/global";
 
 const useSearch = () => {
   const searchForm = useSelector((state) => state.general.searchForm);
@@ -39,8 +40,8 @@ const useSearch = () => {
             nightsTo: 7,
             adults: 2,
             kids: 1,
-            dateFrom: new Date(searchFormData.date[0]),
-            dateTo: new Date(searchFormData.date[1])
+            dateFrom: getFullDate(new Date(searchFormData.date[0])),
+            dateTo: getFullDate(new Date(searchFormData.date[1]))
           }
         }
       }

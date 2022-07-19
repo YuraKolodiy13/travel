@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
@@ -6,6 +6,8 @@ import HotelCard from "../../components/HotelCard/HotelCard";
 import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
 import CountryCard from "../../components/CountryCard/CountryCard";
+import Collapse from "@mui/material/Collapse";
+import Button from "@mui/material/Button";
 
 const Homepage = () => {
 
@@ -14,6 +16,7 @@ const Homepage = () => {
   const recommendedTours = useSelector((state) => state.general.recommendedTours);
   const flights = useSelector((state) => state.general.flights);
   const searchForm = useSelector((state) => state.general.searchForm);
+  const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -85,19 +88,56 @@ const Homepage = () => {
         ? <>
             {/*<Input value='5' onChange={() => {}}/>*/}
             <Search />
-            <h3>Гарячі тури</h3>
-            {hotTours?.map(item =>
-              <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
+            {!!hotTours.length && (
+              <div className="hotTours">
+                <h3>Гарячі тури</h3>
+                {hotTours?.map(item =>
+                  <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
+                )}
+              </div>
             )}
-            <h3>Рукомендовані тури</h3>
-            {recommendedTours?.map(item =>
-              <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
+            {!!recommendedTours.length && (
+              <div className="recommendedTours">
+                <h3>Рукомендовані тури</h3>
+                {recommendedTours?.map(item =>
+                  <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
+                )}
+              </div>
             )}
-            <ul className='countries'>
-             {searchForm?.destination?.options?.countries.popular.map(item =>
-               <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
-             )}
-            </ul>
+            <div className="available-countries">
+              <div className="popular-countries">
+                <h4>Популярні країни</h4>
+                <ul>
+                  {searchForm?.destination?.options?.countries.popular.map(item =>
+                    <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
+                  )}
+                </ul>
+              </div>
+              <div className="others-countries">
+                <h4>Інші країни</h4>
+                <ul>
+                  {searchForm?.destination?.options?.countries.others.slice(0, 6).map(item =>
+                    <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
+                  )}
+                </ul>
+                {searchForm?.destination?.options?.countries.others.length > 6 && (
+                  <>
+                    <Collapse in={showAllOtherCountries} timeout="auto" unmountOnExit>
+                      <ul>
+                      {searchForm?.destination?.options?.countries.others.slice(6).map(item =>
+                        <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
+                      )}
+                      </ul>
+                    </Collapse>
+                    <Button onClick={() => setShowAllOtherCountries(!showAllOtherCountries)}>
+                      show {showAllOtherCountries ? 'less' : 'more'}
+                    </Button>
+                  </>
+                )}
+
+              </div>
+
+            </div>
           </>
         : <Loader/>
       }
