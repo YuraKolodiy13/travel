@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {useDispatch} from "react-redux";
@@ -14,7 +14,7 @@ const HotelCard = ({item, flights}) => {
   return (
     <div className='HotelCard'>
       <div className="hotelCard__img">
-        <img src={item.photo} alt=""/>
+        <img src={item.photo || item.imgUrl} alt=""/>
       </div>
       <div className="hotelCard__info">
         <div className="hotelCard__price">
@@ -59,4 +59,4 @@ const HotelCard = ({item, flights}) => {
   )
 };
 
-export default HotelCard;
+export default memo(HotelCard);

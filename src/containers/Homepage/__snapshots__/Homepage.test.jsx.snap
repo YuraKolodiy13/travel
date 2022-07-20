@@ -149,7 +149,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="07/26/2022-08/09/2022"
+                  value="07/27/2022-08/10/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -268,6 +268,17 @@ Object {
             <ul />
           </div>
         </div>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="position: fixed; bottom: 0px; background-color: red;"
+          tabindex="0"
+          type="button"
+        >
+          Click
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
       </div>
     </div>
   </body>,
@@ -416,7 +427,7 @@ Object {
                 name="date"
                 placeholder="mm/dd/yyyy"
                 type="tel"
-                value="07/26/2022-08/09/2022"
+                value="07/27/2022-08/10/2022"
               />
               <fieldset
                 aria-hidden="true"
@@ -535,6 +546,17 @@ Object {
           <ul />
         </div>
       </div>
+      <button
+        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+        style="position: fixed; bottom: 0px; background-color: red;"
+        tabindex="0"
+        type="button"
+      >
+        Click
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </div>,
   "debug": [Function],

@@ -26,6 +26,9 @@ export const general = {
     return axios.post(`https://farvater.travel/home/homeHot`, data.body);
   },
   getRecommendedTours: (data) => {
-    return axios.post(`https://farvater.travel/home/homeRecommended`, data.body);
+    return axios.post(`https://farvater.travel/en/home/homeRecommended`, data.body);
+  },
+  getToursByCountry: (data) => {
+    return axios.post(`https://farvater.travel/en/catalog/static-tophotels/`, data.body);
   },
 };

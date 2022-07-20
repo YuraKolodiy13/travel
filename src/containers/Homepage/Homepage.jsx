@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, {memo, useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
-import Input from "../../components/Input/Input";
+// import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
 import CountryCard from "../../components/CountryCard/CountryCard";
 import Collapse from "@mui/material/Collapse";
@@ -17,6 +17,7 @@ const Homepage = () => {
   const flights = useSelector((state) => state.general.flights);
   const searchForm = useSelector((state) => state.general.searchForm);
   const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
+  const [clicked, setClicked] = useState(false)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -79,7 +80,7 @@ const Homepage = () => {
         }
       }
     })
-  }, []);
+  }, [dispatch]);
 
 
   return (
@@ -138,6 +139,7 @@ const Homepage = () => {
               </div>
 
             </div>
+          <Button style={{position: 'fixed', bottom: 0, backgroundColor: 'red'}} onClick={() => setClicked(!clicked)}>{clicked ? 'Clicked' : 'Click'}</Button>
           </>
         : <Loader/>
       }
@@ -146,4 +148,4 @@ const Homepage = () => {
   )
 };
 
-export default Homepage;
+export default memo(Homepage);

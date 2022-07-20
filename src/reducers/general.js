@@ -1,7 +1,7 @@
 import {
   GET_FLIGHTS_INFO_SUCCESS, GET_HOT_TOURS_SUCCESS,
-  GET_OTHER_TOURS_SUCCESS, GET_RECOMMENDED_TOURS_SUCCESS,
-  GET_TOUR_SUCCESS,
+  GET_OTHER_TOURS_SUCCESS, GET_RECOMMENDED_TOURS_SUCCESS, GET_TOUR_REQUEST,
+  GET_TOUR_SUCCESS, GET_TOURS_BY_COUNTRY_REQUEST, GET_TOURS_BY_COUNTRY_SUCCESS,
   READ_RESULTS_SUCCESS,
   SEARCH_FORM_REQUEST,
   SEARCH_FORM_SUCCESS,
@@ -17,7 +17,8 @@ const initialState = {
   otherTours: [],
   hotTours: [],
   recommendedTours: [],
-  flights: {}
+  flights: {},
+  toursByCountry: []
 };
 
 export default function general(state = initialState, action) {
@@ -46,10 +47,16 @@ export default function general(state = initialState, action) {
         ...state,
         hotels: action.payload,
       };
+    case GET_TOUR_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
     case GET_TOUR_SUCCESS:
       return {
         ...state,
         tour: action.payload,
+        loading: false
       };
     case GET_OTHER_TOURS_SUCCESS:
       return {
@@ -70,6 +77,17 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         recommendedTours: action.payload,
+      };
+
+    case GET_TOURS_BY_COUNTRY_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case GET_TOURS_BY_COUNTRY_SUCCESS:
+      return {
+        ...state,
+        toursByCountry: action.payload,
       };
 
     default:
