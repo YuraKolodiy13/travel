@@ -4,19 +4,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .header__user{
-      padding-right: 50px;
-      list-style: none;
-      display: flex;
-      li{
-        cursor: pointer;
-        transition: .3s;
-        &:not(:last-of-type){
-          margin-right: 10px;
-        }
-        &:hover{
-          opacity: .7;
-        }
+
+  }
+}
+.nav{
+  ul{
+    padding-right: 50px;
+    list-style: none;
+    display: flex;
+    li{
+      cursor: pointer;
+      transition: .3s;
+      &:not(:last-of-type){
+        margin-right: 10px;
+      }
+      &:hover{
+        opacity: .7;
       }
     }
   }

@@ -23,16 +23,19 @@ const Header = () => {
               <img src={logo} alt=""/>
             </Link>
           </div>
-          <ul className="header__user">
-
-            <li>
-              <span onClick={() => setIsLoginModalOpen(true)}>Увійти</span>
-            </li>
-            <li>
-              <span onClick={() => setIsRegisterModalOpen(true)}>Реєстрація</span>
-            </li>
-
-          </ul>
+          <nav className="nav">
+            <ul>
+              <li>
+                <Link to='/countries'>Tours by countries</Link>
+              </li>
+              <li>
+                <span onClick={() => setIsLoginModalOpen(true)}>Увійти</span>
+              </li>
+              <li>
+                <span onClick={() => setIsRegisterModalOpen(true)}>Реєстрація</span>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div className="switcher" onClick={toggle}/>
         <div className="dark-mode-container">

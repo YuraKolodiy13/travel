@@ -149,7 +149,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="07/27/2022-08/10/2022"
+                  value="07/28/2022-08/11/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -246,26 +246,6 @@ Object {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div
-          class="available-countries"
-        >
-          <div
-            class="popular-countries"
-          >
-            <h4>
-              Популярні країни
-            </h4>
-            <ul />
-          </div>
-          <div
-            class="others-countries"
-          >
-            <h4>
-              Інші країни
-            </h4>
-            <ul />
           </div>
         </div>
         <button
@@ -427,7 +407,7 @@ Object {
                 name="date"
                 placeholder="mm/dd/yyyy"
                 type="tel"
-                value="07/27/2022-08/10/2022"
+                value="07/28/2022-08/11/2022"
               />
               <fieldset
                 aria-hidden="true"
@@ -524,26 +504,6 @@ Object {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div
-        class="available-countries"
-      >
-        <div
-          class="popular-countries"
-        >
-          <h4>
-            Популярні країни
-          </h4>
-          <ul />
-        </div>
-        <div
-          class="others-countries"
-        >
-          <h4>
-            Інші країни
-          </h4>
-          <ul />
         </div>
       </div>
       <button

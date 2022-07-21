@@ -5,8 +5,6 @@ import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
 // import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
-import CountryCard from "../../components/CountryCard/CountryCard";
-import Collapse from "@mui/material/Collapse";
 import Button from "@mui/material/Button";
 
 const Homepage = () => {
@@ -15,8 +13,6 @@ const Homepage = () => {
   const loading = useSelector((state) => state.general.loading);
   const recommendedTours = useSelector((state) => state.general.recommendedTours);
   const flights = useSelector((state) => state.general.flights);
-  const searchForm = useSelector((state) => state.general.searchForm);
-  const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
   const [clicked, setClicked] = useState(false)
   const dispatch = useDispatch();
 
@@ -105,40 +101,7 @@ const Homepage = () => {
                 )}
               </div>
             )}
-            <div className="available-countries">
-              <div className="popular-countries">
-                <h4>Популярні країни</h4>
-                <ul>
-                  {searchForm?.destination?.options?.countries.popular.map(item =>
-                    <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
-                  )}
-                </ul>
-              </div>
-              <div className="others-countries">
-                <h4>Інші країни</h4>
-                <ul>
-                  {searchForm?.destination?.options?.countries.others.slice(0, 6).map(item =>
-                    <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
-                  )}
-                </ul>
-                {searchForm?.destination?.options?.countries.others.length > 6 && (
-                  <>
-                    <Collapse in={showAllOtherCountries} timeout="auto" unmountOnExit>
-                      <ul>
-                      {searchForm?.destination?.options?.countries.others.slice(6).map(item =>
-                        <CountryCard key={item.id} name={item.name} imgSrc={item.alpha2}/>
-                      )}
-                      </ul>
-                    </Collapse>
-                    <Button onClick={() => setShowAllOtherCountries(!showAllOtherCountries)}>
-                      show {showAllOtherCountries ? 'less' : 'more'}
-                    </Button>
-                  </>
-                )}
 
-              </div>
-
-            </div>
           <Button style={{position: 'fixed', bottom: 0, backgroundColor: 'red'}} onClick={() => setClicked(!clicked)}>{clicked ? 'Clicked' : 'Click'}</Button>
           </>
         : <Loader/>

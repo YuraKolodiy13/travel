@@ -6,6 +6,7 @@ import Tour from "./containers/Tour/Tour";
 import Catalog from "./containers/Catalog/Catalog";
 import './assets/styles/globals.scss'
 import Tours from "./containers/Tours/Tours";
+import Countries from "./containers/Countries/Countries";
 
 const App = () => {
 
@@ -23,7 +24,8 @@ const App = () => {
             <Route path="/catalog" element={<Catalog/>}/>
             <Route path="/hotel/:hotelName" element={<Tour/>}/>
             <Route path="/hotel/:hotelName/q=:id" element={<Tour/>}/>
-            <Route path="/tours/:country" element={<Tours/>}/>
+            <Route path="/countries" element={<Countries/>}/>
+            <Route path="/countries/:country" element={<Tours/>}/>
           </Routes>
         </div>
       </div>
