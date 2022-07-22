@@ -23,7 +23,7 @@ Object {
             class="hotelCard__price"
           >
             <a
-              href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+              href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
             >
               Desert View Sharm
             </a>
@@ -115,7 +115,7 @@ Object {
           class="hotelCard__price"
         >
           <a
-            href="/hotel/eg/desert-view-sharm/q=74m5707037035017660892c25"
+            href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
           >
             Desert View Sharm
           </a>

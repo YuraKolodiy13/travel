@@ -14,7 +14,7 @@ export const general = {
     return axios.post(`${API}readresults`, data.body);
   },
   getTour: (data) => {
-    return axios.post(`https://farvater.travel/en${data.pathname}`, data.body);
+    return axios.post(`https://farvater.travel/en${data.pathname.replace('/countries', '/hotel')}`, data.body);
   },
   getOtherTours: (data) => {
     return axios.post(`https://farvater.travel/en/tour/others/${data.id}`, data.body);
@@ -23,7 +23,7 @@ export const general = {
     return axios.post(`https://farvater.travel/en/tour/flightsinfo/${data.id}`, data.body);
   },
   getHotTours: (data) => {
-    return axios.post(`https://farvater.travel/home/homeHot`, data.body);
+    return axios.post(`https://farvater.travel/en/home/homeHot`, data.body);
   },
   getRecommendedTours: (data) => {
     return axios.post(`https://farvater.travel/en/home/homeRecommended`, data.body);

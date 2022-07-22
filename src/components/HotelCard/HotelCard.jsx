@@ -14,11 +14,11 @@ const HotelCard = ({item, flights}) => {
   return (
     <div className='HotelCard'>
       <div className="hotelCard__img">
-        <img src={item.photo || item.imgUrl} alt=""/>
+        <img src={item.photo} alt=""/>
       </div>
       <div className="hotelCard__info">
         <div className="hotelCard__price">
-          <Link to={`${item.hotelUrl}/q=${item.SystemKey}`}>{item.hotel?.value}</Link>
+          <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`}>{item.hotel?.value}</Link>
           <span>   ${item.price}</span>/<span>{item.priceUAH}грн</span>
         </div>
 

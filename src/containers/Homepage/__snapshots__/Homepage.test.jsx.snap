@@ -149,7 +149,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="07/28/2022-08/11/2022"
+                  value="07/29/2022-08/12/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -196,7 +196,7 @@ Object {
                 class="hotelCard__price"
               >
                 <a
-                  href="/hotel/eg/il-mercato-hotel/q=2m5136450731218604758c25"
+                  href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
                 >
                   Il Mercato Hotel (ex.Iberotel Il Mercato)
                 </a>
@@ -407,7 +407,7 @@ Object {
                 name="date"
                 placeholder="mm/dd/yyyy"
                 type="tel"
-                value="07/28/2022-08/11/2022"
+                value="07/29/2022-08/12/2022"
               />
               <fieldset
                 aria-hidden="true"
@@ -454,7 +454,7 @@ Object {
               class="hotelCard__price"
             >
               <a
-                href="/hotel/eg/il-mercato-hotel/q=2m5136450731218604758c25"
+                href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
               >
                 Il Mercato Hotel (ex.Iberotel Il Mercato)
               </a>

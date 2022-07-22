@@ -116,7 +116,7 @@ describe('testing homepage', () => {
       flights: {}
     }})
 
-  test('testing if requests was launched', () => {
+  test('testing if request was launched', () => {
     // axios.get.mockReturnValue(store);
     const {getByText} = render(
       <Provider store={store}>

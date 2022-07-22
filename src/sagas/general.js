@@ -64,8 +64,8 @@ function* getTour(action) {
     const data = {
       title: parsedData.querySelector('#TP__Blocks__TourTitle').textContent,
       images: [...parsedData.querySelectorAll('.TP__gallery__images img')].map(item => item.src),
-      description: parsedData.querySelector('#hotel_description_content div').outerHTML,
-      services: parsedData.querySelector('.TP__services_list').outerHTML,
+      description: parsedData.querySelector('#hotel_description_content div')?.outerHTML,
+      services: parsedData.querySelector('.TP__services_list')?.outerHTML,
     };
     yield put({type: generalActions.GET_TOUR_SUCCESS, payload: data});
   } catch (err) {

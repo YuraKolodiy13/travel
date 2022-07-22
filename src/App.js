@@ -22,10 +22,10 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Homepage/>}/>
             <Route path="/catalog" element={<Catalog/>}/>
-            <Route path="/hotel/:hotelName" element={<Tour/>}/>
-            <Route path="/hotel/:hotelName/q=:id" element={<Tour/>}/>
+            <Route path="/countries/:countryCode/:hotelName" element={<Tour/>}/>
+            <Route path="/countries/:countryCode/:hotelName?q=:id" element={<Tour/>}/>
             <Route path="/countries" element={<Countries/>}/>
-            <Route path="/countries/:country" element={<Tours/>}/>
+            <Route path="/countries/:countryCode" element={<Tours/>}/>
           </Routes>
         </div>
       </div>

@@ -3,20 +3,23 @@ import {useDispatch, useSelector} from "react-redux";
 import React, {memo, useEffect} from "react";
 import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
 import './Tour.scss'
-import {useParams} from "react-router";
+import {useLocation} from "react-router";
 import Loader from "../../components/Loader/Loader";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 
 const Tour = () => {
 
   const dispatch = useDispatch();
   const tour = useSelector((state) => state.general.tour);
   const otherTours = useSelector((state) => state.general.otherTours);
-  const {id} = useParams();
+  const location = useLocation();
+  const id = location.search.replace('?q=', '');
   const flights = useSelector((state) => state.general.flights[id]);
   const loading = useSelector((state) => state.general.loading);
+  const path = location.pathname.split('/').slice(1);
 
   useEffect(() => {
-    dispatch({type: GET_TOUR_REQUEST, payload: {pathname: window.location.pathname.replace('q=', '?q='), body: {}}});
+    dispatch({type: GET_TOUR_REQUEST, payload: {pathname: location.pathname + location.search, body: {}}});
     if(id){
       dispatch({type: GET_OTHER_TOURS_REQUEST, payload: {id, body: {}}});
       dispatch({type: GET_FLIGHTS_INFO_REQUEST, payload: {id, body: {}}});
@@ -24,22 +27,23 @@ const Tour = () => {
   }, [dispatch, id]);
 
   return (
-    <div className="Hotel" data-testid='tour-page'>
+    <div className="Tour" data-testid='tour-page'>
+      <Breadcrumbs path={path}/>
       {!loading
         ? <>
             <h1>{tour.title}</h1>
 
-            <div className="hotel-main">
-              <div className="hotel-gallery">
+            <div className="tour-main">
+              <div className="tour-gallery">
                 <GalleryGrid images={tour.images}/>
               </div>
-              <div className="hotel-info">
+              <div className="tour-info">
                 виліт
               </div>
             </div>
 
             {flights && (
-              <div className="hotel-flights flights">
+              <div className="tour-flights flights">
                 <h2>Деталі переольоту</h2>
                 <div className='flights-wrapper'>
                   <div className='flights-block'>
@@ -78,13 +82,13 @@ const Tour = () => {
               </div>
             )}
 
-            <div className="hotel-description">
+            <div className="tour-description">
               <h2>Опис готелю</h2>
               <div dangerouslySetInnerHTML={{__html: tour.description}}/>
             </div>
-            <div className='hotel-services' dangerouslySetInnerHTML={{__html: tour.services}}/>
+            <div className='tour-services' dangerouslySetInnerHTML={{__html: tour.services}}/>
 
-            <div className="hotel-otherTours">
+            <div className="tour-otherTours">
               {otherTours.map((item, i) =>
                 <div key={i}>
                   <span>{item.nights}</span>

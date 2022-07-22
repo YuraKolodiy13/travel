@@ -7,7 +7,7 @@ const CountryCard = ({name, imgSrc}) => {
   if(!name || !imgSrc) return null;
   return (
     <li onError={addDefaultSrc}>
-      <Link to={`/countries/${name}`}>
+      <Link to={`/countries/${imgSrc.toLocaleLowerCase()}`}>
         <img
           src={`https://farvater.travel/img/country_photos/md/${imgSrc}.jpg`}
           alt=""
