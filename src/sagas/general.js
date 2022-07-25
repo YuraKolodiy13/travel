@@ -66,7 +66,9 @@ function* getTour(action) {
       images: [...parsedData.querySelectorAll('.TP__gallery__images img')].map(item => item.src),
       description: parsedData.querySelector('#hotel_description_content div')?.outerHTML,
       services: parsedData.querySelector('.TP__services_list')?.outerHTML,
+      hotelId: +parsedData.querySelector('meta[property="og:image"]')?.content.match(/([0-9]{5})/)[1],
     };
+    yield put({type: generalActions.GET_TOUR_REVIEWS_REQUEST, payload: {mapKey: data.hotelId, pageindex: 1}});
     yield put({type: generalActions.GET_TOUR_SUCCESS, payload: data});
   } catch (err) {
     yield put({ type: generalActions.GET_TOUR_FAIL, payload: { error: err.message } });
@@ -119,6 +121,15 @@ function* getToursByCountry(action) {
   }
 }
 
+function* getTourReviews(action) {
+  try {
+    const res = yield call(Api.general.getTourReviews, action.payload);
+    yield put({type: generalActions.GET_TOUR_REVIEWS_SUCCESS, payload: JSON.parse(res.data.d)});
+  } catch (err) {
+    yield put({ type: generalActions.GET_TOUR_REVIEWS_FAIL, payload: { error: err.message } });
+  }
+}
+
 export default all([
   takeLatest(generalActions.SEARCH_FORM_REQUEST, searchForm),
   takeLatest(generalActions.SEARCH_START_REQUEST, searchStart),
@@ -129,4 +140,5 @@ export default all([
   takeLatest(generalActions.GET_RECOMMENDED_TOURS_REQUEST, getRecommendedTours),
   takeLatest(generalActions.GET_FLIGHTS_INFO_REQUEST, getFlightsInfo),
   takeLatest(generalActions.GET_TOURS_BY_COUNTRY_REQUEST, getToursByCountry),
+  takeLatest(generalActions.GET_TOUR_REVIEWS_REQUEST, getTourReviews),
 ])

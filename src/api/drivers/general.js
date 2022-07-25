@@ -23,12 +23,15 @@ export const general = {
     return axios.post(`https://farvater.travel/en/tour/flightsinfo/${data.id}`, data.body);
   },
   getHotTours: (data) => {
-    return axios.post(`https://farvater.travel/en/home/homeHot`, data.body);
+    return axios.post(`http://farvater.travel/en/home/homeHot`, data.body);
   },
   getRecommendedTours: (data) => {
     return axios.post(`https://farvater.travel/en/home/homeRecommended`, data.body);
   },
   getToursByCountry: (data) => {
     return axios.post(`https://farvater.travel/en/catalog/static-tophotels/`, data.body);
+  },
+  getTourReviews: (data) => {
+    return axios.post(`https://farvater.travel/wS/detalinfo/ws.asmx/HotelReviewsV2?lang=en`, data);
   },
 };
