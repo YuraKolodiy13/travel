@@ -27,4 +27,34 @@
       }
     }
   }
+  .tour-description{
+    margin-bottom: 40px;
+  }
+  .tour-services{
+    .TP__services_list{
+      padding: 0;
+      column-count: 3;
+      margin: 0;
+      h3{
+        margin-top: 0;
+      }
+      &:not(:empty){
+        margin-bottom: 40px;
+      }
+    }
+    .TP__services_list__group{
+      position: relative;
+      padding-left: 50px;
+      //page-break-inside: avoid;
+      break-inside: avoid-column;
+      padding-top: 4px;
+      margin-bottom: 16px;
+    }
+  }
+  .tour__reviews{
+    ul{
+      padding: 0;
+      list-style: none;
+    }
+  }
 }

@@ -30,7 +30,7 @@ const Tours = () => {
       <Breadcrumbs path={path}/>
       <div className="tours__items">
         {toursByCountry?.map(item =>
-          <TopHotelCard item={item.info}/>
+          <TopHotelCard key={item.info.hotel.mapKey} item={item.info}/>
         )}
       </div>
     </div>
