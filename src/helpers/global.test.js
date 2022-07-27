@@ -1,4 +1,4 @@
-import {getTimeDuration} from "./global";
+import {getFullDate, getTimeDuration} from "./global";
 
 describe('testing global helpers', () => {
 
@@ -6,6 +6,11 @@ describe('testing global helpers', () => {
     expect(getTimeDuration(8, 4, 55, 0)).toBe('4:55');
     expect(getTimeDuration(3, 2, 10, 5)).toBe('1:05');
     expect(getTimeDuration(2, 22, 20, 0)).toBe('4:20');
+  })
+
+  test('testing getFullDate func', () => {
+    expect(getFullDate(new Date('2017-01-26'))).toBe('26.01.2017');
+    expect(getFullDate(new Date(0))).toBe('01.01.1970');
   })
 
 })

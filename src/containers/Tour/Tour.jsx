@@ -113,7 +113,7 @@ const Tour = () => {
                       name={item.reviewer_name}
                       date={item.item_date}
                       title={item.title}
-                      text={item.full}
+                      text={item.full || item.short}
                       score={item.score}
                       type={item.type}
                     />

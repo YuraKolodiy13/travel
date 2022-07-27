@@ -88,6 +88,7 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         toursByCountry: action.payload,
+        loading: false
       };
     case GET_TOUR_REVIEWS_SUCCESS:
       return {

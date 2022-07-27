@@ -5,21 +5,71 @@
   box-sizing: border-box;
   .topHotelCard__wrapper{
     box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
-    background: #fff;
     border-radius: 4px;
     display: flex;
+    text-decoration: none;
+    color: initial;
+    transition: .3s;
+    &:hover{
+      box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+    }
   }
   .topHotelCard__img{
     width: 25%;
     border: 3px solid #fff;
+    position: relative;
+    flex: none;
     img{
-      max-width: 100%;
-      height: auto;
-      display: block;
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
   }
   .topHotelCard__info{
     padding: 8px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+    .topHotelCard__location{
+      width: 60%;
+      h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 0;
+      }
+      cite{
+        margin-bottom: 5px;
+        display: inline-block;
+        color: #bfbfbf;
+      }
+    }
+    .topHotelCard__price{
+      width: 35%;
+      .topHotelCard__rate{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span{
+          color: #bfbfbf;
+          border-bottom: 1px dashed;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+      }
+      .topHotelCard__rating{
+        width: 34px;
+        height: 34px;
+        display: flex;
+        border: 1px solid #62bb00;
+        border-radius: 50%;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 }
 .tours__items{

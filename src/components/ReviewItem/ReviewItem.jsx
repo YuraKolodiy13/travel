@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {memo, useState} from "react";
 import './ReviewItem.scss';
 
 const ReviewItem = ({name, date, title, text, score, type}) => {
@@ -10,7 +10,7 @@ const ReviewItem = ({name, date, title, text, score, type}) => {
     <li className='ReviewItem'>
       <div className="reviewItem__info">
         <h5>{name} <span>{date}</span></h5>
-        <h4>{title}</h4>
+        <h4 dangerouslySetInnerHTML={{__html: title}}/>
         <p
           className={text.length > 500 && !expanded ? 'expand-text' : ''}
           dangerouslySetInnerHTML={{__html: expanded ? text : text.slice(0, 500)}}
@@ -27,4 +27,4 @@ const ReviewItem = ({name, date, title, text, score, type}) => {
   )
 };
 
-export default ReviewItem;
+export default memo(ReviewItem);
