@@ -31,7 +31,7 @@ const Tour = () => {
       dispatch({type: GET_OTHER_TOURS_REQUEST, payload: {id, body: {}}});
       dispatch({type: GET_FLIGHTS_INFO_REQUEST, payload: {id, body: {}}});
     }
-  }, [dispatch, id]);
+  }, [dispatch, id, location.pathname, location.search]);
 
   const loadMoreReviews = () => {
     dispatch({

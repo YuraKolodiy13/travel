@@ -28,7 +28,7 @@ const Tours = () => {
         }
       }
     })
-  }, []);
+  }, [dispatch, countryCode]);
 
   const onChangePage = (e, value) => {
     setCurrentPage(value)
