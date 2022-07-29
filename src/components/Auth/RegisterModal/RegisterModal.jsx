@@ -3,7 +3,7 @@ import {TextValidator, ValidatorForm} from "react-material-ui-form-validator";
 import Modal from "@mui/material/Modal";
 import Backdrop from "@mui/material/Backdrop";
 import Slide from "@mui/material/Slide";
-import Button from "@mui/material/Button";
+import Button from "../../Button/Button";
 
 const RegisterModal = ({open, setIsModalOpen}) => {
 
@@ -85,13 +85,7 @@ const RegisterModal = ({open, setIsModalOpen}) => {
                 />
               </div>
             </div>
-            <Button
-              variant="contained"
-              type='submit'
-              className='button'
-            >
-              Створити
-            </Button>
+            <Button type='submit' title='Створити' color='primary'/>
           </ValidatorForm>
         </div>
       </Slide>

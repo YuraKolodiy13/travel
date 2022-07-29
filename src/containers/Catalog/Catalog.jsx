@@ -1,14 +1,17 @@
 import HotelCard from "../../components/HotelCard/HotelCard";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {READ_RESULTS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
+import {CLEAR_DATA, READ_RESULTS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import useSearch from "../../hooks/useSearch";
+import Button from "../../components/Button/Button";
+import Loader from "../../components/Loader/Loader";
 
 const Catalog = () => {
 
   const hotels = useSelector((state) => state.general.hotels);
   const flights = useSelector((state) => state.general.flights);
+  const loading = useSelector((state) => state.general.loading);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
 
@@ -25,6 +28,7 @@ const Catalog = () => {
       }
     })
     searchTours()
+    return () => dispatch({type: CLEAR_DATA})
   }, []);
 
 
@@ -54,12 +58,22 @@ const Catalog = () => {
 
       <Search/>
 
-      {hotels?.sResult?.map(item =>
-        <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
-      )}
-      {hotels && !hotels?.stopHotelSearch && (
-        <button onClick={loadMoreResults}>Показати більше</button>
-      )}
+      {!loading
+        ? <>
+            {!!hotels?.sResult.length
+              ? <>
+                  {hotels?.sResult?.map(item =>
+                    <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
+                  )}
+                  {hotels && !hotels?.stopHotelSearch && hotels?.sResult.length >= 10 && (
+                    <Button doAction={loadMoreResults} title='Показати більше' color='primary'/>
+                  )}
+                </>
+              : <p>Sorry we haven't found any tours, please choose another city</p>
+            }
+          </>
+        : <Loader/>
+      }
     </div>
   )
 };

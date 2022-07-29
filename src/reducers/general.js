@@ -1,10 +1,11 @@
 import {
+  CLEAR_DATA,
   GET_FLIGHTS_INFO_SUCCESS, GET_HOT_TOURS_SUCCESS,
   GET_OTHER_TOURS_SUCCESS, GET_RECOMMENDED_TOURS_SUCCESS, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_SUCCESS,
-  GET_TOUR_SUCCESS, GET_TOURS_BY_COUNTRY_REQUEST, GET_TOURS_BY_COUNTRY_SUCCESS,
+  GET_TOUR_SUCCESS, GET_TOURS_BY_COUNTRY_REQUEST, GET_TOURS_BY_COUNTRY_SUCCESS, READ_RESULTS_REQUEST,
   READ_RESULTS_SUCCESS,
   SEARCH_FORM_REQUEST,
-  SEARCH_FORM_SUCCESS,
+  SEARCH_FORM_SUCCESS, SEARCH_START_REQUEST,
   SEARCH_START_SUCCESS
 } from "../actions/general";
 
@@ -42,10 +43,18 @@ export default function general(state = initialState, action) {
         hash: action.payload.hash,
       };
 
+    case READ_RESULTS_REQUEST:
+    case SEARCH_START_REQUEST:
+      return {
+        ...state,
+        loading: (state.hotels?.sResult.length || 0) <= 9
+      };
+
     case READ_RESULTS_SUCCESS:
       return {
         ...state,
         hotels: action.payload,
+        loading: false
       };
     case GET_TOUR_REQUEST:
       return {
@@ -100,6 +109,12 @@ export default function general(state = initialState, action) {
             items: state.tour.reviews ? [...state.tour.reviews.items, ...action.payload.reviews] : action.payload.reviews
           }
         }
+      };
+
+    case CLEAR_DATA:
+      return {
+        ...state,
+        hotels: null,
       };
 
     default:

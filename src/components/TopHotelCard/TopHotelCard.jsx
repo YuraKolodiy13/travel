@@ -2,7 +2,7 @@ import React, {memo} from "react";
 import {Link} from "react-router-dom";
 import './TopHotelCard.scss';
 import Rating from "@mui/material/Rating";
-import Button from "@mui/material/Button";
+import Button from "../Button/Button";
 
 const TopHotelCard = ({item}) => {
 
@@ -27,7 +27,7 @@ const TopHotelCard = ({item}) => {
               )}
               <div className='topHotelCard__rating'>{item.hotel.rate}</div>
             </div>
-            <Button>{}</Button>
+            <Button title='price' color='primary'/>
           </div>
 
         </div>

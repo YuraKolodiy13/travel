@@ -12,7 +12,7 @@ import {useLocation} from "react-router";
 import Loader from "../../components/Loader/Loader";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import ReviewItem from "../../components/ReviewItem/ReviewItem";
-import Button from "@mui/material/Button";
+import Button from "../../components/Button/Button";
 
 const Tour = () => {
 
@@ -120,7 +120,7 @@ const Tour = () => {
                   )}
                 </ul>
                 {tour.reviews.total > tour.reviews.items.length && (
-                  <Button onClick={loadMoreReviews}>Load More</Button>
+                  <Button title='Load More' color='primary' doAction={loadMoreReviews}/>
                 )}
               </div>
             )}

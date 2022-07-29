@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
-import {SEARCH_START_REQUEST} from "../actions/general";
+import {CLEAR_DATA, SEARCH_START_REQUEST} from "../actions/general";
 import {useNavigate} from "react-router-dom";
 import {getFullDate} from "../helpers/global";
 
@@ -23,6 +23,7 @@ const useSearch = () => {
 
   const searchTours = () => {
     history('/catalog');
+    dispatch({type: CLEAR_DATA})
     dispatch({
       type: SEARCH_START_REQUEST,
       payload: {

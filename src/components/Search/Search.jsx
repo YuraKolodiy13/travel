@@ -8,6 +8,7 @@ import React, {memo} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
+import Button from "../Button/Button";
 
 const Search = () => {
 
@@ -76,7 +77,7 @@ const Search = () => {
             )}}
         />
       </LocalizationProvider>
-      <button type="submit">Найти</button>
+      <Button type='submit' title='Найти' color='primary'/>
     </ValidatorForm>
   )
 };

@@ -1,10 +1,10 @@
 import CountryCard from "../../components/CountryCard/CountryCard";
 import Collapse from "@mui/material/Collapse";
-import Button from "@mui/material/Button";
 import React, {useEffect, useState} from "react";
 import './Countries.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {SEARCH_FORM_REQUEST} from "../../actions/general";
+import Button from "../../components/Button/Button";
 
 const Countries = () => {
 
@@ -52,9 +52,11 @@ const Countries = () => {
                 )}
               </ul>
             </Collapse>
-            <Button onClick={() => setShowAllOtherCountries(!showAllOtherCountries)}>
-              show {showAllOtherCountries ? 'less' : 'more'}
-            </Button>
+            <Button
+              title={`show ${showAllOtherCountries ? 'less' : 'more'}`}
+              color='primary'
+              doAction={() => setShowAllOtherCountries(!showAllOtherCountries)}
+            />
           </>
         )}
 

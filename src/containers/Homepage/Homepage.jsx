@@ -1,11 +1,10 @@
-import React, {memo, useEffect, useState} from "react";
+import React, {memo, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
 // import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
-import Button from "@mui/material/Button";
 
 const Homepage = () => {
 
@@ -13,7 +12,6 @@ const Homepage = () => {
   const loading = useSelector((state) => state.general.loading);
   const recommendedTours = useSelector((state) => state.general.recommendedTours);
   const flights = useSelector((state) => state.general.flights);
-  const [clicked, setClicked] = useState(false)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -101,8 +99,6 @@ const Homepage = () => {
                 )}
               </div>
             )}
-
-          <Button style={{position: 'fixed', bottom: 0, backgroundColor: 'red'}} onClick={() => setClicked(!clicked)}>{clicked ? 'Clicked' : 'Click'}</Button>
           </>
         : <Loader/>
       }
