@@ -1,7 +1,6 @@
-import {call, put, all, takeLatest} from "redux-saga/effects";
+import {call, put, all, takeLatest, delay} from "redux-saga/effects";
 import {Api} from "../api";
 import * as generalActions from '../actions/general'
-import {delay} from "@redux-saga/core/effects";
 
 export function* searchForm(action) {
   try {

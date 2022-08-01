@@ -24,6 +24,7 @@ const useSearch = () => {
   const searchTours = () => {
     history('/catalog');
     dispatch({type: CLEAR_DATA})
+    const dates = searchFormData.date ? searchFormData.date : [new Date(), new Date()]
     dispatch({
       type: SEARCH_START_REQUEST,
       payload: {
@@ -41,8 +42,8 @@ const useSearch = () => {
             nightsTo: 7,
             adults: 2,
             kids: 1,
-            dateFrom: getFullDate(new Date(searchFormData.date[0])),
-            dateTo: getFullDate(new Date(searchFormData.date[1]))
+            dateFrom: getFullDate(new Date(dates[0])),
+            dateTo: getFullDate(new Date(dates[1]))
           }
         }
       }

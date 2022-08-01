@@ -54,7 +54,7 @@ const Catalog = () => {
   //LWO
 
   return (
-    <div className='Catalog'>
+    <div className='Catalog' data-testid='catalog-page'>
 
       <Search/>
 
@@ -63,7 +63,7 @@ const Catalog = () => {
             {!!hotels?.sResult.length
               ? <>
                   {hotels?.sResult?.map(item =>
-                    <HotelCard item={item} key={item.id} flights={flights[item.SystemKey]}/>
+                    <HotelCard item={item} key={item.hotelId} flights={flights[item.SystemKey]}/>
                   )}
                   {hotels && !hotels?.stopHotelSearch && hotels?.sResult.length >= 10 && (
                     <Button doAction={loadMoreResults} title='Показати більше' color='primary'/>
