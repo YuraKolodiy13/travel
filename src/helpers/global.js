@@ -2,7 +2,7 @@ export const addDefaultSrc = e => {
   e.target.src = '/no-avatar.jpg';
 }
 
-export const getTimeDuration = (hours1, hours2, mins1, mins2, ss) => {
+export const getTimeDuration = (hours1, hours2, mins1, mins2) => {
   let sec_num = (hours1 - hours2) * 3600 + (mins1 - mins2) * 60;
   let hours = Math.floor(sec_num / 3600);
   let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
@@ -21,3 +21,4 @@ export const getFullDate = date => {
   return `${day}.${month}.${year}`;
 };
 
+export const commify = (num) => num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") || '';

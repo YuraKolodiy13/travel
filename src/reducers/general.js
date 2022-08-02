@@ -106,7 +106,9 @@ export default function general(state = initialState, action) {
           ...state.tour,
           reviews: {
             total: action.payload.reviewsCount,
-            items: state.tour.reviews ? [...state.tour.reviews.items, ...action.payload.reviews] : action.payload.reviews
+            items: state.tour.reviews
+              ? [...state.tour.reviews.items, ...action.payload.reviews]
+              : action.payload.reviews
           }
         }
       };

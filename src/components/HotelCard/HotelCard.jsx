@@ -3,7 +3,7 @@ import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
-import {getTimeDuration} from "../../helpers/global";
+import {commify, getTimeDuration} from "../../helpers/global";
 
 const HotelCard = ({item, flights}) => {
 
@@ -19,7 +19,7 @@ const HotelCard = ({item, flights}) => {
       <div className="hotelCard__info">
         <div className="hotelCard__price">
           <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`}>{item.hotel?.value}</Link>
-          <span>   ${item.price}</span>/<span>{item.priceUAH}грн</span>
+          <span>   ${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
         </div>
 
         <ul>

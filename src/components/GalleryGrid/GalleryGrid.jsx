@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import {Gallery, Item} from "react-photoswipe-gallery";
 import './GalleryGrid.scss'
 import 'photoswipe/dist/photoswipe.css'
@@ -32,4 +32,4 @@ const GalleryGrid = ({images}) => {
   )
 };
 
-export default GalleryGrid;
+export default memo(GalleryGrid);
