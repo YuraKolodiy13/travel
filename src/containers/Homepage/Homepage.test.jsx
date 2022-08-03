@@ -8,13 +8,13 @@ import axios from 'axios';
 
 describe('testing homepage', () => {
   const mockStore = configureStore();
-  let store = mockStore({general: {
+  let store = mockStore({
+    general: {
       loading: false,
-      searchForm: {},
-      hash: '',
-      hotels: null,
-      tour: {},
-      otherTours: [],
+      flights: {},
+      searchForm: {}
+    },
+    homepage: {
       hotTours: [ {
         disablePromoCode: false,
         HotType: 1,
@@ -113,8 +113,8 @@ describe('testing homepage', () => {
         isLastSeats: false
       }],
       recommendedTours: [],
-      flights: {}
-    }})
+    }
+  })
 
   test('testing if request was launched', () => {
     // axios.get.mockReturnValue(store);

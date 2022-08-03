@@ -9,5 +9,8 @@ export const catalog = {
   readResults: (data) => {
     return axios.post(`${API_URL}uk/api/readresults`, data.body);
   },
+  readFilters: (data) => {
+    return axios.post(`${API_URL}uk/api/readfilters`, data.body);
+  },
 
 };

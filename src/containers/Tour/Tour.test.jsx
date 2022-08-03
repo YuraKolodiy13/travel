@@ -8,17 +8,16 @@ import configureStore from "redux-mock-store";
 describe('testing Tour page', () => {
 
   const mockStore = configureStore();
-  const store = mockStore({general: {
-      loading: false,
-      searchForm: {},
-      hash: '',
-      hotels: null,
-      tour: {},
-      otherTours: [],
-      hotTours: [],
-      recommendedTours: [],
+  const store = mockStore({
+    general: {
       flights: {}
-    }})
+    },
+    tour: {
+      loading: false,
+      tourInfo: {},
+      otherTours: [],
+    }
+  })
 
   test('render Tour page', () => {
     const {getByTestId} = render(

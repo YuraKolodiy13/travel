@@ -1,4 +1,5 @@
 import {
+  CLEAR_TOUR_DATA,
   GET_OTHER_TOURS_SUCCESS, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_SUCCESS,
   GET_TOUR_SUCCESS
 } from "../actions/tour";
@@ -38,6 +39,13 @@ export default function tour(state = initialState, action) {
             ? [...state.reviews.items, ...action.payload.reviews]
             : action.payload.reviews
         }
+      };
+
+    case CLEAR_TOUR_DATA:
+      return {
+        tourInfo: {},
+        otherTours: [],
+        reviews: null
       };
 
     default:

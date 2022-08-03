@@ -1,0 +1,12 @@
+.Catalog{
+  .catalog__result{
+    display: flex;
+    justify-content: space-between;
+    .catalog__filters{
+      width: 20%;
+    }
+    .catalog__hotels{
+      width: 75%;
+    }
+  }
+}

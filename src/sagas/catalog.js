@@ -18,6 +18,16 @@ function* searchStart(action) {
         sortType: 1
       }
     }})
+    yield put({type: catalogActions.READ_FILTERS_REQUEST, payload: {
+      body: {
+        hashId: res.data.data.hash,
+        landingId: 0,
+        offset: 1,
+        show_type: "",
+        sort: "",
+        sortType: 1
+      }
+    }})
   } catch (err) {
     yield put({ type: catalogActions.SEARCH_START_FAIL, payload: { error: err.message } });
   }
@@ -40,7 +50,17 @@ function* readResults(action) {
   }
 }
 
+function* readFilters(action) {
+  try {
+    const res = yield call(Api.catalog.readFilters, action.payload);
+    yield put({type: catalogActions.READ_FILTERS_SUCCESS, payload: res.data.data})
+  } catch (err) {
+    yield put({ type: catalogActions.READ_FILTERS_FAIL, payload: { error: err.message } });
+  }
+}
+
 export default all([
   takeLatest(catalogActions.SEARCH_START_REQUEST, searchStart),
   takeLatest(catalogActions.READ_RESULTS_REQUEST, readResults),
+  takeLatest(catalogActions.READ_FILTERS_REQUEST, readFilters),
 ])

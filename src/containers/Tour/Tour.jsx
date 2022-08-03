@@ -1,5 +1,5 @@
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
-import {GET_OTHER_TOURS_REQUEST, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_REQUEST} from "../../actions/tour";
+import {CLEAR_TOUR_DATA, GET_OTHER_TOURS_REQUEST, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_REQUEST} from "../../actions/tour";
 import {useDispatch, useSelector} from "react-redux";
 import React, {memo, useEffect} from "react";
 import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
@@ -28,6 +28,7 @@ const Tour = () => {
       dispatch({type: GET_OTHER_TOURS_REQUEST, payload: {id, body: {}}});
       dispatch({type: GET_FLIGHTS_INFO_REQUEST, payload: {id, body: {}}});
     }
+    return () => dispatch({type: CLEAR_TOUR_DATA})
   }, [dispatch, id, location.pathname, location.search]);
 
   const loadMoreReviews = () => {

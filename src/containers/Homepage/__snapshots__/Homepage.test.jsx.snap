@@ -149,7 +149,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="08/05/2022-08/19/2022"
+                  value="08/10/2022-08/24/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -205,11 +205,11 @@ Object {
                 </a>
                 <span>
                      $
-                  1561
+                  1,561
                 </span>
                 /
                 <span>
-                  45660
+                  45,660
                   грн
                 </span>
               </div>
@@ -399,7 +399,7 @@ Object {
                 name="date"
                 placeholder="mm/dd/yyyy"
                 type="tel"
-                value="08/05/2022-08/19/2022"
+                value="08/10/2022-08/24/2022"
               />
               <fieldset
                 aria-hidden="true"
@@ -455,11 +455,11 @@ Object {
               </a>
               <span>
                    $
-                1561
+                1,561
               </span>
               /
               <span>
-                45660
+                45,660
                 грн
               </span>
             </div>

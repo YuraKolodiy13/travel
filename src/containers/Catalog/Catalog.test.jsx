@@ -9,8 +9,9 @@ describe('testing Catalog page', () => {
 
   const mockStore = configureStore();
 
-  const store = mockStore({general: {
-      loading: false,
+  const store = mockStore({
+    general: {
+      flights: {},
       searchForm: {
         current: '',
         cityFrom: {
@@ -585,7 +586,10 @@ describe('testing Catalog page', () => {
             }
           ]
         }
-      },
+      }
+    },
+    catalog: {
+      loading: false,
       hash: '',
       hotels: {
         "hash": "550942fc-8ac0-0d58-521c-f2c8ef0540d2",
@@ -1572,12 +1576,8 @@ describe('testing Catalog page', () => {
         "stopHotelSearch": true,
         "nextSort": null
       },
-      tour: {},
-      otherTours: [],
-      hotTours: [],
-      recommendedTours: [],
-      flights: {}
-    }})
+    }
+  })
 
 
   test('render page', () => {
