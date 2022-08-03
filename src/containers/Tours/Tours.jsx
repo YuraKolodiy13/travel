@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {GET_TOURS_BY_COUNTRY_REQUEST} from "../../actions/general";
+import {GET_TOURS_BY_COUNTRY_REQUEST} from "../../actions/tours";
 import {useLocation, useParams} from "react-router";
 import {COUNTRIES_IDS} from "../../helpers/constants";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
@@ -10,8 +10,8 @@ import Pagination from "@mui/material/Pagination";
 
 const Tours = () => {
 
-  const toursByCountry = useSelector((state) => state.general.toursByCountry);
-  const loading = useSelector((state) => state.general.loading);
+  const toursByCountry = useSelector((state) => state.tours.toursByCountry);
+  const loading = useSelector((state) => state.tours.loading);
   const dispatch = useDispatch();
   const {countryCode} = useParams();
   const location = useLocation()

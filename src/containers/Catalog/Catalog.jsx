@@ -1,17 +1,19 @@
 import HotelCard from "../../components/HotelCard/HotelCard";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {CLEAR_DATA, READ_RESULTS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
+import {CLEAR_DATA, READ_RESULTS_REQUEST} from "../../actions/catalog";
+import {SEARCH_FORM_REQUEST} from "../../actions/general";
 import Search from "../../components/Search/Search";
 import useSearch from "../../hooks/useSearch";
 import Button from "../../components/Button/Button";
 import Loader from "../../components/Loader/Loader";
+import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
 
 const Catalog = () => {
 
-  const hotels = useSelector((state) => state.general.hotels);
+  const hotels = useSelector((state) => state.catalog.hotels);
   const flights = useSelector((state) => state.general.flights);
-  const loading = useSelector((state) => state.general.loading);
+  const loading = useSelector((state) => state.catalog.loading);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
 
@@ -19,17 +21,12 @@ const Catalog = () => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
       payload: {
-        body: {
-          "Form": {
-            "countryId": -1,
-            "townFromId": 5
-          },
-        }
+        body: DEFAULT_SEARCH_VALUE
       }
     })
     searchTours()
     return () => dispatch({type: CLEAR_DATA})
-  }, []);
+  }, []); // eslint-disable-line
 
 
   const loadMoreResults = () => {

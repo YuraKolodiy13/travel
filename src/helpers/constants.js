@@ -196,3 +196,12 @@ export const COUNTRIES_IDS = {
     "name": "Laos"
   }
 }
+
+export const DEFAULT_SEARCH_VALUE = {
+  Form: {
+    countryId: -1,
+    townFromId: 5
+  },
+}
+
+export const API_URL = 'https://farvater.travel/';

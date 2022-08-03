@@ -1,9 +1,5 @@
-import {
-  GET_FLIGHTS_INFO_REQUEST,
-  GET_OTHER_TOURS_REQUEST,
-  GET_TOUR_REQUEST,
-  GET_TOUR_REVIEWS_REQUEST
-} from "../../actions/general";
+import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
+import {GET_OTHER_TOURS_REQUEST, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_REQUEST} from "../../actions/tour";
 import {useDispatch, useSelector} from "react-redux";
 import React, {memo, useEffect} from "react";
 import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
@@ -17,12 +13,13 @@ import Button from "../../components/Button/Button";
 const Tour = () => {
 
   const dispatch = useDispatch();
-  const tour = useSelector((state) => state.general.tour);
-  const otherTours = useSelector((state) => state.general.otherTours);
+  const tourInfo = useSelector((state) => state.tour.tourInfo);
+  const otherTours = useSelector((state) => state.tour.otherTours);
+  const reviews = useSelector((state) => state.tour.reviews);
   const location = useLocation();
   const id = location.search.replace('?q=', '');
   const flights = useSelector((state) => state.general.flights[id]);
-  const loading = useSelector((state) => state.general.loading);
+  const loading = useSelector((state) => state.tour.loading);
   const path = location.pathname.split('/').slice(1);
 
   useEffect(() => {
@@ -36,7 +33,7 @@ const Tour = () => {
   const loadMoreReviews = () => {
     dispatch({
       type: GET_TOUR_REVIEWS_REQUEST,
-      payload: {mapKey: tour.hotelId, pageindex: Math.floor(tour.reviews.items.length / 10) + 1}
+      payload: {mapKey: tourInfo.hotelId, pageindex: Math.floor(reviews.items.length / 10) + 1}
     })
   }
 
@@ -45,11 +42,11 @@ const Tour = () => {
       <Breadcrumbs path={path}/>
       {!loading
         ? <>
-            <h1>{tour.title}</h1>
+            <h1>{tourInfo.title}</h1>
 
             <div className="tour-main">
               <div className="tour-gallery">
-                <GalleryGrid images={tour.images}/>
+                <GalleryGrid images={tourInfo.images}/>
               </div>
               <div className="tour-info">
                 виліт
@@ -98,16 +95,16 @@ const Tour = () => {
 
             <div className="tour-description">
               <h2>Опис готелю</h2>
-              <div dangerouslySetInnerHTML={{__html: tour.description}}/>
+              <div dangerouslySetInnerHTML={{__html: tourInfo.description}}/>
             </div>
 
-            <div className='tour-services' dangerouslySetInnerHTML={{__html: tour.services}}/>
+            <div className='tour-services' dangerouslySetInnerHTML={{__html: tourInfo.services}}/>
 
-            {!!tour.reviews?.total && (
+            {!!reviews?.total && (
               <div className='tour__reviews reviews'>
-                <h2>Reviews of tourists <span>{tour.reviews.total}</span></h2>
+                <h2>Reviews of tourists <span>{reviews.total}</span></h2>
                 <ul>
-                  {tour.reviews.items.map(item =>
+                  {reviews.items.map(item =>
                     <ReviewItem
                       key={item.id}
                       name={item.reviewer_name}
@@ -119,7 +116,7 @@ const Tour = () => {
                     />
                   )}
                 </ul>
-                {tour.reviews.total > tour.reviews.items.length && (
+                {reviews.total > reviews.items.length && (
                   <Button title='Load More' color='primary' doAction={loadMoreReviews}/>
                 )}
               </div>

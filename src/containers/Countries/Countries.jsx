@@ -5,29 +5,30 @@ import './Countries.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {SEARCH_FORM_REQUEST} from "../../actions/general";
 import Button from "../../components/Button/Button";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import {useLocation} from "react-router";
+import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
 
 const Countries = () => {
 
   const searchForm = useSelector((state) => state.general.searchForm);
   const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
   const dispatch = useDispatch();
+  const location = useLocation();
+  const path = location.pathname.split('/').slice(1);
 
   useEffect(() => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
       payload: {
-        body: {
-          "Form": {
-            "countryId": -1,
-            "townFromId": 5
-          },
-        }
+        body: DEFAULT_SEARCH_VALUE
       }
     })
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="countries">
+      <Breadcrumbs path={path}/>
       <div className="popular-countries">
         <h4>Популярні країни</h4>
         <ul>

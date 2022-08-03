@@ -13,7 +13,7 @@ const Breadcrumbs = ({path}) => {
         <li key={key}>
           {key !== path.length - 1
             ? <Link
-                to={`/${path.slice(0, -1).join('/')}`}>
+                to={`/${path.slice(0, key + 1).join('/')}`}>
                 {COUNTRIES_IDS.hasOwnProperty(item) ? COUNTRIES_IDS[item].name : item}
               </Link>
             : <span>{COUNTRIES_IDS.hasOwnProperty(item) ? COUNTRIES_IDS[item].name : item}</span>

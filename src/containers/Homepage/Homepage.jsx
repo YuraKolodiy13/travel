@@ -1,16 +1,18 @@
 import React, {memo, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST, SEARCH_FORM_REQUEST} from "../../actions/general";
+import {SEARCH_FORM_REQUEST} from "../../actions/general";
+import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST} from "../../actions/homepage";
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
 // import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
+import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
 
 const Homepage = () => {
 
-  const hotTours = useSelector((state) => state.general.hotTours);
+  const hotTours = useSelector((state) => state.homepage.hotTours);
   const loading = useSelector((state) => state.general.loading);
-  const recommendedTours = useSelector((state) => state.general.recommendedTours);
+  const recommendedTours = useSelector((state) => state.homepage.recommendedTours);
   const flights = useSelector((state) => state.general.flights);
   const dispatch = useDispatch();
 
@@ -18,12 +20,7 @@ const Homepage = () => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
       payload: {
-        body: {
-          "Form": {
-            "countryId": -1,
-            "townFromId": 5
-          },
-        }
+        body: DEFAULT_SEARCH_VALUE
       }
     })
     dispatch({
