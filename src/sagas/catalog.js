@@ -41,6 +41,7 @@ function* readResults(action) {
     if(res.data.data.hasMore && res.data.data.sResult.length < 10 && requestCount < 3){
       requestCount++;
       yield delay(5000);
+      yield put({type: catalogActions.READ_FILTERS_REQUEST, payload: action.payload})
       yield put({type: catalogActions.READ_RESULTS_REQUEST, payload: action.payload})
     }else {
       yield put({type: catalogActions.READ_RESULTS_SUCCESS, payload: res.data.data})

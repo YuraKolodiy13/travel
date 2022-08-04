@@ -1,5 +1,5 @@
 import HotelCard from "../../components/HotelCard/HotelCard";
-import React, {useEffect} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {CLEAR_CATALOG_DATA, READ_RESULTS_REQUEST} from "../../actions/catalog";
 import {SEARCH_FORM_REQUEST} from "../../actions/general";
@@ -12,6 +12,7 @@ import './Catalog.scss';
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
+import Collapse from "@mui/material/Collapse";
 
 const Catalog = () => {
 
@@ -21,6 +22,7 @@ const Catalog = () => {
   const filters = useSelector((state) => state.catalog.filters);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
+  const [collapsed, setCollapsed] = useState([]);
 
   useEffect(() => {
     dispatch({
@@ -52,8 +54,10 @@ const Catalog = () => {
     })
   };
 
-
-  //LWO
+  const toggleCollapsed = useCallback((item) => {
+    const newCollapsed = collapsed.includes(item) ? collapsed.filter(el => el !== item) : [...collapsed, item];
+    setCollapsed(newCollapsed);
+  }, [collapsed]);
 
   return (
     <div className='Catalog' data-testid='catalog-page'>
@@ -65,14 +69,22 @@ const Catalog = () => {
             {!!hotels?.sResult.length
               ? <div className='catalog__result'>
                   <div className="catalog__filters">
-                    {filters && Object.keys(filters.filter).map(item =>
-                      <div>
-                        <h5>{item}</h5>
-                        <FormGroup>
-                          {filters.filter[item].Values.map(el =>
-                            <FormControlLabel key={el.Id} control={<Checkbox />} label={el.Name} />
-                          )}
-                        </FormGroup>
+                    {filters && Object.entries(filters.filter).map(([key, value]) =>
+                      <div key={value.TypeId}>
+                        <h5
+                          onClick={() => toggleCollapsed(value.TypeId)}
+                          className={!collapsed.includes(value.TypeId) ? 'active' : ''}
+                        >
+                          {key}
+                        </h5>
+                        <Collapse in={!collapsed.includes(value.TypeId)} timeout="auto" unmountOnExit>
+                          <FormGroup>
+                            {value.Values.map(el =>
+                              <FormControlLabel key={el.Id} control={<Checkbox />} label={el.Name} />
+                            )}
+                          </FormGroup>
+                        </Collapse>
+
                       </div>
                     )}
                   </div>
