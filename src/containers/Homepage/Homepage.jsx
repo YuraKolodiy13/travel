@@ -19,9 +19,7 @@ const Homepage = () => {
   useEffect(() => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
-      payload: {
-        body: DEFAULT_SEARCH_VALUE
-      }
+      payload: DEFAULT_SEARCH_VALUE
     })
     dispatch({
       type: GET_HOT_TOURS_REQUEST,

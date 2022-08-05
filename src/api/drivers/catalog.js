@@ -7,10 +7,13 @@ export const catalog = {
     return axios.post(`${API_URL}uk/api/searchstart2`, data.body);
   },
   readResults: (data) => {
-    return axios.post(`${API_URL}uk/api/readresults`, data.body);
+    return axios.post(`${API_URL}uk/api/readresults`, data);
   },
   readFilters: (data) => {
-    return axios.post(`${API_URL}uk/api/readfilters`, data.body);
+    return axios.post(`${API_URL}uk/api/readfilters`, data);
+  },
+  readFilteredResults: (data) => {
+    return axios.post(`${API_URL}uk/tour/ReadResultsWithPars`, data);
   },
 
 };

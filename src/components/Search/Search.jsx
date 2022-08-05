@@ -10,7 +10,7 @@ import {useSelector} from "react-redux";
 import './Search.scss'
 import Button from "../Button/Button";
 
-const Search = () => {
+const Search = ({setSelectedFilters}) => {
 
   const searchForm = useSelector((state) => state.general.searchForm);
   const {searchFormData, setSearchFormData, searchTours} = useSearch();
@@ -24,8 +24,13 @@ const Search = () => {
     localStorage.setItem('searchFormData', JSON.stringify({...searchFormData, [name]: value}))
   };
 
+  const onSearchTour = () => {
+    if(setSelectedFilters) setSelectedFilters({})
+    searchTours()
+  }
+
   return (
-    <ValidatorForm className='search-form' onSubmit={searchTours}>
+    <ValidatorForm className='search-form' onSubmit={onSearchTour}>
       <SelectValidator
         value={searchFormData.cityFrom || ''}
         name='cityFrom'

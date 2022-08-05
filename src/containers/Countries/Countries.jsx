@@ -20,9 +20,7 @@ const Countries = () => {
   useEffect(() => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
-      payload: {
-        body: DEFAULT_SEARCH_VALUE
-      }
+      payload: DEFAULT_SEARCH_VALUE
     })
   }, [dispatch])
 
