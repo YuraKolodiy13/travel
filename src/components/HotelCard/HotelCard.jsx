@@ -1,24 +1,56 @@
-import React, {memo} from "react";
+import React, {memo, useMemo} from "react";
 import './HotelCard.scss';
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import {commify, getTimeDuration} from "../../helpers/global";
+import Rating from "@mui/material/Rating";
+import SimpleImageSlider from "react-simple-image-slider";
+
 
 const HotelCard = ({item, flights}) => {
 
+  console.log(item, 'item')
+
   const dispatch = useDispatch();
+
+  const images = useMemo(() => {
+    let res = [...Array(4)].map((el, i) => ({url: `https://img4.farvater.travel/mapkey/${item?.hotelId}/${i}?size=thumb360`}))
+    console.log(res, 'res')
+    return [...res, {url: `https://staticmaps.farvater.travel/get/${item?.hotelId}`}]
+  }, [item])
+
+  console.log(images, 'images')
 
   if(!item) return null;
 
   return (
     <div className='HotelCard'>
       <div className="hotelCard__img">
-        <img src={item.photo} alt=""/>
+        <SimpleImageSlider
+          width='100%'
+          height='100%'
+          images={images}
+          showNavs={true}
+        />
       </div>
       <div className="hotelCard__info">
+        <div className="hotelCard__header">
+          <div className='hotelCard__left'>
+            <Rating name="half-rating-read" defaultValue={item.star.value} precision={0.5} readOnly />
+            <h3>{item.hotel?.value}</h3>
+            <cite>{item.countryName}, {item.region.ResortName}</cite>
+          </div>
+          <div className="hotelCard__right">
+            {!!item.idsForText.reviewsCount && (
+              <span>{item.idsForText.reviewsCount} review{item.idsForText.reviewsCount === '1' ? '' : 's'}</span>
+            )}
+            <div className='rating-block'>{item.rate}</div>
+
+          </div>
+        </div>
         <div className="hotelCard__price">
-          <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`}>{item.hotel?.value}</Link>
+
           <span>   ${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
         </div>
 
@@ -31,7 +63,7 @@ const HotelCard = ({item, flights}) => {
               ? <span className='hotelCard__time' onClick={() => dispatch({type: GET_FLIGHTS_INFO_REQUEST, payload: {id: item.SystemKey, body: {}}})}>Час</span>
               : <span>
                   {' о '}{flights.from.departure.time},
-                  {' '}Приліт {flights.from.arrival.time},
+                {' '}Приліт {flights.from.arrival.time},
                   тривалість польоту {getTimeDuration(parseInt(flights.from.arrival.time), parseInt(flights.from.departure.time), flights.from.arrival.time.slice(-2), flights.from.departure.time.slice(-2))}
                 </span>
             }
@@ -54,7 +86,7 @@ const HotelCard = ({item, flights}) => {
           <li>{item.meal?.value}</li>
         </ul>
       </div>
-
+      <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`} className="hotelCard__link"/>
     </div>
   )
 };

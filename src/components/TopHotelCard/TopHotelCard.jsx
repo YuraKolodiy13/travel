@@ -25,7 +25,7 @@ const TopHotelCard = ({item}) => {
               {!!item.hotel.reviewsCount && (
                 <span>{item.hotel.reviewsCount} review{item.hotel.reviewsCount === 1 ? '' : 's'}</span>
               )}
-              <div className='topHotelCard__rating'>{item.hotel.rate}</div>
+              <div className='rating-block'>{item.hotel.rate}</div>
             </div>
             <Button title='price' color='primary'/>
           </div>

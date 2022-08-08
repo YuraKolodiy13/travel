@@ -32,7 +32,15 @@ const Catalog = () => {
       type: SEARCH_FORM_REQUEST,
       payload: DEFAULT_SEARCH_VALUE
     })
-    searchTours()
+    if(isFiltered){
+      dispatch({
+        type: READ_FILTERED_RESULTS_REQUEST,
+        payload: {data: {firstCount: 10, hashId: hotels.hash}, filterData: selectedFilters}
+      })
+    }else {
+      searchTours()
+    }
+
     return () => dispatch({type: CLEAR_CATALOG_DATA})
   }, []); // eslint-disable-line
 
@@ -65,6 +73,7 @@ const Catalog = () => {
     dispatch({type: READ_FILTERED_RESULTS_REQUEST, payload: {data: {firstCount: 10, hashId: hotels.hash}, filterData: newSelectedFilters}})
   }
 
+
   return (
     <div className='Catalog' data-testid='catalog-page'>
 
@@ -73,7 +82,7 @@ const Catalog = () => {
       <div className='catalog__result'>
         {!loadingFilters
           ? <div className="catalog__filters">
-            {filters && Object.entries(filters.filter).map(([key, value]) =>
+            {filters && Object.entries(filters.filter).map(([key, value]) => !!value.Values.length &&
               <div key={value.TypeId}>
                 <h5
                   onClick={() => toggleCollapsed(value.TypeId)}
@@ -86,7 +95,12 @@ const Catalog = () => {
                     {value.Values.map(el =>
                       <FormControlLabel
                         key={el.Id}
-                        control={<Checkbox onClick={() => changeSelectedFilters(key, value.TypeId, el.Id)}/>}
+                        control={(
+                          <Checkbox
+                            value={selectedFilters[key]?.Values.includes(el.Id)}
+                            onClick={() => changeSelectedFilters(key, value.TypeId, el.Id)}
+                          />
+                        )}
                         label={el.Name}
                       />
                     )}

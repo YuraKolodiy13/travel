@@ -1,17 +1,64 @@
 .HotelCard{
-  border: 1px solid grey;
-  padding: 8px;
-  border-radius: 4px;
   margin-bottom: 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+  border-radius: 4px;
   display: flex;
-  .hotelCard__time{
-    cursor: pointer;
-    transition: .3s;
-    margin-left: 5px;
-    color: #9e9e9e;
-    text-decoration: underline;
-    &:hover{
-      text-decoration: none;
+  transition: .3s;
+  position: relative;
+  &:hover{
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+  }
+  .hotelCard__link{
+    position: absolute;
+    inset: 0;
+  }
+
+  .hotelCard__img{
+    width: 30%;
+    position: relative;
+    button{
+      z-index: 2;
+      &:first-of-type{
+        left: 0!important;
+      }
+      &:last-of-type{
+        right: 0!important;
+      }
     }
   }
+  .hotelCard__info{
+    width: 70%;
+    padding: 12px;
+    position: relative;
+    z-index: 2;
+    .hotelCard__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      h3{
+        margin: 0 0 10px;
+      }
+      .hotelCard__right{
+        display: flex;
+        align-items: center;
+        span{
+          color: #bfbfbf;
+          border-bottom: 1px dashed;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .hotelCard__time{
+      cursor: pointer;
+      transition: .3s;
+      margin-left: 5px;
+      color: #9e9e9e;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
 }
