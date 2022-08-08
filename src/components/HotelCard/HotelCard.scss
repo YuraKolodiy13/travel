@@ -14,7 +14,7 @@
   }
 
   .hotelCard__img{
-    width: 30%;
+    width: 35%;
     position: relative;
     button{
       z-index: 2;
@@ -27,7 +27,7 @@
     }
   }
   .hotelCard__info{
-    width: 70%;
+    width: 65%;
     padding: 12px;
     position: relative;
     z-index: 2;
@@ -41,6 +41,7 @@
       .hotelCard__right{
         display: flex;
         align-items: center;
+        flex: none;
         span{
           color: #bfbfbf;
           border-bottom: 1px dashed;
@@ -49,16 +50,21 @@
         }
       }
     }
-    .hotelCard__time{
-      cursor: pointer;
-      transition: .3s;
-      margin-left: 5px;
-      color: #9e9e9e;
-      text-decoration: underline;
-      &:hover{
-        text-decoration: none;
+    .hotelCard__main{
+      padding: 0;
+      column-count: 2;
+      .hotelCard__time{
+        cursor: pointer;
+        transition: .3s;
+        margin-left: 5px;
+        color: #9e9e9e;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
+
   }
 
 }

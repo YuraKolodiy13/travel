@@ -10,17 +10,12 @@ import SimpleImageSlider from "react-simple-image-slider";
 
 const HotelCard = ({item, flights}) => {
 
-  console.log(item, 'item')
-
   const dispatch = useDispatch();
 
   const images = useMemo(() => {
     let res = [...Array(4)].map((el, i) => ({url: `https://img4.farvater.travel/mapkey/${item?.hotelId}/${i}?size=thumb360`}))
-    console.log(res, 'res')
     return [...res, {url: `https://staticmaps.farvater.travel/get/${item?.hotelId}`}]
   }, [item])
-
-  console.log(images, 'images')
 
   if(!item) return null;
 
@@ -49,12 +44,7 @@ const HotelCard = ({item, flights}) => {
 
           </div>
         </div>
-        <div className="hotelCard__price">
-
-          <span>   ${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
-        </div>
-
-        <ul>
+        <ul className='hotelCard__main'>
           {item.flyInclude && <li>Включно з перельотом ({item.cityFromName})</li>}
           <li>
             Виліт на відпочинок {''}
@@ -85,6 +75,10 @@ const HotelCard = ({item, flights}) => {
           <li>{item.room}</li>
           <li>{item.meal?.value}</li>
         </ul>
+        <div className="hotelCard__price">
+
+          <span>   ${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
+        </div>
       </div>
       <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`} className="hotelCard__link"/>
     </div>
