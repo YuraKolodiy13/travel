@@ -9,6 +9,10 @@ import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
 import Button from "../Button/Button";
+import Checkbox from "@mui/material/Checkbox";
+import ListItemText from "@mui/material/ListItemText";
+import Select from "@mui/material/Select";
+import {MEALS} from "../../helpers/constants";
 
 const Search = ({setSelectedFilters}) => {
 
@@ -28,6 +32,8 @@ const Search = ({setSelectedFilters}) => {
     if(setSelectedFilters) setSelectedFilters({})
     searchTours()
   }
+
+  console.log(searchFormData, 'searchFormData')
 
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
@@ -82,6 +88,34 @@ const Search = ({setSelectedFilters}) => {
             )}}
         />
       </LocalizationProvider>
+      <Select
+        multiple
+        value={searchFormData.stars || [-1]}
+        onChange={onChange}
+        name='stars'
+        renderValue={(selected) => selected.join(', ')}
+      >
+        {searchForm.stars?.options.map((option) => (
+          <MenuItem key={option.id} value={option.id}>
+            <Checkbox checked={searchFormData.stars?.includes(option.id)} />
+            <ListItemText primary={option.name} />
+          </MenuItem>
+        ))}
+      </Select>
+      <Select
+        multiple
+        value={searchFormData.meals || [-1]}
+        onChange={onChange}
+        name='meals'
+        renderValue={(selected) => selected.join(', ')}
+      >
+        {searchForm.meals?.options.map((option) => (
+          <MenuItem key={option.id} value={option.id}>
+            <Checkbox checked={searchFormData.meals?.includes(option.id)} />
+            <ListItemText primary={option.name} />
+          </MenuItem>
+        ))}
+      </Select>
       <Button type='submit' title='Найти' color='primary'/>
     </ValidatorForm>
   )

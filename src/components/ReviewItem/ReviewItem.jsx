@@ -16,7 +16,7 @@ const ReviewItem = ({name, date, title, text, score, type}) => {
           dangerouslySetInnerHTML={{__html: expanded ? text : text.slice(0, 500)}}
         />
         {text.length > 500 && (
-          <a onClick={() => setExpanded(!expanded)}>Read {expanded ? 'Less' : 'More'}</a>
+          <span onClick={() => setExpanded(!expanded)}>Read {expanded ? 'Less' : 'More'}</span>
         )}
       </div>
       <div className="reviewItem__mark">

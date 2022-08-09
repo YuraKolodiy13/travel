@@ -204,4 +204,42 @@ export const DEFAULT_SEARCH_VALUE = {
   },
 }
 
+export const MEALS = {
+  "0": {
+    "id": 0,
+    "name": "Сніданок (BB)",
+    "code": "BB"
+  },
+  "1": {
+    "id": 1,
+    "name": "Все включено (AI)",
+    "code": "AI"
+  },
+  "2": {
+    "id": 2,
+    "name": "Ультра все включено (UAI)",
+    "code": "UAI"
+  },
+  "4": {
+    "id": 4,
+    "name": "Сніданок + обід + вечеря (FB)",
+    "code": "FB"
+  },
+  "5": {
+    "id": 5,
+    "name": "Сніданок + вечеря (HB)",
+    "code": "HB"
+  },
+  "6": {
+    "id": 6,
+    "name": "Без харчування (RO)",
+    "code": "RO"
+  },
+  "-1": {
+    "id": -1,
+    "name": "Будь-яке",
+    "code": null
+  }
+}
+
 export const API_URL = 'https://farvater.travel/';

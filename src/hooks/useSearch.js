@@ -16,7 +16,9 @@ const useSearch = () => {
       setSearchFormData({
         cityFrom: searchForm.cityFrom?.checkedModel.id,
         destination: searchForm.destination?.checkedModel.country,
-        date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)]
+        date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)],
+        meals: [1, 2],
+        stars: [3,4,7]
       })
     }
   }, [searchForm]);
@@ -33,8 +35,8 @@ const useSearch = () => {
             countryId: searchFormData.destination,
             townFromId: searchFormData.cityFrom,
             ages: [1],
-            stars: [3,4,7],
-            meals: [1,2],
+            stars: searchFormData.stars,
+            meals: searchFormData.meals,
             hotels: [],
             regions: [],
             resorts: [],
