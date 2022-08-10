@@ -4,7 +4,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
-import React, {memo} from "react";
+import React, {memo, useState} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
@@ -12,12 +12,13 @@ import Button from "../Button/Button";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
 import Select from "@mui/material/Select";
-import {MEALS} from "../../helpers/constants";
+import Popover from "@mui/material/Popover";
 
 const Search = ({setSelectedFilters}) => {
 
   const searchForm = useSelector((state) => state.general.searchForm);
   const {searchFormData, setSearchFormData, searchTours} = useSearch();
+  const [touristsAnchorEl, setTouristsAnchorEl] = useState(null);
 
   const onChange = (e) => {
     setSearchFormData({...searchFormData, [e.target.name]: e.target.value});
@@ -88,6 +89,32 @@ const Search = ({setSelectedFilters}) => {
             )}}
         />
       </LocalizationProvider>
+      <div className="select-tourists">
+        <Button
+          doAction={e => setTouristsAnchorEl(e.currentTarget)}
+          title={`${searchFormData.adults} туриста`}
+          color='primary-inverse'
+        />
+        <Popover
+          open={Boolean(touristsAnchorEl)}
+          anchorEl={touristsAnchorEl}
+          onClose={() => setTouristsAnchorEl(null)}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+        >
+          <Select
+            value={searchFormData.adults}
+            onChange={onChange}
+            name='adults'
+          >
+            {[...Array(searchForm.tourists?.options.maxAdults).keys()].map((option) => (
+              <MenuItem key={option} value={option + 1}>{option + 1}</MenuItem>
+            ))}
+          </Select>
+        </Popover>
+      </div>
       <Select
         multiple
         value={searchFormData.stars || [-1]}
