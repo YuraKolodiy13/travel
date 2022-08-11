@@ -34,8 +34,6 @@ const Search = ({setSelectedFilters}) => {
     searchTours()
   }
 
-  console.log(searchFormData, 'searchFormData')
-
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
       <SelectValidator
@@ -91,6 +89,7 @@ const Search = ({setSelectedFilters}) => {
       </LocalizationProvider>
       <div className="select-tourists">
         <Button
+          type='button'
           doAction={e => setTouristsAnchorEl(e.currentTarget)}
           title={`${searchFormData.adults} туриста`}
           color='primary-inverse'
