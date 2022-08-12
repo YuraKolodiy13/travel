@@ -19,7 +19,8 @@ const useSearch = () => {
         date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)],
         meals: [1, 2],
         stars: [3,4,7],
-        adults: 2
+        adults: 2,
+        kids: 1,
       })
     }
   }, [searchForm]);
@@ -44,7 +45,7 @@ const useSearch = () => {
             nightsFrom: 7,
             nightsTo: 7,
             adults: searchFormData.adults,
-            kids: 1,
+            kids: searchFormData.kids,
             dateFrom: getFullDate(new Date(dates[0])),
             dateTo: getFullDate(new Date(dates[1]))
           }

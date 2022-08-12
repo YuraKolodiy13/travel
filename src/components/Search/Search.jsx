@@ -91,7 +91,7 @@ const Search = ({setSelectedFilters}) => {
         <Button
           type='button'
           doAction={e => setTouristsAnchorEl(e.currentTarget)}
-          title={`${searchFormData.adults} туриста`}
+          title={`${searchFormData.adults + searchFormData.kids} туриста`}
           color='primary-inverse'
         />
         <Popover
@@ -109,6 +109,15 @@ const Search = ({setSelectedFilters}) => {
             name='adults'
           >
             {[...Array(searchForm.tourists?.options.maxAdults).keys()].map((option) => (
+              <MenuItem key={option} value={option + 1}>{option + 1}</MenuItem>
+            ))}
+          </Select>
+          <Select
+            value={searchFormData.kids}
+            onChange={onChange}
+            name='kids'
+          >
+            {[...Array(searchForm.tourists?.options.maxKids).keys()].map((option) => (
               <MenuItem key={option} value={option + 1}>{option + 1}</MenuItem>
             ))}
           </Select>

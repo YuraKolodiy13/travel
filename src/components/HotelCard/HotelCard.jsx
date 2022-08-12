@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import {commify, getTimeDuration} from "../../helpers/global";
 import Rating from "@mui/material/Rating";
 import SimpleImageSlider from "react-simple-image-slider";
+import Button from "../Button/Button";
 
 
 const HotelCard = ({item, flights}) => {
@@ -41,7 +42,6 @@ const HotelCard = ({item, flights}) => {
               <span>{item.idsForText.reviewsCount} review{item.idsForText.reviewsCount === '1' ? '' : 's'}</span>
             )}
             <div className='rating-block'>{item.rate}</div>
-
           </div>
         </div>
         <ul className='hotelCard__main'>
@@ -75,10 +75,15 @@ const HotelCard = ({item, flights}) => {
           <li>{item.room}</li>
           <li>{item.meal?.value}</li>
         </ul>
-        <div className="hotelCard__price">
-
-          <span>   ${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
+        <div className="hotelCard__footer">
+          <div className="hotelCard__price">
+            <span>${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
+          </div>
+          <div className="hotelCard__btns">
+            <Button title='Зберегти' color='primary'/>
+          </div>
         </div>
+
       </div>
       <Link to={`${item.hotelUrl.replace('/hotel', '/countries')}?q=${item.SystemKey}`} className="hotelCard__link"/>
     </div>
