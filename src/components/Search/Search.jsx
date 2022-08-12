@@ -19,6 +19,7 @@ const Search = ({setSelectedFilters}) => {
   const searchForm = useSelector((state) => state.general.searchForm);
   const {searchFormData, setSearchFormData, searchTours} = useSearch();
   const [touristsAnchorEl, setTouristsAnchorEl] = useState(null);
+  const [nightsAnchorEl, setNightsAnchorEl] = useState(null);
 
   const onChange = (e) => {
     setSearchFormData({...searchFormData, [e.target.name]: e.target.value});
@@ -33,6 +34,24 @@ const Search = ({setSelectedFilters}) => {
     if(setSelectedFilters) setSelectedFilters({})
     searchTours()
   }
+
+  const onChangeNights = (value) => {
+    if(!searchFormData.nightsFrom && !searchFormData.nightsTo){
+      setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
+    }else if(searchFormData.nightsFrom === searchFormData.nightsTo){
+      if(searchFormData.nightsFrom > value){
+        setSearchFormData({...searchFormData, nightsTo: value});
+      }else {
+        setSearchFormData({...searchFormData, nightsFrom: value})
+      }
+    }else if(searchFormData.nightsFrom && searchFormData.nightsTo){
+      setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
+    }
+
+    // if()
+  }
+
+  console.log(searchFormData, 'searchFormData')
 
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
@@ -87,6 +106,36 @@ const Search = ({setSelectedFilters}) => {
             )}}
         />
       </LocalizationProvider>
+      <div className="select-nights">
+        <Button
+          type='button'
+          doAction={e => setNightsAnchorEl(e.currentTarget)}
+          title={`32`}
+          color='primary-inverse'
+        />
+        <Popover
+          open={Boolean(nightsAnchorEl)}
+          anchorEl={nightsAnchorEl}
+          onClose={() => setNightsAnchorEl(null)}
+          className='select-nights-popover'
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+        >
+          <ul>
+            {[...Array(15).keys()].map((item, i, arr) => (
+              <li
+                className={`${(searchFormData.nightsFrom === item + 1) || (searchFormData.nightsTo === item + 1) ? 'selected' : ''}`}
+                key={item}
+                onClick={() => onChangeNights(item + 1)}
+              >
+                {item + 1}
+              </li>
+            ))}
+          </ul>
+        </Popover>
+      </div>
       <div className="select-tourists">
         <Button
           type='button'

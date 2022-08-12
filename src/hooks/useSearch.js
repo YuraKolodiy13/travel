@@ -21,6 +21,8 @@ const useSearch = () => {
         stars: [3,4,7],
         adults: 2,
         kids: 1,
+        nightsFrom: 7,
+        nightsTo: 7,
       })
     }
   }, [searchForm]);
@@ -42,8 +44,8 @@ const useSearch = () => {
             hotels: [],
             regions: [],
             resorts: [],
-            nightsFrom: 7,
-            nightsTo: 7,
+            nightsFrom: searchFormData.nightsFrom,
+            nightsTo: searchFormData.nightsTo,
             adults: searchFormData.adults,
             kids: searchFormData.kids,
             dateFrom: getFullDate(new Date(dates[0])),

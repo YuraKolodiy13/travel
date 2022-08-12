@@ -3,3 +3,31 @@
   align-items: center;
   margin-bottom: 50px;
 }
+.select-nights-popover{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    width: 463px;
+    li{
+      display: flex;
+      width: 60px;
+      height: 52px;
+      background: white;
+      border: 1px solid #e6e6e6;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      transition: .3s;
+      &:hover{
+        background: rgba(0, 174, 239, 0.05);
+      }
+      &.selected{
+        background: linear-gradient(90deg, #00B3F0 0%, #00D5F9 100%);
+        color: white;
+        border-color: #17AEEB;
+      }
+    }
+  }
+}
