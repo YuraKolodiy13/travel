@@ -40,9 +40,9 @@ const Search = ({setSelectedFilters}) => {
       setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
     }else if(searchFormData.nightsFrom === searchFormData.nightsTo){
       if(searchFormData.nightsFrom > value){
-        setSearchFormData({...searchFormData, nightsTo: value});
+        setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: searchFormData.nightsFrom});
       }else {
-        setSearchFormData({...searchFormData, nightsFrom: value})
+        setSearchFormData({...searchFormData, nightsTo: value})
       }
     }else if(searchFormData.nightsFrom && searchFormData.nightsTo){
       setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
@@ -55,62 +55,71 @@ const Search = ({setSelectedFilters}) => {
 
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
-      <SelectValidator
-        value={searchFormData.cityFrom || ''}
-        name='cityFrom'
-        variant='outlined'
-        onChange={onChange}
-        validators={["required"]}
-        errorMessages={["This field is required"]}
-      >
-        {searchForm.cityFrom?.options.map((option) => (
-          <MenuItem key={option.id} value={option.id}>
-            {option.name}
-          </MenuItem>
-        ))}
-      </SelectValidator>
-      <SelectValidator
-        value={searchFormData.destination || ''}
-        name='destination'
-        variant='outlined'
-        onChange={onChange}
-        validators={["required"]}
-        errorMessages={["This field is required"]}
-      >
-        {searchForm.destination?.options.countries.popular.map((option) => (
-          <MenuItem key={option.id} value={option.id}>
-            {option.name}
-          </MenuItem>
-        ))}
-        {searchForm.destination?.options.countries.others.map((option) => (
-          <MenuItem key={option.id} value={option.id}>
-            {option.name}
-          </MenuItem>
-        ))}
-      </SelectValidator>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <DateRangePicker
-          onChange={date => onChangeDate(date, 'date')}
-          value={searchFormData.date || [null, null]}
-          name='date'
-          renderInput={({ inputProps, ...startProps }, endProps) => {
-            const startValue = inputProps.value;
-            delete inputProps.value;
-            return (
-              <TextField
-                {...startProps}
-                name='date'
-                inputProps={inputProps}
-                value={`${startValue}-${endProps.inputProps.value}`}
-              />
-            )}}
-        />
-      </LocalizationProvider>
-      <div className="select-nights">
+      <div className="search-form__field">
+        <SelectValidator
+          value={searchFormData.cityFrom || ''}
+          name='cityFrom'
+          variant='outlined'
+          onChange={onChange}
+          validators={["required"]}
+          errorMessages={["This field is required"]}
+        >
+          {searchForm.cityFrom?.options.map((option) => (
+            <MenuItem key={option.id} value={option.id}>
+              {option.name}
+            </MenuItem>
+          ))}
+        </SelectValidator>
+      </div>
+
+      <div className="search-form__field">
+        <SelectValidator
+          value={searchFormData.destination || ''}
+          name='destination'
+          variant='outlined'
+          onChange={onChange}
+          validators={["required"]}
+          errorMessages={["This field is required"]}
+        >
+          {searchForm.destination?.options.countries.popular.map((option) => (
+            <MenuItem key={option.id} value={option.id}>
+              {option.name}
+            </MenuItem>
+          ))}
+          {searchForm.destination?.options.countries.others.map((option) => (
+            <MenuItem key={option.id} value={option.id}>
+              {option.name}
+            </MenuItem>
+          ))}
+        </SelectValidator>
+      </div>
+
+      <div className="search-form__field">
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <DateRangePicker
+            onChange={date => onChangeDate(date, 'date')}
+            value={searchFormData.date || [null, null]}
+            name='date'
+            renderInput={({ inputProps, ...startProps }, endProps) => {
+              const startValue = inputProps.value;
+              delete inputProps.value;
+              return (
+                <TextField
+                  {...startProps}
+                  name='date'
+                  inputProps={inputProps}
+                  value={`${startValue}-${endProps.inputProps.value}`}
+                />
+              )}}
+          />
+        </LocalizationProvider>
+      </div>
+
+      <div className="select-nights search-form__field">
         <Button
           type='button'
           doAction={e => setNightsAnchorEl(e.currentTarget)}
-          title={`32`}
+          title={`${searchFormData.nightsFrom}-${searchFormData.nightsTo} ночей`}
           color='primary-inverse'
         />
         <Popover
@@ -124,7 +133,7 @@ const Search = ({setSelectedFilters}) => {
           }}
         >
           <ul>
-            {[...Array(15).keys()].map((item, i, arr) => (
+            {[...Array(15).keys()].map(item => (
               <li
                 className={`${(searchFormData.nightsFrom === item + 1) || (searchFormData.nightsTo === item + 1) ? 'selected' : ''}`}
                 key={item}
@@ -136,7 +145,7 @@ const Search = ({setSelectedFilters}) => {
           </ul>
         </Popover>
       </div>
-      <div className="select-tourists">
+      <div className="select-tourists search-form__field">
         <Button
           type='button'
           doAction={e => setTouristsAnchorEl(e.currentTarget)}
@@ -173,6 +182,7 @@ const Search = ({setSelectedFilters}) => {
         </Popover>
       </div>
       <Select
+        className='search-form__field'
         multiple
         value={searchFormData.stars || [-1]}
         onChange={onChange}
@@ -187,6 +197,7 @@ const Search = ({setSelectedFilters}) => {
         ))}
       </Select>
       <Select
+        className='search-form__field'
         multiple
         value={searchFormData.meals || [-1]}
         onChange={onChange}
@@ -200,6 +211,7 @@ const Search = ({setSelectedFilters}) => {
           </MenuItem>
         ))}
       </Select>
+
       <Button type='submit' title='Найти' color='primary'/>
     </ValidatorForm>
   )
