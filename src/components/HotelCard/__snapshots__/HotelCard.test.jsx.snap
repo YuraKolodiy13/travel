@@ -11,33 +11,289 @@ Object {
         <div
           class="hotelCard__img"
         >
-          <img
-            alt=""
-            src="https://img4.farvater.travel/mapkey/109691/0?size=catalog"
-          />
+          <div
+            style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+          >
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+            >
+              <div
+                class="rsis-container"
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-image"
+                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                />
+                <div
+                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                />
+              </div>
+              <button
+                style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                type="button"
+              >
+                <img
+                  alt="slide to left"
+                  src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                  style="width: 100%;"
+                />
+              </button>
+              <button
+                style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                type="button"
+              >
+                <img
+                  alt="slide to right"
+                  src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                  style="width: 100%; transform: rotate(180deg);"
+                />
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="hotelCard__info"
         >
           <div
-            class="hotelCard__price"
+            class="hotelCard__header"
           >
-            <a
-              href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+            <div
+              class="hotelCard__left"
             >
-              Desert View Sharm
-            </a>
-            <span>
-                 $
-              410
-            </span>
-            /
-            <span>
-              12,111
-              грн
-            </span>
+              <span
+                aria-label="3 Stars"
+                class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                role="img"
+              >
+                <span
+                  class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                >
+                  <span
+                    style="width: 0%; overflow: hidden; position: absolute;"
+                  >
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span>
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                >
+                  <span
+                    style="width: 0%; overflow: hidden; position: absolute;"
+                  >
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span>
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                >
+                  <span
+                    style="width: 0%; overflow: hidden; position: absolute;"
+                  >
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span>
+                    <span
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                >
+                  <span
+                    style="width: 0%; overflow: hidden; position: absolute;"
+                  >
+                    <span
+                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarBorderIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span>
+                    <span
+                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarBorderIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                >
+                  <span
+                    style="width: 0%; overflow: hidden; position: absolute;"
+                  >
+                    <span
+                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarBorderIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span>
+                    <span
+                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                        data-testid="StarBorderIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </span>
+              <h3>
+                Desert View Sharm
+              </h3>
+              <cite>
+                Египет
+                , 
+                Шарм-эль-Шейх
+              </cite>
+            </div>
+            <div
+              class="hotelCard__right"
+            >
+              <span>
+                0
+                 review
+                s
+              </span>
+              <div
+                class="rating-block"
+              >
+                1
+              </div>
+            </div>
           </div>
-          <ul>
+          <ul
+            class="hotelCard__main"
+          >
             <li>
               Включно з перельотом (
               Львов
@@ -92,7 +348,39 @@ Object {
               Все включено (AI)
             </li>
           </ul>
+          <div
+            class="hotelCard__footer"
+          >
+            <div
+              class="hotelCard__price"
+            >
+              <span>
+                $
+                410
+              </span>
+              /
+              <span>
+                12,111
+                грн
+              </span>
+            </div>
+            <div
+              class="hotelCard__btns"
+            >
+              <button
+                class="button primary"
+              >
+                <span>
+                  Зберегти
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
+        <a
+          class="hotelCard__link"
+          href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+        />
       </div>
     </div>
   </body>,
@@ -103,33 +391,289 @@ Object {
       <div
         class="hotelCard__img"
       >
-        <img
-          alt=""
-          src="https://img4.farvater.travel/mapkey/109691/0?size=catalog"
-        />
+        <div
+          style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+        >
+          <div
+            style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+          >
+            <div
+              class="rsis-container"
+              style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+            >
+              <div
+                class="rsis-image"
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+              />
+              <div
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+              />
+            </div>
+            <button
+              style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+              type="button"
+            >
+              <img
+                alt="slide to left"
+                src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                style="width: 100%;"
+              />
+            </button>
+            <button
+              style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+              type="button"
+            >
+              <img
+                alt="slide to right"
+                src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                style="width: 100%; transform: rotate(180deg);"
+              />
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="hotelCard__info"
       >
         <div
-          class="hotelCard__price"
+          class="hotelCard__header"
         >
-          <a
-            href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+          <div
+            class="hotelCard__left"
           >
-            Desert View Sharm
-          </a>
-          <span>
-               $
-            410
-          </span>
-          /
-          <span>
-            12,111
-            грн
-          </span>
+            <span
+              aria-label="3 Stars"
+              class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+              role="img"
+            >
+              <span
+                class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+              >
+                <span
+                  style="width: 0%; overflow: hidden; position: absolute;"
+                >
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span>
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+              >
+                <span
+                  style="width: 0%; overflow: hidden; position: absolute;"
+                >
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span>
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+              >
+                <span
+                  style="width: 0%; overflow: hidden; position: absolute;"
+                >
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span>
+                  <span
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+              >
+                <span
+                  style="width: 0%; overflow: hidden; position: absolute;"
+                >
+                  <span
+                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarBorderIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span>
+                  <span
+                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarBorderIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+              >
+                <span
+                  style="width: 0%; overflow: hidden; position: absolute;"
+                >
+                  <span
+                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarBorderIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span>
+                  <span
+                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                      data-testid="StarBorderIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <h3>
+              Desert View Sharm
+            </h3>
+            <cite>
+              Египет
+              , 
+              Шарм-эль-Шейх
+            </cite>
+          </div>
+          <div
+            class="hotelCard__right"
+          >
+            <span>
+              0
+               review
+              s
+            </span>
+            <div
+              class="rating-block"
+            >
+              1
+            </div>
+          </div>
         </div>
-        <ul>
+        <ul
+          class="hotelCard__main"
+        >
           <li>
             Включно з перельотом (
             Львов
@@ -184,7 +728,39 @@ Object {
             Все включено (AI)
           </li>
         </ul>
+        <div
+          class="hotelCard__footer"
+        >
+          <div
+            class="hotelCard__price"
+          >
+            <span>
+              $
+              410
+            </span>
+            /
+            <span>
+              12,111
+              грн
+            </span>
+          </div>
+          <div
+            class="hotelCard__btns"
+          >
+            <button
+              class="button primary"
+            >
+              <span>
+                Зберегти
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
+      <a
+        class="hotelCard__link"
+        href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+      />
     </div>
   </div>,
   "debug": [Function],

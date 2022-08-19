@@ -33,7 +33,7 @@ const HotelCard = ({item, flights}) => {
       <div className="hotelCard__info">
         <div className="hotelCard__header">
           <div className='hotelCard__left'>
-            <Rating name="half-rating-read" defaultValue={item.star.value} precision={0.5} readOnly />
+            <Rating name="half-rating-read" defaultValue={+item.star.value} precision={0.5} readOnly />
             <h3>{item.hotel?.value}</h3>
             <cite>{item.countryName}, {item.region.ResortName}</cite>
           </div>

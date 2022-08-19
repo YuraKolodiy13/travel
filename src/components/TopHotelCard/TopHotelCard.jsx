@@ -16,7 +16,7 @@ const TopHotelCard = ({item}) => {
         </div>
         <div className="topHotelCard__info">
           <div className="topHotelCard__location">
-            <Rating name="half-rating-read" defaultValue={item.hotel.starId} precision={0.5} readOnly />
+            <Rating name="half-rating-read" defaultValue={+item.hotel.starId} precision={0.5} readOnly />
             <h3>{item.hotel.name}</h3>
             <cite>{item.country.name}, {item.resort.name}</cite>
           </div>

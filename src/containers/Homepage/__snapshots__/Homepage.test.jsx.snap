@@ -11,6 +11,677 @@ Object {
         <form
           class="search-form"
         >
+          <div
+            class="search-form__field"
+          >
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              >
+                <div
+                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-labelledby="mui-15"
+                    class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                    id="mui-15"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </div>
+                  <input
+                    aria-hidden="true"
+                    class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                    name="cityFrom"
+                    tabindex="-1"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-nnbavb"
+                    >
+                      <span
+                        class="notranslate"
+                      >
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="search-form__field"
+          >
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              >
+                <div
+                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-labelledby="mui-16"
+                    class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                    id="mui-16"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </div>
+                  <input
+                    aria-hidden="true"
+                    class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                    name="destination"
+                    tabindex="-1"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-nnbavb"
+                    >
+                      <span
+                        class="notranslate"
+                      >
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="search-form__field"
+          >
+            <div
+              class="css-17vdz66"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="true"
+                  for="mui-17"
+                  id="mui-17-label"
+                >
+                  Start
+                </label>
+                <div
+                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    id="mui-17"
+                    name="date"
+                    placeholder="mm/dd/yyyy"
+                    type="tel"
+                    value="08/26/2022-09/09/2022"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-1z7n62"
+                    >
+                      <span>
+                        Start
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="select-nights search-form__field"
+          >
+            <button
+              class="button primary-inverse"
+              type="button"
+            >
+              <span>
+                7-7 ночей
+              </span>
+            </button>
+          </div>
+          <div
+            class="select-tourists search-form__field"
+          >
+            <button
+              class="button primary-inverse"
+              type="button"
+            >
+              <span>
+                3 туриста
+              </span>
+            </button>
+          </div>
+          <div
+            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary search-form__field css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-labelledby="mui-component-select-stars"
+              class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              id="mui-component-select-stars"
+              role="button"
+              tabindex="0"
+            >
+              3, 4, 7
+            </div>
+            <input
+              aria-hidden="true"
+              class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+              name="stars"
+              tabindex="-1"
+              value="3,4,7"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+              data-testid="ArrowDropDownIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-nnbavb"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+          <div
+            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary search-form__field css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-labelledby="mui-component-select-meals"
+              class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              id="mui-component-select-meals"
+              role="button"
+              tabindex="0"
+            >
+              1, 2
+            </div>
+            <input
+              aria-hidden="true"
+              class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+              name="meals"
+              tabindex="-1"
+              value="1,2"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+              data-testid="ArrowDropDownIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-nnbavb"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+          <button
+            class="button primary"
+            type="submit"
+          >
+            <span>
+              Найти
+            </span>
+          </button>
+        </form>
+        <div
+          class="hotTours"
+        >
+          <h3>
+            Гарячі тури
+          </h3>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+              >
+                <div
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-container"
+                    style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                  >
+                    <div
+                      class="rsis-image"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    />
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    />
+                  </div>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to left"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%;"
+                    />
+                  </button>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to right"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%; transform: rotate(180deg);"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__header"
+              >
+                <div
+                  class="hotelCard__left"
+                >
+                  <span
+                    aria-label="5 Stars"
+                    class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                    role="img"
+                  >
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <h3>
+                    Il Mercato Hotel (ex.Iberotel Il Mercato)
+                  </h3>
+                  <cite>
+                    Египет
+                    , 
+                    Шарм-эль-Шейх
+                  </cite>
+                </div>
+                <div
+                  class="hotelCard__right"
+                >
+                  <span>
+                    329
+                     review
+                    s
+                  </span>
+                  <div
+                    class="rating-block"
+                  >
+                    8
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="hotelCard__main"
+              >
+                <li>
+                  Включно з перельотом (
+                  Киев
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  12
+                  .
+                  09
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  14
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Standard Room
+                </li>
+                <li>
+                  Все включено (AI)
+                </li>
+              </ul>
+              <div
+                class="hotelCard__footer"
+              >
+                <div
+                  class="hotelCard__price"
+                >
+                  <span>
+                    $
+                    1,561
+                  </span>
+                  /
+                  <span>
+                    45,660
+                    грн
+                  </span>
+                </div>
+                <div
+                  class="hotelCard__btns"
+                >
+                  <button
+                    class="button primary"
+                  >
+                    <span>
+                      Зберегти
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="hotelCard__link"
+              href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Homepage"
+    >
+      <form
+        class="search-form"
+      >
+        <div
+          class="search-form__field"
+        >
           <div>
             <div
               class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
@@ -21,9 +692,9 @@ Object {
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  aria-labelledby="mui-5"
+                  aria-labelledby="mui-15"
                   class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-5"
+                  id="mui-15"
                   role="button"
                   tabindex="0"
                 >
@@ -68,6 +739,10 @@ Object {
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="search-form__field"
+        >
           <div>
             <div
               class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
@@ -78,9 +753,9 @@ Object {
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  aria-labelledby="mui-6"
+                  aria-labelledby="mui-16"
                   class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-6"
+                  id="mui-16"
                   role="button"
                   tabindex="0"
                 >
@@ -125,6 +800,10 @@ Object {
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="search-form__field"
+        >
           <div
             class="css-17vdz66"
           >
@@ -134,8 +813,8 @@ Object {
               <label
                 class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
-                for="mui-7"
-                id="mui-7-label"
+                for="mui-17"
+                id="mui-17-label"
               >
                 Start
               </label>
@@ -145,11 +824,11 @@ Object {
                 <input
                   aria-invalid="false"
                   class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-7"
+                  id="mui-17"
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="08/10/2022-08/24/2022"
+                  value="08/26/2022-09/09/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -166,255 +845,124 @@ Object {
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="select-nights search-form__field"
+        >
           <button
-            class="button primary"
-            type="submit"
+            class="button primary-inverse"
+            type="button"
           >
             <span>
-              Найти
+              7-7 ночей
             </span>
           </button>
-        </form>
-        <div
-          class="hotTours"
-        >
-          <h3>
-            Гарячі тури
-          </h3>
-          <div
-            class="HotelCard"
-          >
-            <div
-              class="hotelCard__img"
-            >
-              <img
-                alt=""
-                src="https://img4.farvater.travel/mapkey/34256/0?size=catalog"
-              />
-            </div>
-            <div
-              class="hotelCard__info"
-            >
-              <div
-                class="hotelCard__price"
-              >
-                <a
-                  href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
-                >
-                  Il Mercato Hotel (ex.Iberotel Il Mercato)
-                </a>
-                <span>
-                     $
-                  1,561
-                </span>
-                /
-                <span>
-                  45,660
-                  грн
-                </span>
-              </div>
-              <ul>
-                <li>
-                  Включно з перельотом (
-                  Киев
-                  )
-                </li>
-                <li>
-                  Виліт на відпочинок 
-                  
-                  12
-                  .
-                  09
-                  <span
-                    class="hotelCard__time"
-                  >
-                    Час
-                  </span>
-                </li>
-                <li>
-                  На 
-                  14
-                   ночей
-                </li>
-                <li>
-                  Ціна за 
-                  2
-                   туриста
-                </li>
-                <li>
-                  Standard Room
-                </li>
-                <li>
-                  Все включено (AI)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="Homepage"
-    >
-      <form
-        class="search-form"
-      >
-        <div>
-          <div
-            class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-          >
-            <div
-              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-            >
-              <div
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                aria-labelledby="mui-5"
-                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                id="mui-5"
-                role="button"
-                tabindex="0"
-              >
-                <span
-                  class="notranslate"
-                >
-                  ​
-                </span>
-              </div>
-              <input
-                aria-hidden="true"
-                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-                name="cityFrom"
-                tabindex="-1"
-                value=""
-              />
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-                data-testid="ArrowDropDownIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7 10l5 5 5-5z"
-                />
-              </svg>
-              <fieldset
-                aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-              >
-                <legend
-                  class="css-nnbavb"
-                >
-                  <span
-                    class="notranslate"
-                  >
-                    ​
-                  </span>
-                </legend>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-          >
-            <div
-              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-            >
-              <div
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                aria-labelledby="mui-6"
-                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                id="mui-6"
-                role="button"
-                tabindex="0"
-              >
-                <span
-                  class="notranslate"
-                >
-                  ​
-                </span>
-              </div>
-              <input
-                aria-hidden="true"
-                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-                name="destination"
-                tabindex="-1"
-                value=""
-              />
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-                data-testid="ArrowDropDownIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7 10l5 5 5-5z"
-                />
-              </svg>
-              <fieldset
-                aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-              >
-                <legend
-                  class="css-nnbavb"
-                >
-                  <span
-                    class="notranslate"
-                  >
-                    ​
-                  </span>
-                </legend>
-              </fieldset>
-            </div>
-          </div>
         </div>
         <div
-          class="css-17vdz66"
+          class="select-tourists search-form__field"
+        >
+          <button
+            class="button primary-inverse"
+            type="button"
+          >
+            <span>
+              3 туриста
+            </span>
+          </button>
+        </div>
+        <div
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary search-form__field css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby="mui-component-select-stars"
+            class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="mui-component-select-stars"
+            role="button"
+            tabindex="0"
           >
-            <label
-              class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for="mui-7"
-              id="mui-7-label"
-            >
-              Start
-            </label>
-            <div
-              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-            >
-              <input
-                aria-invalid="false"
-                class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                id="mui-7"
-                name="date"
-                placeholder="mm/dd/yyyy"
-                type="tel"
-                value="08/10/2022-08/24/2022"
-              />
-              <fieldset
-                aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-              >
-                <legend
-                  class="css-1z7n62"
-                >
-                  <span>
-                    Start
-                  </span>
-                </legend>
-              </fieldset>
-            </div>
+            3, 4, 7
           </div>
+          <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            name="stars"
+            tabindex="-1"
+            value="3,4,7"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-nnbavb"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+        <div
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary search-form__field css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby="mui-component-select-meals"
+            class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="mui-component-select-meals"
+            role="button"
+            tabindex="0"
+          >
+            1, 2
+          </div>
+          <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            name="meals"
+            tabindex="-1"
+            value="1,2"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-nnbavb"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
         </div>
         <button
           class="button primary"
@@ -437,33 +985,289 @@ Object {
           <div
             class="hotelCard__img"
           >
-            <img
-              alt=""
-              src="https://img4.farvater.travel/mapkey/34256/0?size=catalog"
-            />
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-container"
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-image"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  />
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  />
+                </div>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to left"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%;"
+                  />
+                </button>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to right"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%; transform: rotate(180deg);"
+                  />
+                </button>
+              </div>
+            </div>
           </div>
           <div
             class="hotelCard__info"
           >
             <div
-              class="hotelCard__price"
+              class="hotelCard__header"
             >
-              <a
-                href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
+              <div
+                class="hotelCard__left"
               >
-                Il Mercato Hotel (ex.Iberotel Il Mercato)
-              </a>
-              <span>
-                   $
-                1,561
-              </span>
-              /
-              <span>
-                45,660
-                грн
-              </span>
+                <span
+                  aria-label="5 Stars"
+                  class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                  role="img"
+                >
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <h3>
+                  Il Mercato Hotel (ex.Iberotel Il Mercato)
+                </h3>
+                <cite>
+                  Египет
+                  , 
+                  Шарм-эль-Шейх
+                </cite>
+              </div>
+              <div
+                class="hotelCard__right"
+              >
+                <span>
+                  329
+                   review
+                  s
+                </span>
+                <div
+                  class="rating-block"
+                >
+                  8
+                </div>
+              </div>
             </div>
-            <ul>
+            <ul
+              class="hotelCard__main"
+            >
               <li>
                 Включно з перельотом (
                 Киев
@@ -498,7 +1302,39 @@ Object {
                 Все включено (AI)
               </li>
             </ul>
+            <div
+              class="hotelCard__footer"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <span>
+                  $
+                  1,561
+                </span>
+                /
+                <span>
+                  45,660
+                  грн
+                </span>
+              </div>
+              <div
+                class="hotelCard__btns"
+              >
+                <button
+                  class="button primary"
+                >
+                  <span>
+                    Зберегти
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
+          <a
+            class="hotelCard__link"
+            href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
+          />
         </div>
       </div>
     </div>
