@@ -200,7 +200,7 @@ export const COUNTRIES_IDS = {
 export const DEFAULT_SEARCH_VALUE = {
   Form: {
     countryId: -1,
-    townFromId: 5
+    townFromId: 13
   },
 }
 

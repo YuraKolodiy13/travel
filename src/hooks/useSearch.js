@@ -12,10 +12,11 @@ const useSearch = () => {
 
   useEffect(() => {
     if(!localStorage.getItem('searchFormData')){
+      console.log(searchForm, 'searchForm')
       const currentDate = new Date();
       setSearchFormData({
         cityFrom: searchForm.cityFrom?.checkedModel.id,
-        destination: searchForm.destination?.checkedModel.country,
+        destination: searchForm.destination?.checkedModel.country || 25,
         date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)],
         meals: [1, 2],
         stars: [3,4,7],

@@ -1,7 +1,7 @@
 import { call, put } from 'redux-saga/effects';
 import {searchForm} from "./general";
 import {Api} from "../api";
-import {SEARCH_FORM_FAIL, SEARCH_FORM_REQUEST, SEARCH_FORM_SUCCESS} from "../actions/general";
+import {SEARCH_FORM_FAIL, SEARCH_FORM_SUCCESS} from "../actions/general";
 import {DEFAULT_SEARCH_VALUE} from "../helpers/constants";
 
 const searchFormMock = {
@@ -728,9 +728,10 @@ describe('testing general saga', () => {
     const res = {};
 
     expect(generator.next().value).toEqual(call(Api.general.searchForm, action.payload));
-    expect(generator.next(res).value).toEqual(put({type: SEARCH_FORM_FAIL}));
-    // expect(generator.next())
-    //   .toEqual({ done: true, value: undefined });
+    expect(generator.next(res).value).toEqual(put({type: SEARCH_FORM_FAIL, payload: {
+      error: "Cannot read properties of undefined (reading 'data')"
+    }}));
+    expect(generator.next().done).toEqual(true);
   });
 });
 
