@@ -3,6 +3,7 @@ import {homepage} from "./drivers/homepage";
 import {tour} from "./drivers/tour";
 import {catalog} from "./drivers/catalog";
 import {tours} from "./drivers/tours";
+import {auth} from "./drivers/auth";
 
 export const Api = {
   general,
@@ -10,4 +11,5 @@ export const Api = {
   tour,
   catalog,
   tours,
+  auth,
 };

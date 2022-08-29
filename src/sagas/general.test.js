@@ -713,7 +713,7 @@ const searchFormMock = {
 
 describe('testing general saga', () => {
   const action = {payload: DEFAULT_SEARCH_VALUE};
-  it('success triggers success action with searchForm', () => {
+  test('success triggers success action with searchForm', () => {
 
     const generator = searchForm(action);
     const res = searchFormMock;
@@ -723,7 +723,7 @@ describe('testing general saga', () => {
     expect(generator.next().done).toEqual(true);
   });
 
-  it('failure triggers failure action', () => {
+  test('failure triggers failure action', () => {
     const generator = searchForm(action);
     const res = {};
 
@@ -734,35 +734,3 @@ describe('testing general saga', () => {
     expect(generator.next().done).toEqual(true);
   });
 });
-
-// describe('searchCharacters', () => {
-//   it('success triggers success action with characters', () => {
-//     const term = 'Luke';
-//     const generator = searchCharactersSaga(searchCharactersActionCreator(term));
-//     const response = { data: { results: GetCharactersMock } };
-//
-//     expect(generator.next().value)
-//       .toEqual(call(searchCharactersFromApi, term));
-//
-//     expect(generator.next(response).value)
-//       .toEqual(put(getCharactersSuccessActionCreator(GetCharactersMock)));
-//
-//     expect(generator.next())
-//       .toEqual({ done: true, value: undefined });
-//   });
-//
-//   it('failure triggers failure action', () => {
-//     const term = 'Luke';
-//     const generator = searchCharactersSaga(searchCharactersActionCreator(term));
-//     const response = {};
-//
-//     expect(generator.next().value)
-//       .toEqual(call(searchCharactersFromApi, term));
-//
-//     expect(generator.next(response).value)
-//       .toEqual(put(getCharactersFailureActionCreator()));
-//
-//     expect(generator.next())
-//       .toEqual({ done: true, value: undefined });
-//   });
-// });

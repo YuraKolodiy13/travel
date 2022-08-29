@@ -5,6 +5,7 @@ import homepage from "./homepage";
 import tour from "./tour";
 import catalog from "./catalog";
 import tours from "./tours";
+import auth from "./auth";
 
 export function* sagas() {
   yield all([
@@ -13,5 +14,6 @@ export function* sagas() {
     tour,
     catalog,
     tours,
+    auth,
   ])
 }

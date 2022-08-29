@@ -4,6 +4,8 @@ import Modal from "@mui/material/Modal";
 import Backdrop from "@mui/material/Backdrop";
 import Slide from "@mui/material/Slide";
 import Button from "../../Button/Button";
+import {useDispatch, useSelector} from "react-redux";
+import {LOGIN_REQUEST} from "../../../actions/auth";
 
 const LoginModal = ({open, setIsModalOpen}) => {
 
@@ -11,6 +13,9 @@ const LoginModal = ({open, setIsModalOpen}) => {
     email: '',
     password: ''
   });
+
+  const error = useSelector((state) => state.auth.error);
+  const dispatch = useDispatch();
 
   const onHandleChange = (e) => {
     setState({...state, [e.target.name]: e.target.value})
@@ -22,6 +27,10 @@ const LoginModal = ({open, setIsModalOpen}) => {
       email: '',
       password: ''
     })
+  };
+
+  const submitLogin = () => {
+    dispatch({type: LOGIN_REQUEST, payload: state, callback: closeModal});
   };
 
 
@@ -40,7 +49,7 @@ const LoginModal = ({open, setIsModalOpen}) => {
       <Slide direction="down" in={open}>
         <div className='modal__content'>
           <h3 className="heading">Вхід до системи</h3>
-          <ValidatorForm className='login__form' onSubmit={() => {}}>
+          <ValidatorForm className='login__form' onSubmit={submitLogin}>
             <div className="modal__row">
               <div className="login__field modal__field w100">
                 <TextValidator
@@ -50,8 +59,8 @@ const LoginModal = ({open, setIsModalOpen}) => {
                   label='Email'
                   variant="outlined"
                   onChange={onHandleChange}
-                  validators={['required']}
-                  errorMessages={['Обовязкове поле']}
+                  validators={['required', 'isEmail']}
+                  errorMessages={['Обовязкове поле', 'email не валідний']}
                 />
               </div>
             </div>
@@ -67,6 +76,7 @@ const LoginModal = ({open, setIsModalOpen}) => {
                   validators={['required']}
                   errorMessages={['Обовязкове поле']}
                 />
+                {error && <p className='error'>{error.message}</p>}
               </div>
             </div>
             <Button type='submit' title='Увійти' color='primary'/>

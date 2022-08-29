@@ -4,9 +4,11 @@ import './Header.scss'
 import {Link} from "react-router-dom";
 import LoginModal from "../Auth/LoginModal/LoginModal";
 import RegisterModal from "../Auth/RegisterModal/RegisterModal";
+import {useSelector} from "react-redux";
 
 const Header = () => {
 
+  const user = useSelector((state) => state.auth.user);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
@@ -28,12 +30,19 @@ const Header = () => {
               <li>
                 <Link to='/countries'>Tours by countries</Link>
               </li>
-              <li>
-                <span onClick={() => setIsLoginModalOpen(true)}>Увійти</span>
-              </li>
-              <li>
-                <span onClick={() => setIsRegisterModalOpen(true)}>Реєстрація</span>
-              </li>
+              {user
+                ? <li>
+                    <Link to='/cabinet'>{user.email}</Link>
+                  </li>
+                : <>
+                    <li>
+                      <span onClick={() => setIsLoginModalOpen(true)}>Увійти</span>
+                    </li>
+                    <li>
+                      <span onClick={() => setIsRegisterModalOpen(true)}>Реєстрація</span>
+                    </li>
+                  </>
+              }
             </ul>
           </nav>
         </div>
