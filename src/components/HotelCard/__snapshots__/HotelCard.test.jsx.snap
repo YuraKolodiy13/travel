@@ -371,7 +371,7 @@ Object {
                 class="button primary"
               >
                 <span>
-                  Зберегти
+                  Вибрати
                 </span>
               </button>
             </div>
@@ -751,7 +751,7 @@ Object {
               class="button primary"
             >
               <span>
-                Зберегти
+                Вибрати
               </span>
             </button>
           </div>

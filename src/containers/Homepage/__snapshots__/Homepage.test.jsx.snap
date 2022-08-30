@@ -102,7 +102,7 @@ Object {
                     class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                     name="destination"
                     tabindex="-1"
-                    value=""
+                    value="25"
                   />
                   <svg
                     aria-hidden="true"
@@ -160,7 +160,7 @@ Object {
                     name="date"
                     placeholder="mm/dd/yyyy"
                     type="tel"
-                    value="08/26/2022-09/09/2022"
+                    value="09/06/2022-09/20/2022"
                   />
                   <fieldset
                     aria-hidden="true"
@@ -657,7 +657,7 @@ Object {
                     class="button primary"
                   >
                     <span>
-                      Зберегти
+                      Вибрати
                     </span>
                   </button>
                 </div>
@@ -770,7 +770,7 @@ Object {
                   class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                   name="destination"
                   tabindex="-1"
-                  value=""
+                  value="25"
                 />
                 <svg
                   aria-hidden="true"
@@ -828,7 +828,7 @@ Object {
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="08/26/2022-09/09/2022"
+                  value="09/06/2022-09/20/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -1325,7 +1325,7 @@ Object {
                   class="button primary"
                 >
                   <span>
-                    Зберегти
+                    Вибрати
                   </span>
                 </button>
               </div>

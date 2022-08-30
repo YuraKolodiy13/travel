@@ -80,7 +80,7 @@ const HotelCard = ({item, flights}) => {
             <span>${commify(item.price)}</span>/<span>{commify(item.priceUAH)}грн</span>
           </div>
           <div className="hotelCard__btns">
-            <Button title='Зберегти' color='primary'/>
+            <Button title='Вибрати' color='primary'/>
           </div>
         </div>
 

@@ -729,7 +729,7 @@ describe('testing general saga', () => {
 
     expect(generator.next().value).toEqual(call(Api.general.searchForm, action.payload));
     expect(generator.next(res).value).toEqual(put({type: SEARCH_FORM_FAIL, payload: {
-      error: "Cannot read properties of undefined (reading 'data')"
+      error: "Cannot read property 'data' of undefined"
     }}));
     expect(generator.next().done).toEqual(true);
   });
