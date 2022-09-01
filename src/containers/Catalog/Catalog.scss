@@ -35,4 +35,11 @@
       width: 75%;
     }
   }
+  .catalog__noResults{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--color-error-400);
+  }
 }

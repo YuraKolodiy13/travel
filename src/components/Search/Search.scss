@@ -11,12 +11,29 @@
     .MuiOutlinedInput-notchedOutline {
       border-color: var(--color-neutrals-400);
       transition: .3s;
+      border-radius: 0;
     }
     .MuiOutlinedInput-input{
       padding: 12px 14px;
       font-size: 14px;
+      line-height: 20px;
+      height: initial;
+      color: var(--color-neutrals-1000);
     }
-
+    .button{
+      span{
+        color: initial;
+      }
+    }
+  }
+  .button{
+    padding: 12px 14px;
+    width: 100%;
+    flex: auto;
+    transition: .3s;
+    &:hover{
+      border-color: rgba(0, 0, 0, 0.87);
+    }
   }
 }
 .select-nights-popover{

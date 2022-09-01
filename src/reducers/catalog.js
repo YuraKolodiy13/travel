@@ -13,6 +13,7 @@ const initialState = {
   loadingHotels: true,
   loadingFilters: true,
   hash: '',
+  error: null,
   hotels: null,
   filters: null
 };
@@ -23,7 +24,10 @@ export default function catalog(state = initialState, action) {
     case SEARCH_START_SUCCESS:
       return {
         ...state,
-        hash: action.payload.hash,
+        hash: action.payload.data?.hash,
+        loadingHotels: !action.payload.statusMessage,
+        loadingFilters: !action.payload.statusMessage,
+        error: action.payload.statusMessage,
       };
 
     case READ_RESULTS_REQUEST:
@@ -59,6 +63,7 @@ export default function catalog(state = initialState, action) {
       return {
         ...state,
         hotels: null,
+        error: null
       };
 
     default:

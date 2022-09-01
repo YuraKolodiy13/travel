@@ -17,6 +17,7 @@ import Collapse from "@mui/material/Collapse";
 const Catalog = () => {
 
   const hotels = useSelector((state) => state.catalog.hotels);
+  const error = useSelector((state) => state.catalog.error);
   const flights = useSelector((state) => state.general.flights);
   const loadingHotels = useSelector((state) => state.catalog.loadingHotels);
   const loadingFilters = useSelector((state) => state.catalog.loadingFilters);
@@ -121,7 +122,10 @@ const Catalog = () => {
                 <Button doAction={loadMoreResults} title='Показати більше' color='primary'/>
               )}
             </div>
-            : <p>Sorry we haven't found any tours</p>
+            : <div className='catalog__noResults'>
+                <p className='error'>{error}</p>
+                <p>Sorry we haven't found any tours</p>
+              </div>
           : <Loader/>
         }
       </div>

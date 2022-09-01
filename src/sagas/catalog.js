@@ -5,9 +5,11 @@ import * as catalogActions from '../actions/catalog'
 function* searchStart(action) {
   try {
     const res = yield call(Api.catalog.searchStart, action.payload);
-    yield put({type: catalogActions.SEARCH_START_SUCCESS, payload: res.data.data});
-    yield put({type: catalogActions.READ_RESULTS_REQUEST, payload: {firstCount: 10, hashId: res.data.data.hash}})
-    yield put({type: catalogActions.READ_FILTERS_REQUEST, payload: {hashId: res.data.data.hash}})
+    yield put({type: catalogActions.SEARCH_START_SUCCESS, payload: res.data});
+    if(res.data.data){
+      yield put({type: catalogActions.READ_RESULTS_REQUEST, payload: {firstCount: 10, hashId: res.data.data?.hash}})
+      yield put({type: catalogActions.READ_FILTERS_REQUEST, payload: {hashId: res.data.data?.hash}})
+    }
   } catch (err) {
     yield put({ type: catalogActions.SEARCH_START_FAIL, payload: { error: err.message } });
   }

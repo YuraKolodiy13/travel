@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding-right: 12px;
   }
   .container {
     padding: 16px 50px;
@@ -33,6 +34,7 @@ h1, h2, h3, h4, h5, h6{
   }
   .main-container{
     overflow-y: auto;
+    height: 100%;
   }
 
   .switcher{
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #000;
+    background-color: var(--color-neutrals-1000);
     cursor: pointer;
     transition: .3s;
     z-index: 2;
@@ -59,7 +61,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: var(--color-neutrals-1000);
   }
   .dark-mode{
     position: relative;
@@ -70,7 +72,7 @@ h1, h2, h3, h4, h5, h6{
     width: 250vw;
     height: 250vw;
     transform: scale(0);
-    background-color: #000;
+    background-color: var(--color-neutrals-1000);
     transition: 1s ease-in-out;
     border-radius: 50%;
     display: flex;
@@ -78,7 +80,7 @@ h1, h2, h3, h4, h5, h6{
   }
   &.dark-mode-active{
     *{
-      color: #fff;
+      color: #fff!important;
 
     }
     .switcher{

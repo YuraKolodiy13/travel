@@ -4,7 +4,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
-import React, {memo, useState} from "react";
+import React, {memo, useMemo, useState} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
@@ -36,22 +36,41 @@ const Search = ({setSelectedFilters}) => {
   }
 
   const onChangeNights = (value) => {
-    if(!searchFormData.nightsFrom && !searchFormData.nightsTo){
-      setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
-    }else if(searchFormData.nightsFrom === searchFormData.nightsTo){
+    if(searchFormData.nightsFrom === searchFormData.nightsTo){
       if(searchFormData.nightsFrom > value){
         setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: searchFormData.nightsFrom});
       }else {
         setSearchFormData({...searchFormData, nightsTo: value})
       }
-    }else if(searchFormData.nightsFrom && searchFormData.nightsTo){
+    }else if((!searchFormData.nightsFrom && !searchFormData.nightsTo) || (searchFormData.nightsFrom && searchFormData.nightsTo)){
       setSearchFormData({...searchFormData, nightsFrom: value, nightsTo: value})
     }
-
-    // if()
   }
 
-  console.log(searchFormData, 'searchFormData')
+  const getNightsValueTitle = useMemo(() => {
+    let value = '';
+    if(searchFormData.nightsFrom === searchFormData.nightsTo){
+      value += searchFormData.nightsFrom
+    }else {
+      value += `${searchFormData.nightsFrom}-${searchFormData.nightsTo}`
+    }
+    if(searchFormData.nightsTo === 1){
+      value += ' ніч'
+    }else if(searchFormData.nightsTo < 5){
+      value += ' ночі'
+    }else {
+      value += ' ночей'
+    }
+    return value
+  }, [searchFormData.nightsFrom, searchFormData.nightsTo])
+
+  const getTouristsValueTitle = useMemo(() => {
+    let value = searchFormData.adults + searchFormData.kids;
+    if(value === 1) value += ' турист'
+    else if(value < 5) value += ' туриста'
+    else value += ' туристів'
+    return value;
+  }, [searchFormData.adults, searchFormData.kids])
 
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
@@ -119,7 +138,7 @@ const Search = ({setSelectedFilters}) => {
         <Button
           type='button'
           doAction={e => setNightsAnchorEl(e.currentTarget)}
-          title={`${searchFormData.nightsFrom}-${searchFormData.nightsTo} ночей`}
+          title={getNightsValueTitle}
           color='primary-inverse'
         />
         <Popover
@@ -149,7 +168,7 @@ const Search = ({setSelectedFilters}) => {
         <Button
           type='button'
           doAction={e => setTouristsAnchorEl(e.currentTarget)}
-          title={`${searchFormData.adults + searchFormData.kids} туриста`}
+          title={getTouristsValueTitle}
           color='primary-inverse'
         />
         <Popover
@@ -176,7 +195,7 @@ const Search = ({setSelectedFilters}) => {
             name='kids'
           >
             {[...Array(searchForm.tourists?.options.maxKids).keys()].map((option) => (
-              <MenuItem key={option} value={option + 1}>{option + 1}</MenuItem>
+              <MenuItem key={option} value={option}>{option}</MenuItem>
             ))}
           </Select>
         </Popover>
