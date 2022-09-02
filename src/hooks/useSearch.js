@@ -10,21 +10,23 @@ const useSearch = () => {
   const history = useNavigate();
   const [searchFormData, setSearchFormData] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});
 
+  const currentDate = new Date();
+  const initialSearchData = {
+    cityFrom: searchForm.cityFrom?.checkedModel.id || 13,
+    destination: searchForm.destination?.checkedModel.country || 25,
+    date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)],
+    meals: [1, 2],
+    stars: [3,4,7],
+    adults: 2,
+    kids: 0,
+    ages: [],
+    nightsFrom: 7,
+    nightsTo: 7,
+  }
+
   useEffect(() => {
     if(!localStorage.getItem('searchFormData')){
-      console.log(searchForm, 'searchForm')
-      const currentDate = new Date();
-      setSearchFormData({
-        cityFrom: searchForm.cityFrom?.checkedModel.id,
-        destination: searchForm.destination?.checkedModel.country || 25,
-        date: [currentDate.setDate(currentDate.getDate() + 7), currentDate.setDate(currentDate.getDate() + 14)],
-        meals: [1, 2],
-        stars: [3,4,7],
-        adults: 2,
-        kids: 1,
-        nightsFrom: 7,
-        nightsTo: 7,
-      })
+      setSearchFormData(initialSearchData)
     }
   }, [searchForm]);
 
@@ -37,18 +39,18 @@ const useSearch = () => {
       payload: {
         body: {
           form: {
-            countryId: searchFormData.destination,
-            townFromId: searchFormData.cityFrom,
-            ages: [1],
-            stars: searchFormData.stars,
-            meals: searchFormData.meals,
+            countryId: searchFormData.destination || initialSearchData.destination,
+            townFromId: searchFormData.cityFrom || initialSearchData.cityFrom,
+            ages: searchFormData.ages || initialSearchData.ages,
+            stars: searchFormData.stars || initialSearchData.stars,
+            meals: searchFormData.meals || initialSearchData.meals,
             hotels: [],
             regions: [],
             resorts: [],
-            nightsFrom: searchFormData.nightsFrom,
-            nightsTo: searchFormData.nightsTo,
-            adults: searchFormData.adults,
-            kids: searchFormData.kids,
+            nightsFrom: searchFormData.nightsFrom || initialSearchData.nightsFrom,
+            nightsTo: searchFormData.nightsTo || initialSearchData.nightsTo,
+            adults: searchFormData.adults || initialSearchData.adults,
+            kids: searchFormData.kids || initialSearchData.kids,
             dateFrom: getFullDate(new Date(dates[0])),
             dateTo: getFullDate(new Date(dates[1]))
           }
