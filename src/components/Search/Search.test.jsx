@@ -616,4 +616,18 @@ describe('testing search component', () => {
 
   })
 
+  test('search functionality', () => {
+    const {getByText} = render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Search />
+        </MemoryRouter>
+      </Provider>
+    )
+    userEvent.click(getByText('2 туриста'))
+    // expect(store.dispatch).toHaveBeenCalledTimes(1);
+
+
+  })
+
 })

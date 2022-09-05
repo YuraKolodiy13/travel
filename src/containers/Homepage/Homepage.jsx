@@ -4,16 +4,17 @@ import {SEARCH_FORM_REQUEST} from "../../actions/general";
 import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST} from "../../actions/homepage";
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
-// import Input from "../../components/Input/Input";
 import Loader from "../../components/Loader/Loader";
 import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
+import {selectFlights, selectLoading} from "../../selectors/general";
+import {selectHotTours, selectRecommendedTours} from "../../selectors/homepage";
 
 const Homepage = () => {
 
-  const hotTours = useSelector((state) => state.homepage.hotTours);
-  const loading = useSelector((state) => state.general.loading);
-  const recommendedTours = useSelector((state) => state.homepage.recommendedTours);
-  const flights = useSelector((state) => state.general.flights);
+  const hotTours = useSelector(selectHotTours);
+  const loading = useSelector(selectLoading);
+  const recommendedTours = useSelector(selectRecommendedTours);
+  const flights = useSelector(selectFlights);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -76,7 +77,6 @@ const Homepage = () => {
     <div className='Homepage'>
       {!loading
         ? <>
-            {/*<Input value='5' onChange={() => {}}/>*/}
             <Search />
             {!!hotTours.length && (
               <div className="hotTours">

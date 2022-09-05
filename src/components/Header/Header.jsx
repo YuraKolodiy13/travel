@@ -5,10 +5,11 @@ import {Link} from "react-router-dom";
 import LoginModal from "../Auth/LoginModal/LoginModal";
 import RegisterModal from "../Auth/RegisterModal/RegisterModal";
 import {useSelector} from "react-redux";
+import {selectUser} from "../../selectors/auth";
 
 const Header = () => {
 
-  const user = useSelector((state) => state.auth.user);
+  const user = useSelector(selectUser);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 

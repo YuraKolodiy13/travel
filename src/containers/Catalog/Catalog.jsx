@@ -13,21 +13,29 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import Collapse from "@mui/material/Collapse";
+import {
+  selectHotels,
+  selectError,
+  selectLoadingHotels,
+  selectLoadingFilters,
+  selectFilters
+} from "../../selectors/catalog";
+import {selectFlights} from "../../selectors/general";
 
 const Catalog = () => {
 
-  const hotels = useSelector((state) => state.catalog.hotels);
-  const error = useSelector((state) => state.catalog.error);
-  const flights = useSelector((state) => state.general.flights);
-  const loadingHotels = useSelector((state) => state.catalog.loadingHotels);
-  const loadingFilters = useSelector((state) => state.catalog.loadingFilters);
-  const filters = useSelector((state) => state.catalog.filters);
+  const hotels = useSelector(selectHotels);
+  const error = useSelector(selectError);
+  const flights = useSelector(selectFlights);
+  const loadingHotels = useSelector(selectLoadingHotels);
+  const loadingFilters = useSelector(selectLoadingFilters);
+  const filters = useSelector(selectFilters);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
   const [collapsed, setCollapsed] = useState([]);
   const [selectedFilters, setSelectedFilters] = useState({});
   const isFiltered = useMemo(() => !!Object.keys(selectedFilters).length, [selectedFilters])
-
+  console.log(111)
   useEffect(() => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
@@ -83,7 +91,7 @@ const Catalog = () => {
       <div className='catalog__result'>
         {!loadingFilters
           ? <div className="catalog__filters">
-            {filters && Object.entries(filters.filter).map(([key, value]) => !!value.Values.length &&
+            {filters?.map(([key, value]) => !!value.Values.length &&
               <div key={value.TypeId}>
                 <h5
                   onClick={() => toggleCollapsed(value.TypeId)}

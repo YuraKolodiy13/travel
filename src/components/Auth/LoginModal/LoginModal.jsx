@@ -6,6 +6,7 @@ import Slide from "@mui/material/Slide";
 import Button from "../../Button/Button";
 import {useDispatch, useSelector} from "react-redux";
 import {LOGIN_REQUEST} from "../../../actions/auth";
+import {selectError} from "../../../selectors/auth";
 
 const LoginModal = ({open, setIsModalOpen}) => {
 
@@ -14,7 +15,7 @@ const LoginModal = ({open, setIsModalOpen}) => {
     password: ''
   });
 
-  const error = useSelector((state) => state.auth.error);
+  const error = useSelector(selectError);
   const dispatch = useDispatch();
 
   const onHandleChange = (e) => {

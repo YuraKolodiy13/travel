@@ -8,10 +8,11 @@ import Button from "../../components/Button/Button";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import {useLocation} from "react-router";
 import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
+import {selectSearchForm} from "../../selectors/general";
 
 const Countries = () => {
 
-  const searchForm = useSelector((state) => state.general.searchForm);
+  const searchForm = useSelector(selectSearchForm);
   const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
   const dispatch = useDispatch();
   const location = useLocation();

@@ -9,17 +9,19 @@ import Loader from "../../components/Loader/Loader";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import ReviewItem from "../../components/ReviewItem/ReviewItem";
 import Button from "../../components/Button/Button";
+import {selectLoading, selectOtherTours, selectReviews, selectTourInfo} from "../../selectors/tour";
+import {selectFlight} from "../../selectors/general";
 
 const Tour = () => {
 
   const dispatch = useDispatch();
-  const tourInfo = useSelector((state) => state.tour.tourInfo);
-  const otherTours = useSelector((state) => state.tour.otherTours);
-  const reviews = useSelector((state) => state.tour.reviews);
+  const tourInfo = useSelector(selectTourInfo);
+  const otherTours = useSelector(selectOtherTours);
+  const reviews = useSelector(selectReviews);
   const location = useLocation();
   const id = location.search.replace('?q=', '');
-  const flights = useSelector((state) => state.general.flights[id]);
-  const loading = useSelector((state) => state.tour.loading);
+  const flights = useSelector(selectFlight(id));
+  const loading = useSelector(selectLoading);
   const path = location.pathname.split('/').slice(1);
 
   useEffect(() => {

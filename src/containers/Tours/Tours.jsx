@@ -7,11 +7,11 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import TopHotelCard from "../../components/TopHotelCard/TopHotelCard";
 import Loader from "../../components/Loader/Loader";
 import Pagination from "@mui/material/Pagination";
-
+import {selectToursByCountry, selectLoading} from "../../selectors/tours";
 const Tours = () => {
 
-  const toursByCountry = useSelector((state) => state.tours.toursByCountry);
-  const loading = useSelector((state) => state.tours.loading);
+  const toursByCountry = useSelector(selectToursByCountry);
+  const loading = useSelector(selectLoading);
   const dispatch = useDispatch();
   const {countryCode} = useParams();
   const location = useLocation()

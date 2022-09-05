@@ -3,9 +3,10 @@ import {useEffect, useState} from "react";
 import {CLEAR_CATALOG_DATA, SEARCH_START_REQUEST} from "../actions/catalog";
 import {useNavigate} from "react-router-dom";
 import {getFullDate} from "../helpers/global";
+import {selectSearchForm} from "../selectors/general";
 
 const useSearch = () => {
-  const searchForm = useSelector((state) => state.general.searchForm);
+  const searchForm = useSelector(selectSearchForm);
   const dispatch = useDispatch();
   const history = useNavigate();
   const [searchFormData, setSearchFormData] = useState(JSON.parse(localStorage.getItem('searchFormData')) || {});
@@ -28,7 +29,7 @@ const useSearch = () => {
     if(!localStorage.getItem('searchFormData')){
       setSearchFormData(initialSearchData)
     }
-  }, [searchForm]);
+  }, [searchForm]); // eslint-disable-line
 
   const searchTours = () => {
     history('/catalog');

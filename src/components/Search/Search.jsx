@@ -4,7 +4,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
-import React, {memo, useCallback, useMemo, useState} from "react";
+import React, {memo, useMemo, useState} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
@@ -15,10 +15,11 @@ import Select from "@mui/material/Select";
 import Popover from "@mui/material/Popover";
 import {clsx} from "clsx";
 import {MEALS, STARTS} from "../../helpers/constants";
+import {selectSearchForm} from "../../selectors/general";
 
 const Search = ({setSelectedFilters}) => {
 
-  const searchForm = useSelector((state) => state.general.searchForm);
+  const searchForm = useSelector(selectSearchForm);
   const {searchFormData, setSearchFormData, searchTours} = useSearch();
   const [touristsAnchorEl, setTouristsAnchorEl] = useState(null);
   const [nightsAnchorEl, setNightsAnchorEl] = useState(null);
@@ -87,13 +88,13 @@ const Search = ({setSelectedFilters}) => {
     return value;
   }, [searchFormData.adults, searchFormData.kids])
 
-  const getStartsValueTitle = useCallback((selected) => {
+  const getStartsValueTitle = (selected) => {
     return selected.map(item => STARTS[item]).join(', ')
-  }, [searchFormData.stars])
+  }
 
-  const getMealsValueTitle = useCallback((selected) => {
+  const getMealsValueTitle = (selected) => {
     return selected.map(item => MEALS[item].name).join(', ')
-  }, [searchFormData.meals])
+  }
 
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
