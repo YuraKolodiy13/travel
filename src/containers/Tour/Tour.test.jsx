@@ -1,4 +1,4 @@
-import {render} from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import Tour from "./Tour";
 import {MemoryRouter} from "react-router";
 import {Provider} from "react-redux";
@@ -31,6 +31,18 @@ describe('testing Tour page', () => {
       </Provider>
       );
     expect(getByTestId('tour-page')).toBeInTheDocument()
+  })
+
+  test('reviews should be on the page', () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Tour/>
+        </MemoryRouter>
+      </Provider>
+    );
+    expect(screen.getByText('Reviews of tourists')).toBeInTheDocument()
+    expect(screen.getByText('Load More')).toBeInTheDocument()
   })
 
 })
