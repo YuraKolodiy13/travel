@@ -24,9 +24,9 @@ Object {
                   <div
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    aria-labelledby="mui-15"
+                    aria-labelledby="mui-55"
                     class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                    id="mui-15"
+                    id="mui-55"
                     role="button"
                     tabindex="0"
                   >
@@ -41,7 +41,7 @@ Object {
                     class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                     name="cityFrom"
                     tabindex="-1"
-                    value=""
+                    value="13"
                   />
                   <svg
                     aria-hidden="true"
@@ -85,9 +85,9 @@ Object {
                   <div
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    aria-labelledby="mui-16"
+                    aria-labelledby="mui-56"
                     class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                    id="mui-16"
+                    id="mui-56"
                     role="button"
                     tabindex="0"
                   >
@@ -145,8 +145,8 @@ Object {
                 <label
                   class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for="mui-17"
-                  id="mui-17-label"
+                  for="mui-57"
+                  id="mui-57-label"
                 >
                   Start
                 </label>
@@ -156,11 +156,11 @@ Object {
                   <input
                     aria-invalid="false"
                     class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id="mui-17"
+                    id="mui-57"
                     name="date"
                     placeholder="mm/dd/yyyy"
                     type="tel"
-                    value="09/06/2022-09/20/2022"
+                    value="09/13/2022-09/27/2022"
                   />
                   <fieldset
                     aria-hidden="true"
@@ -186,7 +186,7 @@ Object {
               type="button"
             >
               <span>
-                7-7 ночей
+                7 ночей
               </span>
             </button>
           </div>
@@ -198,7 +198,7 @@ Object {
               type="button"
             >
               <span>
-                3 туриста
+                2 туриста
               </span>
             </button>
           </div>
@@ -214,7 +214,7 @@ Object {
               role="button"
               tabindex="0"
             >
-              3, 4, 7
+              3, 4, 5
             </div>
             <input
               aria-hidden="true"
@@ -261,7 +261,7 @@ Object {
               role="button"
               tabindex="0"
             >
-              1, 2
+              Все включено (AI), Ультра все включено (UAI)
             </div>
             <input
               aria-hidden="true"
@@ -329,10 +329,367 @@ Object {
                   >
                     <div
                       class="rsis-image"
-                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/57835/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
                     />
                     <div
-                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/57835/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    />
+                  </div>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to left"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%;"
+                    />
+                  </button>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to right"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%; transform: rotate(180deg);"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__header"
+              >
+                <div
+                  class="hotelCard__left"
+                >
+                  <span
+                    aria-label="4 Stars"
+                    class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                    role="img"
+                  >
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarBorderIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarBorderIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <h3>
+                    MATIAT HOTEL
+                  </h3>
+                  <cite>
+                    Туреччина
+                    , 
+                    Стамбул
+                  </cite>
+                </div>
+                <div
+                  class="hotelCard__right"
+                >
+                  <span>
+                    4
+                     review
+                    s
+                  </span>
+                  <div
+                    class="rating-block"
+                  >
+                    8,4
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="hotelCard__main"
+              >
+                <li>
+                  Включно з перельотом (
+                  Будапешт
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  14
+                  .
+                  09
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  9
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Dbl (Standard)
+                </li>
+                <li>
+                  Сніданок (BB)
+                </li>
+              </ul>
+              <div
+                class="hotelCard__footer"
+              >
+                <div
+                  class="hotelCard__price"
+                >
+                  <span>
+                    $
+                    1,040
+                  </span>
+                  /
+                  <span>
+                    41,600
+                    грн
+                  </span>
+                </div>
+                <div
+                  class="hotelCard__btns"
+                >
+                  <button
+                    class="button primary"
+                  >
+                    <span>
+                      Вибрати
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="hotelCard__link"
+              href="/countries/tr/matiat-hotel?q=2p3711281728535647136c83"
+            />
+          </div>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+              >
+                <div
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-container"
+                    style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                  >
+                    <div
+                      class="rsis-image"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/166971/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    />
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/166971/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
                     />
                   </div>
                   <button
@@ -574,26 +931,26 @@ Object {
                     </span>
                   </span>
                   <h3>
-                    Il Mercato Hotel (ex.Iberotel Il Mercato)
+                    Bricks Airport Hotel Istanbul
                   </h3>
                   <cite>
-                    Египет
+                    Туреччина
                     , 
-                    Шарм-эль-Шейх
+                    Стамбул
                   </cite>
                 </div>
                 <div
                   class="hotelCard__right"
                 >
                   <span>
-                    329
+                    103
                      review
                     s
                   </span>
                   <div
                     class="rating-block"
                   >
-                    8
+                    8,6
                   </div>
                 </div>
               </div>
@@ -602,13 +959,1084 @@ Object {
               >
                 <li>
                   Включно з перельотом (
-                  Киев
+                  Будапешт
                   )
                 </li>
                 <li>
                   Виліт на відпочинок 
                   
-                  12
+                  16
+                  .
+                  09
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  7
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Dbl (Superior)
+                </li>
+                <li>
+                  Сніданок (BB)
+                </li>
+              </ul>
+              <div
+                class="hotelCard__footer"
+              >
+                <div
+                  class="hotelCard__price"
+                >
+                  <span>
+                    $
+                    1,363
+                  </span>
+                  /
+                  <span>
+                    54,520
+                    грн
+                  </span>
+                </div>
+                <div
+                  class="hotelCard__btns"
+                >
+                  <button
+                    class="button primary"
+                  >
+                    <span>
+                      Вибрати
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="hotelCard__link"
+              href="/countries/tr/bricks-hotel?q=2p2460723119090374132c83"
+            />
+          </div>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+              >
+                <div
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-container"
+                    style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                  >
+                    <div
+                      class="rsis-image"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34247/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    />
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34247/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    />
+                  </div>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to left"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%;"
+                    />
+                  </button>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to right"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%; transform: rotate(180deg);"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__header"
+              >
+                <div
+                  class="hotelCard__left"
+                >
+                  <span
+                    aria-label="5 Stars"
+                    class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                    role="img"
+                  >
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <h3>
+                    Pyramisa Sahl Hasheesh
+                  </h3>
+                  <cite>
+                    Єгипет
+                    , 
+                    Сахль-Хашиш
+                  </cite>
+                </div>
+                <div
+                  class="hotelCard__right"
+                >
+                  <span>
+                    140
+                     review
+                    s
+                  </span>
+                  <div
+                    class="rating-block"
+                  >
+                    8,4
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="hotelCard__main"
+              >
+                <li>
+                  Включно з перельотом (
+                  Варшава
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  05
+                  .
+                  10
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  7
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Premium Room / Land view
+                </li>
+                <li>
+                  Все включено (AI)
+                </li>
+              </ul>
+              <div
+                class="hotelCard__footer"
+              >
+                <div
+                  class="hotelCard__price"
+                >
+                  <span>
+                    $
+                    2,419
+                  </span>
+                  /
+                  <span>
+                    67,974
+                    грн
+                  </span>
+                </div>
+                <div
+                  class="hotelCard__btns"
+                >
+                  <button
+                    class="button primary"
+                  >
+                    <span>
+                      Вибрати
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="hotelCard__link"
+              href="/countries/eg/pyramisa-sahl-hasheesh?q=2m6806532797193383496c25"
+            />
+          </div>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+              >
+                <div
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-container"
+                    style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                  >
+                    <div
+                      class="rsis-image"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/33933/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    />
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/33933/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    />
+                  </div>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to left"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%;"
+                    />
+                  </button>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to right"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%; transform: rotate(180deg);"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__header"
+              >
+                <div
+                  class="hotelCard__left"
+                >
+                  <span
+                    aria-label="5 Stars"
+                    class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                    role="img"
+                  >
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <h3>
+                    Tropitel Sahl Hasheesh
+                  </h3>
+                  <cite>
+                    Єгипет
+                    , 
+                    Сахль-Хашиш
+                  </cite>
+                </div>
+                <div
+                  class="hotelCard__right"
+                >
+                  <span>
+                    199
+                     review
+                    s
+                  </span>
+                  <div
+                    class="rating-block"
+                  >
+                    9
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="hotelCard__main"
+              >
+                <li>
+                  Включно з перельотом (
+                  Варшава
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  05
+                  .
+                  10
+                  <span
+                    class="hotelCard__time"
+                  >
+                    Час
+                  </span>
+                </li>
+                <li>
+                  На 
+                  7
+                   ночей
+                </li>
+                <li>
+                  Ціна за 
+                  2
+                   туриста
+                </li>
+                <li>
+                  Deluxe Garden Or Pool View Room
+                </li>
+                <li>
+                  Все включено (AI)
+                </li>
+              </ul>
+              <div
+                class="hotelCard__footer"
+              >
+                <div
+                  class="hotelCard__price"
+                >
+                  <span>
+                    $
+                    2,029
+                  </span>
+                  /
+                  <span>
+                    84,407
+                    грн
+                  </span>
+                </div>
+                <div
+                  class="hotelCard__btns"
+                >
+                  <button
+                    class="button primary"
+                  >
+                    <span>
+                      Вибрати
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="hotelCard__link"
+              href="/countries/eg/tropitel-sahl-hasheesh?q=2m8128699269021999403c25"
+            />
+          </div>
+          <div
+            class="HotelCard"
+          >
+            <div
+              class="hotelCard__img"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+              >
+                <div
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-container"
+                    style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                  >
+                    <div
+                      class="rsis-image"
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/42819/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    />
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/42819/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    />
+                  </div>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to left"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%;"
+                    />
+                  </button>
+                  <button
+                    style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                    type="button"
+                  >
+                    <img
+                      alt="slide to right"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                      style="width: 100%; transform: rotate(180deg);"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hotelCard__info"
+            >
+              <div
+                class="hotelCard__header"
+              >
+                <div
+                  class="hotelCard__left"
+                >
+                  <span
+                    aria-label="5 Stars"
+                    class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                    role="img"
+                  >
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                    >
+                      <span
+                        style="width: 0%; overflow: hidden; position: absolute;"
+                      >
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span>
+                        <span
+                          class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                            data-testid="StarIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <h3>
+                    RIU BAMBU CLUBHOTEL
+                  </h3>
+                  <cite>
+                    Домініканська республіка
+                    , 
+                    Пунта-Кана
+                  </cite>
+                </div>
+                <div
+                  class="hotelCard__right"
+                >
+                  <span>
+                    118
+                     review
+                    s
+                  </span>
+                  <div
+                    class="rating-block"
+                  >
+                    8,6
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="hotelCard__main"
+              >
+                <li>
+                  Включно з перельотом (
+                  Київ
+                  )
+                </li>
+                <li>
+                  Виліт на відпочинок 
+                  
+                  17
                   .
                   09
                   <span
@@ -628,7 +2056,7 @@ Object {
                    туриста
                 </li>
                 <li>
-                  Standard Room
+                  STD
                 </li>
                 <li>
                   Все включено (AI)
@@ -642,11 +2070,11 @@ Object {
                 >
                   <span>
                     $
-                    1,561
+                    4,350
                   </span>
                   /
                   <span>
-                    45,660
+                    174,000
                     грн
                   </span>
                 </div>
@@ -665,7 +2093,7 @@ Object {
             </div>
             <a
               class="hotelCard__link"
-              href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
+              href="/countries/do/clubhotel-riu-bambu?q=2m993695720448273324c23"
             />
           </div>
         </div>
@@ -692,9 +2120,9 @@ Object {
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  aria-labelledby="mui-15"
+                  aria-labelledby="mui-55"
                   class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-15"
+                  id="mui-55"
                   role="button"
                   tabindex="0"
                 >
@@ -709,7 +2137,7 @@ Object {
                   class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                   name="cityFrom"
                   tabindex="-1"
-                  value=""
+                  value="13"
                 />
                 <svg
                   aria-hidden="true"
@@ -753,9 +2181,9 @@ Object {
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  aria-labelledby="mui-16"
+                  aria-labelledby="mui-56"
                   class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-16"
+                  id="mui-56"
                   role="button"
                   tabindex="0"
                 >
@@ -813,8 +2241,8 @@ Object {
               <label
                 class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
-                for="mui-17"
-                id="mui-17-label"
+                for="mui-57"
+                id="mui-57-label"
               >
                 Start
               </label>
@@ -824,11 +2252,11 @@ Object {
                 <input
                   aria-invalid="false"
                   class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-17"
+                  id="mui-57"
                   name="date"
                   placeholder="mm/dd/yyyy"
                   type="tel"
-                  value="09/06/2022-09/20/2022"
+                  value="09/13/2022-09/27/2022"
                 />
                 <fieldset
                   aria-hidden="true"
@@ -854,7 +2282,7 @@ Object {
             type="button"
           >
             <span>
-              7-7 ночей
+              7 ночей
             </span>
           </button>
         </div>
@@ -866,7 +2294,7 @@ Object {
             type="button"
           >
             <span>
-              3 туриста
+              2 туриста
             </span>
           </button>
         </div>
@@ -882,7 +2310,7 @@ Object {
             role="button"
             tabindex="0"
           >
-            3, 4, 7
+            3, 4, 5
           </div>
           <input
             aria-hidden="true"
@@ -929,7 +2357,7 @@ Object {
             role="button"
             tabindex="0"
           >
-            1, 2
+            Все включено (AI), Ультра все включено (UAI)
           </div>
           <input
             aria-hidden="true"
@@ -997,10 +2425,367 @@ Object {
                 >
                   <div
                     class="rsis-image"
-                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/57835/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
                   />
                   <div
-                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34256/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/57835/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  />
+                </div>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to left"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%;"
+                  />
+                </button>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to right"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%; transform: rotate(180deg);"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hotelCard__info"
+          >
+            <div
+              class="hotelCard__header"
+            >
+              <div
+                class="hotelCard__left"
+              >
+                <span
+                  aria-label="4 Stars"
+                  class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                  role="img"
+                >
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarBorderIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarBorderIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <h3>
+                  MATIAT HOTEL
+                </h3>
+                <cite>
+                  Туреччина
+                  , 
+                  Стамбул
+                </cite>
+              </div>
+              <div
+                class="hotelCard__right"
+              >
+                <span>
+                  4
+                   review
+                  s
+                </span>
+                <div
+                  class="rating-block"
+                >
+                  8,4
+                </div>
+              </div>
+            </div>
+            <ul
+              class="hotelCard__main"
+            >
+              <li>
+                Включно з перельотом (
+                Будапешт
+                )
+              </li>
+              <li>
+                Виліт на відпочинок 
+                
+                14
+                .
+                09
+                <span
+                  class="hotelCard__time"
+                >
+                  Час
+                </span>
+              </li>
+              <li>
+                На 
+                9
+                 ночей
+              </li>
+              <li>
+                Ціна за 
+                2
+                 туриста
+              </li>
+              <li>
+                Dbl (Standard)
+              </li>
+              <li>
+                Сніданок (BB)
+              </li>
+            </ul>
+            <div
+              class="hotelCard__footer"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <span>
+                  $
+                  1,040
+                </span>
+                /
+                <span>
+                  41,600
+                  грн
+                </span>
+              </div>
+              <div
+                class="hotelCard__btns"
+              >
+                <button
+                  class="button primary"
+                >
+                  <span>
+                    Вибрати
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            class="hotelCard__link"
+            href="/countries/tr/matiat-hotel?q=2p3711281728535647136c83"
+          />
+        </div>
+        <div
+          class="HotelCard"
+        >
+          <div
+            class="hotelCard__img"
+          >
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-container"
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-image"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/166971/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  />
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/166971/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
                   />
                 </div>
                 <button
@@ -1242,26 +3027,26 @@ Object {
                   </span>
                 </span>
                 <h3>
-                  Il Mercato Hotel (ex.Iberotel Il Mercato)
+                  Bricks Airport Hotel Istanbul
                 </h3>
                 <cite>
-                  Египет
+                  Туреччина
                   , 
-                  Шарм-эль-Шейх
+                  Стамбул
                 </cite>
               </div>
               <div
                 class="hotelCard__right"
               >
                 <span>
-                  329
+                  103
                    review
                   s
                 </span>
                 <div
                   class="rating-block"
                 >
-                  8
+                  8,6
                 </div>
               </div>
             </div>
@@ -1270,13 +3055,1084 @@ Object {
             >
               <li>
                 Включно з перельотом (
-                Киев
+                Будапешт
                 )
               </li>
               <li>
                 Виліт на відпочинок 
                 
-                12
+                16
+                .
+                09
+                <span
+                  class="hotelCard__time"
+                >
+                  Час
+                </span>
+              </li>
+              <li>
+                На 
+                7
+                 ночей
+              </li>
+              <li>
+                Ціна за 
+                2
+                 туриста
+              </li>
+              <li>
+                Dbl (Superior)
+              </li>
+              <li>
+                Сніданок (BB)
+              </li>
+            </ul>
+            <div
+              class="hotelCard__footer"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <span>
+                  $
+                  1,363
+                </span>
+                /
+                <span>
+                  54,520
+                  грн
+                </span>
+              </div>
+              <div
+                class="hotelCard__btns"
+              >
+                <button
+                  class="button primary"
+                >
+                  <span>
+                    Вибрати
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            class="hotelCard__link"
+            href="/countries/tr/bricks-hotel?q=2p2460723119090374132c83"
+          />
+        </div>
+        <div
+          class="HotelCard"
+        >
+          <div
+            class="hotelCard__img"
+          >
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-container"
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-image"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34247/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  />
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/34247/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  />
+                </div>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to left"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%;"
+                  />
+                </button>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to right"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%; transform: rotate(180deg);"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hotelCard__info"
+          >
+            <div
+              class="hotelCard__header"
+            >
+              <div
+                class="hotelCard__left"
+              >
+                <span
+                  aria-label="5 Stars"
+                  class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                  role="img"
+                >
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <h3>
+                  Pyramisa Sahl Hasheesh
+                </h3>
+                <cite>
+                  Єгипет
+                  , 
+                  Сахль-Хашиш
+                </cite>
+              </div>
+              <div
+                class="hotelCard__right"
+              >
+                <span>
+                  140
+                   review
+                  s
+                </span>
+                <div
+                  class="rating-block"
+                >
+                  8,4
+                </div>
+              </div>
+            </div>
+            <ul
+              class="hotelCard__main"
+            >
+              <li>
+                Включно з перельотом (
+                Варшава
+                )
+              </li>
+              <li>
+                Виліт на відпочинок 
+                
+                05
+                .
+                10
+                <span
+                  class="hotelCard__time"
+                >
+                  Час
+                </span>
+              </li>
+              <li>
+                На 
+                7
+                 ночей
+              </li>
+              <li>
+                Ціна за 
+                2
+                 туриста
+              </li>
+              <li>
+                Premium Room / Land view
+              </li>
+              <li>
+                Все включено (AI)
+              </li>
+            </ul>
+            <div
+              class="hotelCard__footer"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <span>
+                  $
+                  2,419
+                </span>
+                /
+                <span>
+                  67,974
+                  грн
+                </span>
+              </div>
+              <div
+                class="hotelCard__btns"
+              >
+                <button
+                  class="button primary"
+                >
+                  <span>
+                    Вибрати
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            class="hotelCard__link"
+            href="/countries/eg/pyramisa-sahl-hasheesh?q=2m6806532797193383496c25"
+          />
+        </div>
+        <div
+          class="HotelCard"
+        >
+          <div
+            class="hotelCard__img"
+          >
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-container"
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-image"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/33933/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  />
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/33933/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  />
+                </div>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to left"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%;"
+                  />
+                </button>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to right"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%; transform: rotate(180deg);"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hotelCard__info"
+          >
+            <div
+              class="hotelCard__header"
+            >
+              <div
+                class="hotelCard__left"
+              >
+                <span
+                  aria-label="5 Stars"
+                  class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                  role="img"
+                >
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <h3>
+                  Tropitel Sahl Hasheesh
+                </h3>
+                <cite>
+                  Єгипет
+                  , 
+                  Сахль-Хашиш
+                </cite>
+              </div>
+              <div
+                class="hotelCard__right"
+              >
+                <span>
+                  199
+                   review
+                  s
+                </span>
+                <div
+                  class="rating-block"
+                >
+                  9
+                </div>
+              </div>
+            </div>
+            <ul
+              class="hotelCard__main"
+            >
+              <li>
+                Включно з перельотом (
+                Варшава
+                )
+              </li>
+              <li>
+                Виліт на відпочинок 
+                
+                05
+                .
+                10
+                <span
+                  class="hotelCard__time"
+                >
+                  Час
+                </span>
+              </li>
+              <li>
+                На 
+                7
+                 ночей
+              </li>
+              <li>
+                Ціна за 
+                2
+                 туриста
+              </li>
+              <li>
+                Deluxe Garden Or Pool View Room
+              </li>
+              <li>
+                Все включено (AI)
+              </li>
+            </ul>
+            <div
+              class="hotelCard__footer"
+            >
+              <div
+                class="hotelCard__price"
+              >
+                <span>
+                  $
+                  2,029
+                </span>
+                /
+                <span>
+                  84,407
+                  грн
+                </span>
+              </div>
+              <div
+                class="hotelCard__btns"
+              >
+                <button
+                  class="button primary"
+                >
+                  <span>
+                    Вибрати
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            class="hotelCard__link"
+            href="/countries/eg/tropitel-sahl-hasheesh?q=2m8128699269021999403c25"
+          />
+        </div>
+        <div
+          class="HotelCard"
+        >
+          <div
+            class="hotelCard__img"
+          >
+            <div
+              style="display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"
+            >
+              <div
+                style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 100%; height: 100%;"
+              >
+                <div
+                  class="rsis-container"
+                  style="display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                >
+                  <div
+                    class="rsis-image"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/42819/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  />
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/42819/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  />
+                </div>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; left: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to left"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%;"
+                  />
+                </button>
+                <button
+                  style="display: block; margin: -25px 0px 0px 0px; padding: 0px; border: 0px; position: absolute; top: 50%; cursor: pointer; outline: none; background: none; right: 30px; width: 50px;"
+                  type="button"
+                >
+                  <img
+                    alt="slide to right"
+                    src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3e %3cdefs%3e %3cfilter id='8utpkffr2a' width='171.8%25' height='232.4%25' x='-35.9%25' y='-66.2%25' filterUnits='objectBoundingBox'%3e %3cfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3e %3cfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3e %3cfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3e %3c/filter%3e %3cpath id='6inzdknobb' d='M20 6.999L20.707 7.706 12.354 16.06 4 7.706 4.707 6.999 12.354 14.646z'/%3e %3c/defs%3e %3cg fill='none' fill-rule='evenodd'%3e %3cg%3e %3cg%3e %3cg transform='translate(-67 -27) translate(67 27) rotate(90 12.354 11.53)'%3e %3cuse fill='black' filter='url(%238utpkffr2a)' xlink:href='%236inzdknobb'/%3e %3cuse fill='white' xlink:href='%236inzdknobb'/%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e"
+                    style="width: 100%; transform: rotate(180deg);"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hotelCard__info"
+          >
+            <div
+              class="hotelCard__header"
+            >
+              <div
+                class="hotelCard__left"
+              >
+                <span
+                  aria-label="5 Stars"
+                  class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
+                  role="img"
+                >
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiRating-decimal css-34he1w-MuiRating-decimal"
+                  >
+                    <span
+                      style="width: 0%; overflow: hidden; position: absolute;"
+                    >
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span>
+                      <span
+                        class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                          data-testid="StarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <h3>
+                  RIU BAMBU CLUBHOTEL
+                </h3>
+                <cite>
+                  Домініканська республіка
+                  , 
+                  Пунта-Кана
+                </cite>
+              </div>
+              <div
+                class="hotelCard__right"
+              >
+                <span>
+                  118
+                   review
+                  s
+                </span>
+                <div
+                  class="rating-block"
+                >
+                  8,6
+                </div>
+              </div>
+            </div>
+            <ul
+              class="hotelCard__main"
+            >
+              <li>
+                Включно з перельотом (
+                Київ
+                )
+              </li>
+              <li>
+                Виліт на відпочинок 
+                
+                17
                 .
                 09
                 <span
@@ -1296,7 +4152,7 @@ Object {
                  туриста
               </li>
               <li>
-                Standard Room
+                STD
               </li>
               <li>
                 Все включено (AI)
@@ -1310,11 +4166,11 @@ Object {
               >
                 <span>
                   $
-                  1,561
+                  4,350
                 </span>
                 /
                 <span>
-                  45,660
+                  174,000
                   грн
                 </span>
               </div>
@@ -1333,7 +4189,7 @@ Object {
           </div>
           <a
             class="hotelCard__link"
-            href="/countries/eg/il-mercato-hotel?q=2m5136450731218604758c25"
+            href="/countries/do/clubhotel-riu-bambu?q=2m993695720448273324c23"
           />
         </div>
       </div>

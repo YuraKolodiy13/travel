@@ -4,6 +4,8 @@ import {MemoryRouter} from "react-router";
 import {Provider} from "react-redux";
 import React from "react";
 import configureStore from "redux-mock-store";
+import {tourMock} from "../../mock/tour";
+import {reviewsMock} from "../../mock/reviews";
 
 describe('testing Tour page', () => {
 
@@ -14,8 +16,9 @@ describe('testing Tour page', () => {
     },
     tour: {
       loading: false,
-      tourInfo: {},
+      tourInfo: tourMock,
       otherTours: [],
+      reviews: reviewsMock
     }
   })
 
