@@ -22,3 +22,28 @@ export const getFullDate = date => {
 };
 
 export const commify = (num) => num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") || '';
+
+export const getNightsValue = (nightsFrom, nightsTo) => {
+  let value = '';
+  if(nightsFrom === nightsTo){
+    value += nightsFrom
+  }else {
+    value += `${nightsFrom}-${nightsTo}`
+  }
+  if(nightsTo === 1){
+    value += ' ніч'
+  }else if(nightsTo < 5){
+    value += ' ночі'
+  }else {
+    value += ' ночей'
+  }
+  return value
+}
+
+export const getTouristsValue = (adults, kids) => {
+  let value = adults + kids;
+  if(value === 1) value += ' турист'
+  else if(value < 5) value += ' туриста'
+  else value += ' туристів'
+  return value;
+}

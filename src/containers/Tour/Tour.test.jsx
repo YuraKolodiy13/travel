@@ -41,8 +41,9 @@ describe('testing Tour page', () => {
         </MemoryRouter>
       </Provider>
     );
-    expect(screen.getByText('Reviews of tourists')).toBeInTheDocument()
-    expect(screen.getByText('Load More')).toBeInTheDocument()
+    expect(screen.getByText('Reviews of tourists')).toBeInTheDocument();
+    expect(screen.getByText('Завантажити більше')).toBeInTheDocument();
+    expect(screen.getByText('Опис готелю')).toBeInTheDocument();
   })
 
 })

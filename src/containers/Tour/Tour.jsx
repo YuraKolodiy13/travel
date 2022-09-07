@@ -120,7 +120,7 @@ const Tour = () => {
                   )}
                 </ul>
                 {reviews.total > reviews.items.length && (
-                  <Button title='Load More' color='primary' doAction={loadMoreReviews}/>
+                  <Button title='Завантажити більше' color='primary' doAction={loadMoreReviews}/>
                 )}
               </div>
             )}

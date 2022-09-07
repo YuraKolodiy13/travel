@@ -53,7 +53,7 @@ const Countries = () => {
               </ul>
             </Collapse>
             <Button
-              title={`show ${showAllOtherCountries ? 'less' : 'more'}`}
+              title={`Показати ${showAllOtherCountries ? 'менше' : 'більше'}`}
               color='primary'
               doAction={() => setShowAllOtherCountries(!showAllOtherCountries)}
             />

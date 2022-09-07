@@ -1,4 +1,4 @@
-import {commify, getFullDate, getTimeDuration} from "./global";
+import {commify, getFullDate, getNightsValue, getTimeDuration, getTouristsValue} from "./global";
 
 describe('testing global helpers', () => {
 
@@ -18,6 +18,21 @@ describe('testing global helpers', () => {
     expect(commify(2520)).toBe('2,520');
     expect(commify(53023243)).toBe('53,023,243');
     expect(commify(54353)).not.toBe('54353');
+  })
+
+  test('testing getNightsValue func', () => {
+    expect(getNightsValue(1, 1)).toBe('1 ніч');
+    expect(getNightsValue(4, 8)).toBe('4-8 ночей');
+    expect(getNightsValue(3, 4)).toBe('3-4 ночі');
+    expect(getNightsValue(3, 4)).not.toBe('3-4 ночей');
+    expect(getNightsValue(9, 9)).not.toBe('9-9 ночей');
+  })
+
+  test('testing getTouristsValue func', () => {
+    expect(getTouristsValue(2, 1)).toBe('3 туриста');
+    expect(getTouristsValue(1, 0)).toBe('1 турист');
+    expect(getTouristsValue(5, 2)).toBe('7 туристів');
+    expect(getTouristsValue(2, 2)).not.toBe('4 туристів');
   })
 
 })

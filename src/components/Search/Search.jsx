@@ -16,6 +16,7 @@ import Popover from "@mui/material/Popover";
 import {clsx} from "clsx";
 import {MEALS, STARTS} from "../../helpers/constants";
 import {selectSearchForm} from "../../selectors/general";
+import {getNightsValue, getTouristsValue} from "../../helpers/global";
 
 const Search = ({setSelectedFilters}) => {
 
@@ -64,28 +65,11 @@ const Search = ({setSelectedFilters}) => {
   }
 
   const getNightsValueTitle = useMemo(() => {
-    let value = '';
-    if(searchFormData.nightsFrom === searchFormData.nightsTo){
-      value += searchFormData.nightsFrom
-    }else {
-      value += `${searchFormData.nightsFrom}-${searchFormData.nightsTo}`
-    }
-    if(searchFormData.nightsTo === 1){
-      value += ' ніч'
-    }else if(searchFormData.nightsTo < 5){
-      value += ' ночі'
-    }else {
-      value += ' ночей'
-    }
-    return value
+    return getNightsValue(searchFormData.nightsFrom, searchFormData.nightsTo);
   }, [searchFormData.nightsFrom, searchFormData.nightsTo])
 
   const getTouristsValueTitle = useMemo(() => {
-    let value = searchFormData.adults + searchFormData.kids;
-    if(value === 1) value += ' турист'
-    else if(value < 5) value += ' туриста'
-    else value += ' туристів'
-    return value;
+    return getTouristsValue(searchFormData.adults, searchFormData.kids);
   }, [searchFormData.adults, searchFormData.kids])
 
   const getStartsValueTitle = (selected) => {

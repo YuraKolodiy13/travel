@@ -23,10 +23,10 @@ Object {
               >
                 <div
                   class="rsis-image"
-                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/88842/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
                 />
                 <div
-                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                  style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/88842/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
                 />
               </div>
               <button
@@ -62,7 +62,7 @@ Object {
               class="hotelCard__left"
             >
               <span
-                aria-label="3 Stars"
+                aria-label="5 Stars"
                 class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
                 role="img"
               >
@@ -193,34 +193,34 @@ Object {
                     style="width: 0%; overflow: hidden; position: absolute;"
                   >
                     <span
-                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                     >
                       <svg
                         aria-hidden="true"
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                        data-testid="StarBorderIcon"
+                        data-testid="StarIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                         />
                       </svg>
                     </span>
                   </span>
                   <span>
                     <span
-                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                     >
                       <svg
                         aria-hidden="true"
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                        data-testid="StarBorderIcon"
+                        data-testid="StarIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                         />
                       </svg>
                     </span>
@@ -233,34 +233,34 @@ Object {
                     style="width: 0%; overflow: hidden; position: absolute;"
                   >
                     <span
-                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                     >
                       <svg
                         aria-hidden="true"
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                        data-testid="StarBorderIcon"
+                        data-testid="StarIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                         />
                       </svg>
                     </span>
                   </span>
                   <span>
                     <span
-                      class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                      class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                     >
                       <svg
                         aria-hidden="true"
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                        data-testid="StarBorderIcon"
+                        data-testid="StarIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                         />
                       </svg>
                     </span>
@@ -268,26 +268,26 @@ Object {
                 </span>
               </span>
               <h3>
-                Desert View Sharm
+                Robinson Club Masmavi (Ex.Jacaranda Belek)
               </h3>
               <cite>
-                Египет
+                Туреччина
                 , 
-                Шарм-эль-Шейх
+                Белек
               </cite>
             </div>
             <div
               class="hotelCard__right"
             >
               <span>
-                0
+                199
                  review
                 s
               </span>
               <div
                 class="rating-block"
               >
-                1
+                8,8
               </div>
             </div>
           </div>
@@ -296,39 +296,39 @@ Object {
           >
             <li>
               Включно з перельотом (
-              Львов
+              Кишинів
               )
             </li>
             <li>
               Виліт на відпочинок 
               
-              26
+              11
               .
-              01
+              10
               <span>
                  о 
-                06:05
+                13:20
                 ,
                  
                 Приліт 
-                10:20
+                16:20
                 , тривалість польоту 
-                4:15
+                3:00
               </span>
             </li>
             <li>
               Виліт додому 
               
-              21.07
+              24.09
               <span>
                  о 
-                11:20
+                11:30
                 ,
                  
                 Приліт 
-                15:40
+                12:40
                 , тривалість польоту 
-                4:20
+                1:10
               </span>
             </li>
             <li>
@@ -338,11 +338,11 @@ Object {
             </li>
             <li>
               Ціна за 
-              3
+              2
                туриста
             </li>
             <li>
-              Standard Room
+              Main Building Standard Room
             </li>
             <li>
               Все включено (AI)
@@ -356,11 +356,11 @@ Object {
             >
               <span>
                 $
-                410
+                1,876
               </span>
               /
               <span>
-                12,111
+                68,625
                 грн
               </span>
             </div>
@@ -379,7 +379,7 @@ Object {
         </div>
         <a
           class="hotelCard__link"
-          href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+          href="/countries/tr/robinson-club-masmavi?q=2p1203911010801578295c83"
         />
       </div>
     </div>
@@ -403,10 +403,10 @@ Object {
             >
               <div
                 class="rsis-image"
-                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/88842/0?size=thumb360); transform: translate3d(0%, 0px, 0px);"
               />
               <div
-                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/109691/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(https://img4.farvater.travel/mapkey/88842/1?size=thumb360); transform: translate3d(100%, 0px, 0px);"
               />
             </div>
             <button
@@ -442,7 +442,7 @@ Object {
             class="hotelCard__left"
           >
             <span
-              aria-label="3 Stars"
+              aria-label="5 Stars"
               class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-ryrseu-MuiRating-root"
               role="img"
             >
@@ -573,34 +573,34 @@ Object {
                   style="width: 0%; overflow: hidden; position: absolute;"
                 >
                   <span
-                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                   >
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                      data-testid="StarBorderIcon"
+                      data-testid="StarIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                       />
                     </svg>
                   </span>
                 </span>
                 <span>
                   <span
-                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                   >
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                      data-testid="StarBorderIcon"
+                      data-testid="StarIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                       />
                     </svg>
                   </span>
@@ -613,34 +613,34 @@ Object {
                   style="width: 0%; overflow: hidden; position: absolute;"
                 >
                   <span
-                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                   >
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                      data-testid="StarBorderIcon"
+                      data-testid="StarIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                       />
                     </svg>
                   </span>
                 </span>
                 <span>
                   <span
-                    class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+                    class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
                   >
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
-                      data-testid="StarBorderIcon"
+                      data-testid="StarIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                       />
                     </svg>
                   </span>
@@ -648,26 +648,26 @@ Object {
               </span>
             </span>
             <h3>
-              Desert View Sharm
+              Robinson Club Masmavi (Ex.Jacaranda Belek)
             </h3>
             <cite>
-              Египет
+              Туреччина
               , 
-              Шарм-эль-Шейх
+              Белек
             </cite>
           </div>
           <div
             class="hotelCard__right"
           >
             <span>
-              0
+              199
                review
               s
             </span>
             <div
               class="rating-block"
             >
-              1
+              8,8
             </div>
           </div>
         </div>
@@ -676,39 +676,39 @@ Object {
         >
           <li>
             Включно з перельотом (
-            Львов
+            Кишинів
             )
           </li>
           <li>
             Виліт на відпочинок 
             
-            26
+            11
             .
-            01
+            10
             <span>
                о 
-              06:05
+              13:20
               ,
                
               Приліт 
-              10:20
+              16:20
               , тривалість польоту 
-              4:15
+              3:00
             </span>
           </li>
           <li>
             Виліт додому 
             
-            21.07
+            24.09
             <span>
                о 
-              11:20
+              11:30
               ,
                
               Приліт 
-              15:40
+              12:40
               , тривалість польоту 
-              4:20
+              1:10
             </span>
           </li>
           <li>
@@ -718,11 +718,11 @@ Object {
           </li>
           <li>
             Ціна за 
-            3
+            2
              туриста
           </li>
           <li>
-            Standard Room
+            Main Building Standard Room
           </li>
           <li>
             Все включено (AI)
@@ -736,11 +736,11 @@ Object {
           >
             <span>
               $
-              410
+              1,876
             </span>
             /
             <span>
-              12,111
+              68,625
               грн
             </span>
           </div>
@@ -759,7 +759,7 @@ Object {
       </div>
       <a
         class="hotelCard__link"
-        href="/countries/eg/desert-view-sharm?q=74m5707037035017660892c25"
+        href="/countries/tr/robinson-club-masmavi?q=2p1203911010801578295c83"
       />
     </div>
   </div>,

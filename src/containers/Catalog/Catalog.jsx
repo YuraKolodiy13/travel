@@ -35,7 +35,7 @@ const Catalog = () => {
   const [collapsed, setCollapsed] = useState([]);
   const [selectedFilters, setSelectedFilters] = useState({});
   const isFiltered = useMemo(() => !!Object.keys(selectedFilters).length, [selectedFilters])
-  console.log(111)
+
   useEffect(() => {
     dispatch({
       type: SEARCH_FORM_REQUEST,
