@@ -142,14 +142,6 @@ Object {
               <div
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
-                <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
-                  data-shrink="true"
-                  for="mui-57"
-                  id="mui-57-label"
-                >
-                  Start
-                </label>
                 <div
                   class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
@@ -167,10 +159,12 @@ Object {
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1z7n62"
+                      class="css-173wfxe"
                     >
-                      <span>
-                        Start
+                      <span
+                        class="notranslate"
+                      >
+                        ​
                       </span>
                     </legend>
                   </fieldset>
@@ -2238,14 +2232,6 @@ Object {
             <div
               class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
             >
-              <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
-                data-shrink="true"
-                for="mui-57"
-                id="mui-57-label"
-              >
-                Start
-              </label>
               <div
                 class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
               >
@@ -2263,10 +2249,12 @@ Object {
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1z7n62"
+                    class="css-173wfxe"
                   >
-                    <span>
-                      Start
+                    <span
+                      class="notranslate"
+                    >
+                      ​
                     </span>
                   </legend>
                 </fieldset>

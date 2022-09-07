@@ -7,7 +7,7 @@ import Search from "../../components/Search/Search";
 import useSearch from "../../hooks/useSearch";
 import Button from "../../components/Button/Button";
 import Loader from "../../components/Loader/Loader";
-import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
+import {DEFAULT_SEARCH_VALUE, filtersNames} from "../../helpers/constants";
 import './Catalog.scss';
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -20,7 +20,7 @@ import {
   selectLoadingFilters,
   selectFilters
 } from "../../selectors/catalog";
-import {selectFlights} from "../../selectors/general";
+import {selectFlights, selectLoading} from "../../selectors/general";
 
 const Catalog = () => {
 
@@ -29,10 +29,11 @@ const Catalog = () => {
   const flights = useSelector(selectFlights);
   const loadingHotels = useSelector(selectLoadingHotels);
   const loadingFilters = useSelector(selectLoadingFilters);
+  const loadingSearchData = useSelector(selectLoading);
   const filters = useSelector(selectFilters);
   const dispatch = useDispatch();
   const {searchTours} = useSearch();
-  const [collapsed, setCollapsed] = useState([]);
+  const [expanded, setExpanded] = useState([1]);
   const [selectedFilters, setSelectedFilters] = useState({});
   const isFiltered = useMemo(() => !!Object.keys(selectedFilters).length, [selectedFilters])
 
@@ -69,10 +70,10 @@ const Catalog = () => {
 
   };
 
-  const toggleCollapsed = useCallback((item) => {
-    const newCollapsed = collapsed.includes(item) ? collapsed.filter(el => el !== item) : [...collapsed, item];
-    setCollapsed(newCollapsed);
-  }, [collapsed]);
+  const toggleExpanded = useCallback((item) => {
+    const newExpanded = expanded.includes(item) ? expanded.filter(el => el !== item) : [...expanded, item];
+    setExpanded(newExpanded);
+  }, [expanded]);
 
   const changeSelectedFilters = (name, typeId, id) => {
     let newItems = selectedFilters[name] ? [...selectedFilters[name].Values] : [];
@@ -86,7 +87,7 @@ const Catalog = () => {
   return (
     <div className='Catalog' data-testid='catalog-page'>
 
-      <Search setSelectedFilters={setSelectedFilters}/>
+      <Search setSelectedFilters={setSelectedFilters} loading={loadingSearchData}/>
 
       <div className='catalog__result'>
         {!loadingFilters
@@ -94,12 +95,12 @@ const Catalog = () => {
             {filters?.map(([key, value]) => !!value.Values.length &&
               <div key={value.TypeId}>
                 <h5
-                  onClick={() => toggleCollapsed(value.TypeId)}
-                  className={!collapsed.includes(value.TypeId) ? 'active' : ''}
+                  onClick={() => toggleExpanded(value.TypeId)}
+                  className={expanded.includes(value.TypeId) ? 'active' : ''}
                 >
-                  {key}
+                  {filtersNames[key]}
                 </h5>
-                <Collapse in={!collapsed.includes(value.TypeId)} timeout="auto" unmountOnExit>
+                <Collapse in={expanded.includes(value.TypeId)} timeout="auto" unmountOnExit>
                   <FormGroup>
                     {value.Values.map(el =>
                       <FormControlLabel

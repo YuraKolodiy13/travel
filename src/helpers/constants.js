@@ -254,4 +254,17 @@ export const MEALS = {
   }
 }
 
+export const filtersNames = {
+  ManualServices: 'Особливі фільтри',
+  Resorts: 'Курорти',
+  Prices: 'Бюджет поїздки',
+  Services: 'Параметри готелю',
+  Properties: 'Параметри курорту',
+  Rates: 'Рейтинг',
+  Stars: 'Зірки',
+  Meals: 'Харчування',
+  Operators: 'Оператори',
+}
+
+
 export const API_URL = 'https://farvater.travel/';
