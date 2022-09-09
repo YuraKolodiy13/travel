@@ -4,18 +4,16 @@ import './Header.scss'
 import {Link} from "react-router-dom";
 import LoginModal from "../Auth/LoginModal/LoginModal";
 import RegisterModal from "../Auth/RegisterModal/RegisterModal";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {selectUser} from "../../selectors/auth";
+import {CHANGE_THEME} from "../../actions/general";
 
 const Header = () => {
 
   const user = useSelector(selectUser);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
-
-  const toggle = () => {
-    document.querySelector('.App').classList.toggle('dark-mode-active');
-  }
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -47,7 +45,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="switcher" onClick={toggle}/>
+        <div className="switcher" onClick={() => dispatch({type: CHANGE_THEME})}/>
         <div className="dark-mode-container">
           <div className="dark-mode"/>
         </div>

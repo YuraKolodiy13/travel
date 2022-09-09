@@ -7,7 +7,7 @@ import {searchFormMock} from "../mock/searchForm";
 
 describe('testing general saga', () => {
   const action = {payload: DEFAULT_SEARCH_VALUE};
-  test('success triggers success action with searchForm', () => {
+  test('triggers success action with searchForm', () => {
 
     const generator = searchForm(action);
     const res = searchFormMock;
@@ -17,7 +17,7 @@ describe('testing general saga', () => {
     expect(generator.next().done).toEqual(true);
   });
 
-  test('failure triggers failure action', () => {
+  test('triggers failure action', () => {
     const generator = searchForm(action);
     const res = {};
 
@@ -29,10 +29,10 @@ describe('testing general saga', () => {
   });
 
   // test('should add new todo item with "addTodo" action', () => {
-  //   const action = { type: addTodo.type, payload: 'Hello' };
+  //   const action = { type: SEARCH_FORM_REQUEST, payload: DEFAULT_SEARCH_VALUE };
   //
-  //   const result = todoReducer([], action);
-  //
-  //   expect(result[0].text).toBe('Hello');
+  //   const result = call(Api.general.searchForm, action.payload);
+  //   console.log(result, 'result')
+  //   // expect(result[0].text).toBe('Hello');
   // });
 });

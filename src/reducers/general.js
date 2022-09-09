@@ -1,4 +1,5 @@
 import {
+  CHANGE_THEME,
   GET_FLIGHTS_INFO_SUCCESS,
   SEARCH_FORM_REQUEST,
   SEARCH_FORM_SUCCESS
@@ -8,6 +9,7 @@ const initialState = {
   loading: true,
   searchForm: {},
   flights: {},
+  theme: 'light'
 };
 
 export default function general(state = initialState, action) {
@@ -29,6 +31,12 @@ export default function general(state = initialState, action) {
       return {
         ...state,
         flights: {...state.flights, ...action.payload},
+      };
+
+    case CHANGE_THEME:
+      return {
+        ...state,
+        theme: state.theme === 'light' ? 'dark' : 'light'
       };
 
     default:

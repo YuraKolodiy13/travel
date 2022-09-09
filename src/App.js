@@ -7,11 +7,15 @@ import Catalog from "./containers/Catalog/Catalog";
 import './assets/styles/globals.scss'
 import Tours from "./containers/Tours/Tours";
 import Countries from "./containers/Countries/Countries";
+import {useSelector} from "react-redux";
+import {selectTheme} from "./selectors/general";
 
 const App = () => {
 
+  const theme = useSelector(selectTheme);
+
   return (
-    <div className='App'>
+    <div className={`App ${theme}`}>
       <div className="header-container">
         <Header/>
       </div>
