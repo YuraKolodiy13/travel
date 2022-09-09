@@ -1,7 +1,7 @@
 import {GET_FLIGHTS_INFO_REQUEST} from "../../actions/general";
 import {CLEAR_TOUR_DATA, GET_OTHER_TOURS_REQUEST, GET_TOUR_REQUEST, GET_TOUR_REVIEWS_REQUEST} from "../../actions/tour";
 import {useDispatch, useSelector} from "react-redux";
-import React, {memo, useEffect} from "react";
+import React, {memo, useEffect, useMemo} from "react";
 import GalleryGrid from "../../components/GalleryGrid/GalleryGrid";
 import './Tour.scss'
 import {useLocation} from "react-router";
@@ -22,7 +22,7 @@ const Tour = () => {
   const id = location.search.replace('?q=', '');
   const flights = useSelector(selectFlight(id));
   const loading = useSelector(selectLoading);
-  const path = location.pathname.split('/').slice(1);
+  const path = useMemo(() => location.pathname.split('/').slice(1), [location.pathname]);
 
   useEffect(() => {
     dispatch({type: GET_TOUR_REQUEST, payload: {pathname: location.pathname + location.search, body: {}}});

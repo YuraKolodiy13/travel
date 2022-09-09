@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {GET_TOURS_BY_COUNTRY_REQUEST} from "../../actions/tours";
 import {useLocation, useParams} from "react-router";
@@ -15,7 +15,7 @@ const Tours = () => {
   const dispatch = useDispatch();
   const {countryCode} = useParams();
   const location = useLocation()
-  const path = location.pathname.split('/').slice(1);
+  const path = useMemo(() => location.pathname.split('/').slice(1), [location.pathname]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 

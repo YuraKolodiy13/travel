@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {Link} from "react-router-dom";
 import './Breadcrumbs.scss'
 import {COUNTRIES_IDS} from "../../helpers/constants";
@@ -24,4 +24,4 @@ const Breadcrumbs = ({path}) => {
   )
 };
 
-export default Breadcrumbs;
+export default memo(Breadcrumbs);

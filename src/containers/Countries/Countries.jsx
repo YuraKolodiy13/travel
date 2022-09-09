@@ -1,6 +1,6 @@
 import CountryCard from "../../components/CountryCard/CountryCard";
 import Collapse from "@mui/material/Collapse";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import './Countries.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {SEARCH_FORM_REQUEST} from "../../actions/general";
@@ -16,7 +16,7 @@ const Countries = () => {
   const [showAllOtherCountries, setShowAllOtherCountries] = useState(false);
   const dispatch = useDispatch();
   const location = useLocation();
-  const path = location.pathname.split('/').slice(1);
+  const path = useMemo(() => location.pathname.split('/').slice(1), [location.pathname]);
 
   useEffect(() => {
     dispatch({

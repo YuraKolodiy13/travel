@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './Button.scss'
 const Button = ({title, color, doAction, type, disabled}) => {
   return (
@@ -8,4 +8,4 @@ const Button = ({title, color, doAction, type, disabled}) => {
   )
 };
 
-export default Button;
+export default memo(Button);

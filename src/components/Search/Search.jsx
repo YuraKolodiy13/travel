@@ -4,7 +4,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import TextField from "@mui/material/TextField";
-import React, {memo, useMemo, useState} from "react";
+import React, {memo, useCallback, useMemo, useState} from "react";
 import useSearch from "../../hooks/useSearch";
 import {useSelector} from "react-redux";
 import './Search.scss'
@@ -81,6 +81,9 @@ const Search = ({setSelectedFilters, loading}) => {
     return selected.map(item => MEALS[item].name).join(', ')
   }
 
+  const openNightsPopup = useCallback(e => setNightsAnchorEl(e.currentTarget), []);
+  const openTouristsPopup = useCallback(e => setTouristsAnchorEl(e.currentTarget), []);
+
   return (
     <ValidatorForm className='search-form' onSubmit={onSearchTour}>
       {!loading
@@ -151,7 +154,8 @@ const Search = ({setSelectedFilters, loading}) => {
             <div className="select-nights search-form__field">
               <Button
                 type='button'
-                doAction={e => setNightsAnchorEl(e.currentTarget)}
+                doAction={openNightsPopup}
+                // doAction={e => setNightsAnchorEl(e.currentTarget)}
                 title={getNightsValueTitle}
                 color='primary-inverse'
               />
@@ -187,7 +191,8 @@ const Search = ({setSelectedFilters, loading}) => {
             <div className="select-tourists search-form__field">
               <Button
                 type='button'
-                doAction={e => setTouristsAnchorEl(e.currentTarget)}
+                doAction={openTouristsPopup}
+                // doAction={e => setTouristsAnchorEl(e.currentTarget)}
                 title={getTouristsValueTitle}
                 color='primary-inverse'
               />
