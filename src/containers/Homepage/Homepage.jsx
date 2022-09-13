@@ -5,7 +5,7 @@ import {GET_HOT_TOURS_REQUEST, GET_RECOMMENDED_TOURS_REQUEST} from "../../action
 import Search from "../../components/Search/Search";
 import HotelCard from "../../components/HotelCard/HotelCard";
 import Loader from "../../components/Loader/Loader";
-import {DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
+import {DEFAULT_SEARCH_ALL_TOURS_VALUE, DEFAULT_SEARCH_VALUE} from "../../helpers/constants";
 import {selectFlights, selectLoading} from "../../selectors/general";
 import {selectHotTours, selectRecommendedTours} from "../../selectors/homepage";
 
@@ -24,51 +24,11 @@ const Homepage = () => {
     })
     dispatch({
       type: GET_HOT_TOURS_REQUEST,
-      payload: {
-        body: {
-          "landingId": null,
-          "country": -1,
-          "CountryAlpha": "vse-strany",
-          "operatorIntId": null,
-          "regions": [],
-          "resorts": [],
-          "hotels": [],
-          "townFrom": "LWO",
-          "cityFromCode": "LWO",
-          "cityFrom": 5,
-          "viewType": "horizontal",
-          "checkIn": null,
-          "dateFrom": null,
-          "systemKey": null,
-          "partnerType": null,
-          "nightFrom": null,
-          "nightTo": null
-        }
-      }
+      payload: DEFAULT_SEARCH_ALL_TOURS_VALUE
     })
     dispatch({
       type: GET_RECOMMENDED_TOURS_REQUEST,
-      payload: {
-        body: {
-          "landingId": null,
-          "country": -1,
-          "CountryAlpha": "vse-strany",
-          "operatorIntId": null,
-          "regions": [],
-          "resorts": [],
-          "hotels": [],
-          "townFrom": "LWO",
-          "cityFromCode": "LWO",
-          "cityFrom": 5,
-          "viewType": "horizontal",
-          "checkIn": null,
-          "dateFrom": null,
-          "systemKey": null,
-          "partnerType": null,
-          "nightFrom": null,
-          "nightTo": null
-        }
-      }
+      payload: DEFAULT_SEARCH_ALL_TOURS_VALUE
     })
   }, [dispatch]);
 

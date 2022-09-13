@@ -204,6 +204,29 @@ export const DEFAULT_SEARCH_VALUE = {
   },
 }
 
+export const DEFAULT_SEARCH_ALL_TOURS_VALUE = {
+  body: {
+    "landingId": null,
+    "country": -1,
+    "CountryAlpha": "vse-strany",
+    "operatorIntId": null,
+    "regions": [],
+    "resorts": [],
+    "hotels": [],
+    "townFrom": "LWO",
+    "cityFromCode": "LWO",
+    "cityFrom": 5,
+    "viewType": "horizontal",
+    "checkIn": null,
+    "dateFrom": null,
+    "systemKey": null,
+    "partnerType": null,
+    "nightFrom": null,
+    "nightTo": null
+  }
+}
+
+
 export const STARTS = {
   "1": "2",
   "3": "3",
