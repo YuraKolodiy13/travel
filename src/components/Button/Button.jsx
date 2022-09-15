@@ -3,7 +3,7 @@ import './Button.scss'
 const Button = ({title, color, doAction, type, disabled}) => {
   return (
     <button type={type} className={`button ${color}`} onClick={doAction} disabled={disabled}>
-      <span>{title}</span>
+      {title && <span data-testid='buttonTitle'>{title}</span>}
     </button>
   )
 };

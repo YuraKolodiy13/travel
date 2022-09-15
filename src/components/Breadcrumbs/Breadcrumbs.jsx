@@ -16,7 +16,7 @@ const Breadcrumbs = ({path}) => {
                 to={`/${path.slice(0, key + 1).join('/')}`}>
                 {COUNTRIES_IDS.hasOwnProperty(item) ? COUNTRIES_IDS[item].name : item}
               </Link>
-            : <span>{COUNTRIES_IDS.hasOwnProperty(item) ? COUNTRIES_IDS[item].name : item}</span>
+            : <span data-testid='active-el'>{COUNTRIES_IDS.hasOwnProperty(item) ? COUNTRIES_IDS[item].name : item}</span>
           }
         </li>
       )}
