@@ -27,7 +27,7 @@ const Header = () => {
           <nav className="nav">
             <ul>
               <li>
-                <Link to='/countries'>Tours by countries</Link>
+                <Link to='/countries'>Тури по країнах</Link>
               </li>
               {user
                 ? <li>

@@ -16,9 +16,11 @@ describe('gallery component', () => {
   });
 
   test('gallery should contain images and open gallery view', () => {
-    const {container} =  render(
+    const {container} = render(
       <GalleryGrid images={images} />
     );
+    expect(screen.get);
+    expect(container.get);
     expect(container.getElementsByClassName('destination').length).toBeGreaterThan(5);
     expect(container.getElementsByClassName('destination')[0]).toBeInTheDocument();
     userEvent.click(container.getElementsByClassName('destination')[0]);
